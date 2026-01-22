@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmueijundtlw6"]
+
+[ext_resource type="ArrayMesh" uid="uid://b244xdr8ln0fd" path="res://Meshy_AI_Piedistallo_di_un_mus_0121094325_generate.obj" id="1_a0tk4"]
+[ext_resource type="ArrayMesh" uid="uid://0d5usppl5nav" path="res://Meshy_AI_Piedistallo_di_un_mus_0121094336_generate.obj" id="2_r3fl7"]
+[ext_resource type="ArrayMesh" uid="uid://5vmmlc6l7q5b" path="res://Meshy_AI_Piedistallo_di_un_mus_0121094346_generate.obj" id="3_jka67"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshyAiPiedistalloDiUnMus0121094325Generate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35450876, 0.24776345, -1.1153398)
+mesh = ExtResource("1_a0tk4")
+
+[node name="MeshyAiPiedistalloDiUnMus0121094336Generate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24145365, 0.22303498, 0.31297472)
+mesh = ExtResource("2_r3fl7")
+
+[node name="MeshyAiPiedistalloDiUnMus0121094346Generate" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4255178, 0, 1.9603722)
+mesh = ExtResource("3_jka67")
