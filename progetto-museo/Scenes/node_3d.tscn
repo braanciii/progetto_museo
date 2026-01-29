@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmueijundtlw6"]
+[gd_scene load_steps=11 format=3 uid="uid://dmueijundtlw6"]
 
 [ext_resource type="Script" uid="uid://debyc5dfvr6gy" path="res://Scenes/node_3d.gd" id="1_7q7q3"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
+[ext_resource type="PackedScene" uid="uid://csye2kpn1kd8s" path="res://Arredamento/FrontDesk/Meshy_AI_Wooden_Reception_Desk_0128094106_texture.glb" id="5_t3l2h"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkdvt"]
 size = Vector3(20, 0.2, 20)
@@ -81,3 +82,6 @@ metadata/_custom_type_script = "uid://ck4yn3hxuobj7"
 
 [node name="XRCamera3D" type="XRCamera3D" parent="Player/XROrigin3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 6)
+
+[node name="Meshy_AI_Wooden_Reception_Desk_0128094106_texture" parent="." instance=ExtResource("5_t3l2h")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.9778423, 1.3891091, 3.7823358)
