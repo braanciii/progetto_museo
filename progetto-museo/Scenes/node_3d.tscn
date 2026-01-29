@@ -1,8 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmueijundtlw6"]
+[gd_scene load_steps=10 format=3 uid="uid://dmueijundtlw6"]
 
 [ext_resource type="Script" uid="uid://debyc5dfvr6gy" path="res://Scenes/node_3d.gd" id="1_7q7q3"]
+[ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
+[ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
+[ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkdvt"]
+size = Vector3(20, 0.2, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wosnj"]
 size = Vector3(20, 0.2, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
@@ -21,6 +27,11 @@ script = ExtResource("1_7q7q3")
 
 [node name="Floor" type="MeshInstance3D" parent="Room"]
 mesh = SubResource("BoxMesh_vkdvt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Floor/StaticBody3D"]
+shape = SubResource("BoxShape3D_wosnj")
 
 [node name="Wall_north" type="MeshInstance3D" parent="Room"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
@@ -48,11 +59,25 @@ transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70
 [node name="XROrigin3D" type="XROrigin3D" parent="Player"]
 current = true
 
-[node name="XRCamera3D" type="XRCamera3D" parent="Player/XROrigin3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 6)
+[node name="RightHand" type="XRController3D" parent="Player/XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="XRToolsMovementDirect" type="Node3D" parent="Player/XROrigin3D/RightHand" groups=["movement_providers"]]
+script = ExtResource("3_wosnj")
+max_speed = 2.0
+strafe = true
+metadata/_custom_type_script = "uid://dc4hg8kq5ia5y"
 
 [node name="LeftHand" type="XRController3D" parent="Player/XROrigin3D"]
 tracker = &"left_hand"
 
-[node name="RightHand" type="XRController3D" parent="Player/XROrigin3D"]
-tracker = &"right_hand"
+[node name="XRToolsMovementTurn" type="Node3D" parent="Player/XROrigin3D/LeftHand" groups=["movement_providers"]]
+script = ExtResource("3_t3l2h")
+metadata/_custom_type_script = "uid://kuxqh057vr5y"
+
+[node name="XRToolsPlayerBody" type="CharacterBody3D" parent="Player/XROrigin3D"]
+script = ExtResource("2_okq71")
+metadata/_custom_type_script = "uid://ck4yn3hxuobj7"
+
+[node name="XRCamera3D" type="XRCamera3D" parent="Player/XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 6)
