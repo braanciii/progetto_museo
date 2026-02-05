@@ -2,30 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://chp38qy6j7rgb"
-path.s3tc="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-5d0da4e2c4dd47f90afe06eb9ab8a32d.s3tc.ctex"
-=======
-uid="uid://gwctn55j2atm"
+uid="uid://840qoto5vvtf"
 path.s3tc="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-db79dfc373ceaefe7f631b0c7f89f156.s3tc.ctex"
->>>>>>> febac64fee1b7c257a4c481ee89898b6973398cf
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "faf75ca0492ac187e695fca44d9a5b3f"
-}
 
 [deps]
 
-<<<<<<< HEAD
-source_file="res://oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-5d0da4e2c4dd47f90afe06eb9ab8a32d.s3tc.ctex"]
-=======
 source_file="res://Oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg"
 dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-db79dfc373ceaefe7f631b0c7f89f156.s3tc.ctex"]
->>>>>>> febac64fee1b7c257a4c481ee89898b6973398cf
 
 [params]
 

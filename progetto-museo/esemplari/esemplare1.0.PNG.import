@@ -2,24 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bup1l2y5dnotj"
-path.s3tc="res://.godot/imported/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture_0.jpg-ac6f4d3ace8a782211f1c9b4c1e50597.s3tc.ctex"
+uid="uid://do0nmb0cb12et"
+path="res://.godot/imported/esemplare1.0.PNG-3c87939c2d40d2f039ec0baeb6ee9b9b.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "bca36cf0997832d828f913c9305cd9fb"
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Oggetti/Cifrario Playfair/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture_0.jpg-ac6f4d3ace8a782211f1c9b4c1e50597.s3tc.ctex"]
+source_file="res://esemplari/esemplare1.0.PNG"
+dest_files=["res://.godot/imported/esemplare1.0.PNG-3c87939c2d40d2f039ec0baeb6ee9b9b.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -27,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -41,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

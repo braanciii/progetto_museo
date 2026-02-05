@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ctmdglec4ehe8"
-path="res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture.glb-ac49ba15a6c8884aa920b98b727aec13.scn"
+path="res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture.glb-79e78089eb5af49beaa6493154e753d9.scn"
 
 [deps]
 
-source_file="res://oggetti/cipher wheel/Meshy_AI_Cipher_Wheel_0120082919_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture.glb-ac49ba15a6c8884aa920b98b727aec13.scn"]
+source_file="res://Oggetti/cipher wheel/Meshy_AI_Cipher_Wheel_0120082919_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture.glb-79e78089eb5af49beaa6493154e753d9.scn"]
 
 [params]
 

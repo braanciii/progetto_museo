@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://dmueijundtlw6"]
+[gd_scene load_steps=29 format=3 uid="uid://dmueijundtlw6"]
 
 [ext_resource type="Script" uid="uid://debyc5dfvr6gy" path="res://Scenes/node_3d.gd" id="1_7q7q3"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="5_a8auw"]
+[ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkdvt"]
 size = Vector3(20, 0.2, 20)
@@ -147,9 +148,6 @@ physics_material_override = SubResource("PhysicsMaterial_t3l2h")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east/StaticBody3D"]
 shape = SubResource("BoxShape3D_cb6ip")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east/StaticBody3D/CollisionShape3D"]
-shape = SubResource("BoxShape3D_cb6ip")
-
 [node name="Corridor" type="Node3D" parent="Room"]
 
 [node name="Corridor_Floor" type="MeshInstance3D" parent="Room/Corridor"]
@@ -239,3 +237,6 @@ script = ExtResource("5_a8auw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player/DesktopPlayer"]
 shape = SubResource("CapsuleShape3D_ifh66")
+
+[node name="Quadro" parent="." instance=ExtResource("6_a8auw")]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bwbvox2ioc82"
-path="res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-bcf4cf0808d5571e1cce2e177b623276.scn"
+uid="uid://qtxenp0tlxqm"
+path="res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"
 
 [deps]
 
-source_file="res://Arredamento/divano/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-bcf4cf0808d5571e1cce2e177b623276.scn"]
+source_file="res://Arredamento/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"]
 
 [params]
 
