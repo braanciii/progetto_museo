@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhxtj1l34gpoh"
-path.s3tc="res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg-43d8353492e4ffed7e1c71c0f0edf4d4.s3tc.ctex"
+uid="uid://d4gwegux0f1xk"
+path.s3tc="res://.godot/imported/Meshy_AI_crea_una_poltroncina__0205074750_texture_0.jpg-8d668a406207f89026fe4beea3f673d4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "4c20a0b0cebeb2631f49a62ee2fa1a68"
+"md5": "5c95c13f3e5d12d7a0827b3680d04a06"
 }
 
 [deps]
 
-source_file="res://oggetti/enigma/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg-43d8353492e4ffed7e1c71c0f0edf4d4.s3tc.ctex"]
+source_file="res://Arredamento/sedia/Meshy_AI_crea_una_poltroncina__0205074750_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_crea_una_poltroncina__0205074750_texture_0.jpg-8d668a406207f89026fe4beea3f673d4.s3tc.ctex"]
 
 [params]
 

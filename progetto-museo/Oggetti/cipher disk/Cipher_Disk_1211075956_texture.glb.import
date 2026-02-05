@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cnr247bm1jpdb"
-path="res://.godot/imported/Cipher_Disk_1211075956_texture.glb-8ba996b24a67c8bd7d83c9a75e830a62.scn"
+path="res://.godot/imported/Cipher_Disk_1211075956_texture.glb-d3c8c56d7bd9c34c772d7b29d373e970.scn"
 
 [deps]
 
-source_file="res://Oggetti/cipher disk/Cipher_Disk_1211075956_texture.glb"
-dest_files=["res://.godot/imported/Cipher_Disk_1211075956_texture.glb-8ba996b24a67c8bd7d83c9a75e830a62.scn"]
+source_file="res://oggetti/cipher disk/Cipher_Disk_1211075956_texture.glb"
+dest_files=["res://.godot/imported/Cipher_Disk_1211075956_texture.glb-d3c8c56d7bd9c34c772d7b29d373e970.scn"]
 
 [params]
 

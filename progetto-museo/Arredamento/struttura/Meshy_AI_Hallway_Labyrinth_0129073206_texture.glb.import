@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://clatvygahaffq"
-path="res://.godot/imported/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture.glb-8ac38eed2d66d6d155b2c972fb09933e.scn"
+uid="uid://4dctk65lhhli"
+path="res://.godot/imported/Meshy_AI_Hallway_Labyrinth_0129073206_texture.glb-de28155260b766a851363aaabf76814c.scn"
 
 [deps]
 
-source_file="res://oggetti/Cifrario Playfair/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_ETÀ_MODERNA_Cifrario_0127084043_texture.glb-8ac38eed2d66d6d155b2c972fb09933e.scn"]
+source_file="res://Arredamento/struttura/Meshy_AI_Hallway_Labyrinth_0129073206_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Hallway_Labyrinth_0129073206_texture.glb-de28155260b766a851363aaabf76814c.scn"]
 
 [params]
 

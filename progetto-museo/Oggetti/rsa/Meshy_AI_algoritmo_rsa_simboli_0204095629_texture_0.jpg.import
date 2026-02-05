@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhxtj1l34gpoh"
-path.s3tc="res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg-43d8353492e4ffed7e1c71c0f0edf4d4.s3tc.ctex"
+uid="uid://chp38qy6j7rgb"
+path.s3tc="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-5d0da4e2c4dd47f90afe06eb9ab8a32d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "4c20a0b0cebeb2631f49a62ee2fa1a68"
+"md5": "faf75ca0492ac187e695fca44d9a5b3f"
 }
 
 [deps]
 
-source_file="res://oggetti/enigma/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture_0.jpg-43d8353492e4ffed7e1c71c0f0edf4d4.s3tc.ctex"]
+source_file="res://oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture_0.jpg-5d0da4e2c4dd47f90afe06eb9ab8a32d.s3tc.ctex"]
 
 [params]
 

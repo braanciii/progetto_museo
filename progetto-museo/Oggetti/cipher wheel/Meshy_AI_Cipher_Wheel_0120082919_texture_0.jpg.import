@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp4dq0bmc07nw"
-path.s3tc="res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg-a7973bec9584e26a494db618598c1cb7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg-9094437b42af9ba77a62400f42afd372.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Oggetti/cipher wheel/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg-a7973bec9584e26a494db618598c1cb7.s3tc.ctex"]
+source_file="res://oggetti/cipher wheel/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Cipher_Wheel_0120082919_texture_0.jpg-9094437b42af9ba77a62400f42afd372.s3tc.ctex"]
 
 [params]
 
