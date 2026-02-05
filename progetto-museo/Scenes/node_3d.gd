@@ -1,8 +1,8 @@
 extends Node3D
 
 # Percorsi ai nodi — adattali se i nomi nella tua scena sono diversi
-@export_node_path(Node3D) var desktop_player_path : NodePath = "DesktopPlayer"
-@export_node_path(Node3D) var xr_origin_path : NodePath = "XROrigin3D"
+@export_node_path("Node3D") var desktop_player_path : NodePath = "DesktopPlayer"
+@export_node_path("Node3D") var xr_origin_path : NodePath = "XROrigin3D"
 
 @onready var desktop_player: Node = get_node_or_null(desktop_player_path)
 @onready var xr_origin: Node = get_node_or_null(xr_origin_path)

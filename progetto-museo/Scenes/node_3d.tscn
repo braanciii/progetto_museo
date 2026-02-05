@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="5_a8auw"]
-[ext_resource type="PackedScene" uid="uid://csye2kpn1kd8s" path="res://Arredamento/FrontDesk/Meshy_AI_Wooden_Reception_Desk_0128094106_texture.glb" id="5_t3l2h"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkdvt"]
 size = Vector3(20, 0.2, 20)
@@ -40,8 +39,10 @@ size = Vector3(0.2, 4, 20)
 [sub_resource type="BoxMesh" id="BoxMesh_okq71"]
 size = Vector3(0.2, 4, 20)
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_t3l2h"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_cb6ip"]
-size = Vector3(0.2, 1, 1)
+size = Vector3(0.2, 4, 20)
 
 [sub_resource type="BoxMesh" id="BoxMesh_vudi7"]
 size = Vector3(3, 0.2, 12)
@@ -82,8 +83,17 @@ mesh = SubResource("BoxMesh_vkdvt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Floor/StaticBody3D"]
 shape = SubResource("BoxShape3D_wosnj")
 
+[node name="Floor" type="MeshInstance3D" parent="Room/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5258789e-05, -19.993868)
+mesh = SubResource("BoxMesh_vkdvt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room/Floor/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Floor/Floor/StaticBody3D"]
+shape = SubResource("BoxShape3D_wosnj")
+
 [node name="Wall_north" type="MeshInstance3D" parent="Room"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -10)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -29.894156)
 mesh = SubResource("BoxMesh_7q7q3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_north"]
@@ -118,13 +128,26 @@ mesh = SubResource("BoxMesh_bi5fs")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_west/StaticBody3D"]
 shape = SubResource("BoxShape3D_rvjhm")
 
+[node name="Wall_west" type="MeshInstance3D" parent="Room/Wall_west"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19.998173)
+mesh = SubResource("BoxMesh_bi5fs")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west/Wall_west"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_west/Wall_west/StaticBody3D"]
+shape = SubResource("BoxShape3D_rvjhm")
+
 [node name="Wall_east" type="MeshInstance3D" parent="Room"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 0)
 mesh = SubResource("BoxMesh_okq71")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_east"]
+physics_material_override = SubResource("PhysicsMaterial_t3l2h")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east/StaticBody3D"]
+shape = SubResource("BoxShape3D_cb6ip")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east/StaticBody3D/CollisionShape3D"]
 shape = SubResource("BoxShape3D_cb6ip")
 
 [node name="Corridor" type="Node3D" parent="Room"]
@@ -165,6 +188,19 @@ mesh = SubResource("BoxMesh_rl1jb")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Corridor/Corridor_EndWall/StaticBody3D"]
 shape = SubResource("BoxShape3D_58eop")
 
+[node name="Wall_east2" type="MeshInstance3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -20)
+mesh = SubResource("BoxMesh_okq71")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_east2"]
+physics_material_override = SubResource("PhysicsMaterial_t3l2h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east2/StaticBody3D"]
+shape = SubResource("BoxShape3D_cb6ip")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_east2/StaticBody3D/CollisionShape3D"]
+shape = SubResource("BoxShape3D_cb6ip")
+
 [node name="Lights" type="Node3D" parent="."]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights"]
@@ -203,6 +239,3 @@ script = ExtResource("5_a8auw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player/DesktopPlayer"]
 shape = SubResource("CapsuleShape3D_ifh66")
-
-[node name="Meshy_AI_Wooden_Reception_Desk_0128094106_texture" parent="." instance=ExtResource("5_t3l2h")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4.9778423, 1.3891091, 3.7823358)
