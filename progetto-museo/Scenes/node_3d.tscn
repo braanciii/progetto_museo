@@ -217,7 +217,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0021362305)
 shape = SubResource("BoxShape3D_rvjhm")
 
 [node name="Wall_west3" type="MeshInstance3D" parent="Room" unique_id=769331107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.13733, 2.0513916, -20.978546)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.027523, 2.0513916, -20.921402)
 mesh = SubResource("BoxMesh_worak")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west3" unique_id=637083538]
