@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dtepvtw4rke70"
-path="res://.godot/imported/Meshy_AI_ENTRATA_ELEGANTE_0204165325_texture.glb-1549a0999432cd62a8d89dac945b8321.scn"
+uid="uid://cphyay8xdr17i"
+path="res://.godot/imported/Meshy_AI_entrata_di_un_museo_i_0210081700_texture.glb-c54bce87d143faeff967a0ca2efeb107.scn"
 
 [deps]
 
-source_file="res://Arredamento/entrata decorativa/Meshy_AI_ENTRATA_ELEGANTE_0204165325_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_ENTRATA_ELEGANTE_0204165325_texture.glb-1549a0999432cd62a8d89dac945b8321.scn"]
+source_file="res://Arredamento/Entrata Museo/Meshy_AI_entrata_di_un_museo_i_0210081700_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_entrata_di_un_museo_i_0210081700_texture.glb-c54bce87d143faeff967a0ca2efeb107.scn"]
 
 [params]
 

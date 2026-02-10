@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nx77v07kcb85"
-path.s3tc="res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture_0.jpg-0c4fea88c4992851b6f1b9ed6cedebb8.s3tc.ctex"
+uid="uid://dmqox57drcw2e"
+path.s3tc="res://.godot/imported/Meshy_AI_Cryptic_Code_Scroll_0210082021_texture_0.jpg-6a960fee70427d0a5a73dc538e8bca00.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "e8dd0c36a62048fd469f793ebc315dbe"
+"md5": "753e8c3f8ebad713dd258addf2dd475e"
 }
 
 [deps]
 
-source_file="res://Arredamento/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture_0.jpg-0c4fea88c4992851b6f1b9ed6cedebb8.s3tc.ctex"]
+source_file="res://Oggetti/Cifrario Al-kindi/Meshy_AI_Cryptic_Code_Scroll_0210082021_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Cryptic_Code_Scroll_0210082021_texture_0.jpg-6a960fee70427d0a5a73dc538e8bca00.s3tc.ctex"]
 
 [params]
 
