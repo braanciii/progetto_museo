@@ -21,7 +21,7 @@ size = Vector3(20, 0.2, 40)
 size = Vector3(19.801392, 0.2, 39.953674)
 
 [sub_resource type="BoxMesh" id="BoxMesh_1vwyg"]
-size = Vector3(12, 0.2, 4)
+size = Vector3(12, 0.2, 4.1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wosnj"]
 size = Vector3(11.929871, 0.2, 3.9348145)
@@ -51,10 +51,10 @@ size = Vector3(8.5, 4, 0.2)
 size = Vector3(8.5, 4, 0.2)
 
 [sub_resource type="BoxMesh" id="BoxMesh_nivdu"]
-size = Vector3(8.5, 4, 0.2)
+size = Vector3(7.985, 4, 0.2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_24o0o"]
-size = Vector3(8.5, 4, 0.2)
+size = Vector3(7.8385925, 4, 0.2)
 
 [sub_resource type="BoxMesh" id="BoxMesh_o74xe"]
 size = Vector3(8.5, 4, 0.2)
@@ -113,7 +113,7 @@ size = Vector3(0.2, 4, 12)
 size = Vector3(0.2, 4, 12)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cb6ip"]
-size = Vector3(0.2, 4, 12)
+size = Vector3(0.2, 4, 12.22)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ahc04"]
 size = Vector3(0.2, 4, 12)
@@ -169,7 +169,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17166042, 0, 0.012573242)
 shape = SubResource("BoxShape3D_wosnj")
 
 [node name="Floor4" type="MeshInstance3D" parent="Room" unique_id=283224828]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -31.73824, 0, -35.92865)
+transform = Transform3D(-4.026629e-08, -1.7009148e-08, -1, -0.38912395, 0.9211854, 0, 0.9211854, 0.38912395, -4.371139e-08, -31.73824, 2.339065, -35.557293)
 mesh = SubResource("BoxMesh_58eop")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Floor4" unique_id=1087147116]
@@ -206,16 +206,17 @@ mesh = SubResource("BoxMesh_a8auw")
 shape = SubResource("BoxShape3D_ifh66")
 
 [node name="Wall_southL2" type="MeshInstance3D" parent="Room" unique_id=418869095]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.122532, 2.0534399, -30.025734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.740759, 2.057168, -30.051111)
 mesh = SubResource("BoxMesh_nivdu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_southL2" unique_id=1060582793]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_southL2/StaticBody3D" unique_id=8452970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010528564, 0, 0)
 shape = SubResource("BoxShape3D_24o0o")
 
 [node name="Wall_southL3" type="MeshInstance3D" parent="Room" unique_id=825657397]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.06151, 2, -30.025734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.9931, 2, -30.025734)
 mesh = SubResource("BoxMesh_o74xe")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_southL3" unique_id=1485576661]
@@ -243,7 +244,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.008419991)
 shape = SubResource("BoxShape3D_aeo3b")
 
 [node name="Wall_west4" type="MeshInstance3D" parent="Room" unique_id=1589151441]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.027061, 2, 1.0794544)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0239, 2.0000002, 1.1037612)
 mesh = SubResource("BoxMesh_ifh66")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west4" unique_id=1448376181]
@@ -263,13 +264,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0021362305)
 shape = SubResource("BoxShape3D_rvjhm")
 
 [node name="Wall_west3" type="MeshInstance3D" parent="Room" unique_id=769331107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.969967, 2.0513916, -20.921402)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.96269, 2.052065, -20.980423)
 mesh = SubResource("BoxMesh_worak")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west3" unique_id=637083538]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Wall_west3/StaticBody3D" unique_id=537250892]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0021362305)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.027511597)
 shape = SubResource("BoxShape3D_rvjhm")
 
 [node name="Wall_east" type="MeshInstance3D" parent="Room" unique_id=1495610969]
@@ -313,7 +314,7 @@ mesh = SubResource("BoxMesh_ahc04")
 shape = SubResource("BoxShape3D_8cye3")
 
 [node name="Corridor_Wall_L2" type="MeshInstance3D" parent="Room/Corridor" unique_id=921367720]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927177, 2.0610476, -12.01357)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927177, 2.0503247, -12.080469)
 mesh = SubResource("BoxMesh_rvjhm")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Wall_L2" unique_id=1330892624]
@@ -322,7 +323,7 @@ mesh = SubResource("BoxMesh_rvjhm")
 shape = SubResource("BoxShape3D_vudi7")
 
 [node name="Corridor_Wall_L3" type="MeshInstance3D" parent="Room/Corridor" unique_id=1317026089]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.965432, 2.0610476, -7.8884215)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16.00943, 2.000001, -7.861832)
 mesh = SubResource("BoxMesh_cb6ip")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Wall_L3" unique_id=893595269]
