@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://c35ruxg4srn3h"
+=======
+uid="uid://fsd013008tww"
+>>>>>>> 2d99639906baafaee988d38f8476327a52d1f872
 path.s3tc="res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],

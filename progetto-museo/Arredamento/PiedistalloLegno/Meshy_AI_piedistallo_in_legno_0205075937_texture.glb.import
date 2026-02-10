@@ -3,7 +3,11 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
 uid="uid://clm0btsis33ty"
+=======
+uid="uid://cmjq1ba8b6hwx"
+>>>>>>> 2d99639906baafaee988d38f8476327a52d1f872
 path="res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture.glb-491c9cbccd0c73fd7aa0eccf23262aae.scn"
 
 [deps]
