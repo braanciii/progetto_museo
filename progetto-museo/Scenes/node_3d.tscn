@@ -166,7 +166,7 @@ mesh = SubResource("BoxMesh_7q7q3")
 shape = SubResource("BoxShape3D_t3l2h")
 
 [node name="Wall_north2" type="MeshInstance3D" parent="Room" unique_id=1422354740]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.974077, 2, -29.894156)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.974077, 2, 9.904078)
 mesh = SubResource("BoxMesh_m2rse")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_north2" unique_id=1982904631]
