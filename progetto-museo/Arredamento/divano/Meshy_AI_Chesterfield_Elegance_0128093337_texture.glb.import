@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bwbvox2ioc82"
-path="res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-271f67d4543776e0b5012437dc327d02.scn"
+path="res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-bcf4cf0808d5571e1cce2e177b623276.scn"
 
 [deps]
 
-source_file="res://Arredamento/poltrona_dec/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-271f67d4543776e0b5012437dc327d02.scn"]
+source_file="res://Arredamento/divano/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb-bcf4cf0808d5571e1cce2e177b623276.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djwuxhpugjx4d"
-path.s3tc="res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg-d1182e40e900bf1c690f1e223ccbc815.s3tc.ctex"
+path.s3tc="res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg-fecf8027de6c083733f6eedc220b348d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Arredamento/poltrona_dec/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg-d1182e40e900bf1c690f1e223ccbc815.s3tc.ctex"]
+source_file="res://Arredamento/divano/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Chesterfield_Elegance_0128093337_texture_0.jpg-fecf8027de6c083733f6eedc220b348d.s3tc.ctex"]
 
 [params]
 

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cgosrdlpj465x"
-path="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-f71042b714684e8d7d481f01eae62e6a.scn"
+uid="uid://qtxenp0tlxqm"
+path="res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"
 
 [deps]
 
-source_file="res://oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-f71042b714684e8d7d481f01eae62e6a.scn"]
+source_file="res://Arredamento/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"]
 
 [params]
 
@@ -38,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=0
+gltf/naming_version=2
 gltf/embedded_image_handling=1
