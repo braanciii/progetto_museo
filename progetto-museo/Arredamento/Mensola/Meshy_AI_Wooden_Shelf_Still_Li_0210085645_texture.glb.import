@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://qtxenp0tlxqm"
-path="res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"
+uid="uid://b5n805q2hl5vx"
+path="res://.godot/imported/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture.glb-9f6e997258ef9950aeaccf231fb68b59.scn"
 
 [deps]
 
-source_file="res://Arredamento/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb-6ecf6cd179dc2def38509aeae5211f7d.scn"]
+source_file="res://Arredamento/Mensola/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture.glb-9f6e997258ef9950aeaccf231fb68b59.scn"]
 
 [params]
 

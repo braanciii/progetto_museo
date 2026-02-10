@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fsd013008tww"
-path.s3tc="res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.s3tc.ctex"
+uid="uid://bpjowq5eb3ad4"
+path.s3tc="res://.godot/imported/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture_0.jpg-8ed579595cfd2cd5bf76c59a322182a3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "3bb7903b84dcd689270bfb5f668c0442"
+}
 
 [deps]
 
-source_file="res://Arredamento/PiedistalloLegno/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.s3tc.ctex"]
+source_file="res://Arredamento/Mensola/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Wooden_Shelf_Still_Li_0210085645_texture_0.jpg-8ed579595cfd2cd5bf76c59a322182a3.s3tc.ctex"]
 
 [params]
 
