@@ -206,7 +206,7 @@ mesh = SubResource("BoxMesh_a8auw")
 shape = SubResource("BoxShape3D_ifh66")
 
 [node name="Wall_southL2" type="MeshInstance3D" parent="Room" unique_id=418869095]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.500956, 2, -30.025734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.122532, 2.0534399, -30.025734)
 mesh = SubResource("BoxMesh_nivdu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_southL2" unique_id=1060582793]
@@ -243,7 +243,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.008419991)
 shape = SubResource("BoxShape3D_aeo3b")
 
 [node name="Wall_west4" type="MeshInstance3D" parent="Room" unique_id=1589151441]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.027061, 2, 1.135086)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.027061, 2, 1.0794544)
 mesh = SubResource("BoxMesh_ifh66")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west4" unique_id=1448376181]
@@ -263,7 +263,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0021362305)
 shape = SubResource("BoxShape3D_rvjhm")
 
 [node name="Wall_west3" type="MeshInstance3D" parent="Room" unique_id=769331107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.027523, 2.0513916, -20.921402)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.969967, 2.0513916, -20.921402)
 mesh = SubResource("BoxMesh_worak")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Wall_west3" unique_id=637083538]
@@ -322,7 +322,7 @@ mesh = SubResource("BoxMesh_rvjhm")
 shape = SubResource("BoxShape3D_vudi7")
 
 [node name="Corridor_Wall_L3" type="MeshInstance3D" parent="Room/Corridor" unique_id=1317026089]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927177, 2.0610476, -7.8975024)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.965432, 2.0610476, -7.8884215)
 mesh = SubResource("BoxMesh_cb6ip")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Wall_L3" unique_id=893595269]
