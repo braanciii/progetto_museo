@@ -3,11 +3,14 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 uid="uid://dknpbssekv8h2"
 path="res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.ctex"
 metadata={
 "vram_texture": false
 =======
+=======
+>>>>>>> Stashed changes
 uid="uid://fsd013008tww"
 path.s3tc="res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.s3tc.ctex"
 metadata={
@@ -16,6 +19,9 @@ metadata={
 }
 generator_parameters={
 "md5": "9711536cbc5030b0c07637f233a38cec"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 
@@ -23,17 +29,23 @@ generator_parameters={
 
 source_file="res://Arredamento/PiedistalloLegno/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 dest_files=["res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.ctex"]
 
 [params]
 
 compress/mode=0
 =======
+=======
+>>>>>>> Stashed changes
 dest_files=["res://.godot/imported/Meshy_AI_piedistallo_in_legno_0205075937_texture_0.jpg-9d57f825de6695884dbd1032b71a7f51.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 compress/high_quality=false
 compress/lossy_quality=0.7
@@ -43,7 +55,11 @@ compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 mipmaps/generate=false
+=======
+mipmaps/generate=true
+>>>>>>> Stashed changes
 =======
 mipmaps/generate=true
 >>>>>>> Stashed changes
@@ -61,7 +77,11 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 detect_3d/compress_to=1
+=======
+detect_3d/compress_to=0
+>>>>>>> Stashed changes
 =======
 detect_3d/compress_to=0
 >>>>>>> Stashed changes
