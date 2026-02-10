@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmueijundtlw6"]
 
 [ext_resource type="Script" uid="uid://debyc5dfvr6gy" path="res://Scenes/node_3d.gd" id="1_7q7q3"]
-[ext_resource type="Script" uid="uid://b8n6rjknhao0a" path="res://Scenes/player.gd" id="2_a8auw"]
+[ext_resource type="Script" path="res://Scenes/player.gd" id="2_a8auw"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
@@ -68,6 +68,12 @@ size = Vector3(0.2, 4, 12)
 size = Vector3(0.2, 4, 12)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vudi7"]
+size = Vector3(0.2, 4, 12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cb6ip"]
+size = Vector3(0.2, 4, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ahc04"]
 size = Vector3(0.2, 4, 12)
 
 [sub_resource type="BoxMesh" id="BoxMesh_062e5"]
@@ -177,13 +183,22 @@ mesh = SubResource("BoxMesh_ahc04")
 shape = SubResource("BoxShape3D_8cye3")
 
 [node name="Corridor_Wall_L2" type="MeshInstance3D" parent="Room/Corridor" unique_id=921367720]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927177, 2, -12.067848)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.927177, 2.0610476, -12.01357)
 mesh = SubResource("BoxMesh_rvjhm")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Wall_L2" unique_id=1330892624]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Corridor/Corridor_Wall_L2/StaticBody3D" unique_id=877491984]
 shape = SubResource("BoxShape3D_vudi7")
+
+[node name="Corridor_Wall_L2" type="MeshInstance3D" parent="Room/Corridor/Corridor_Wall_L2" unique_id=1572175673]
+transform = Transform3D(-1, 0, 8.742277e-08, 0, 1, 0, -8.742277e-08, 0, -1, 4.4185243, 0.20000005, 1.5199995)
+mesh = SubResource("BoxMesh_cb6ip")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Wall_L2/Corridor_Wall_L2" unique_id=689486518]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room/Corridor/Corridor_Wall_L2/Corridor_Wall_L2/StaticBody3D" unique_id=723079403]
+shape = SubResource("BoxShape3D_ahc04")
 
 [node name="Corridor_Wall_R" type="MeshInstance3D" parent="Room/Corridor" unique_id=123196078]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 2, 16)
