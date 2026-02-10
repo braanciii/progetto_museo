@@ -1,58 +1,65 @@
-extends Node3D
+extends CharacterBody3D
 
-# Assegna questi due nodi dall’Inspector
-@export var desktop_player: Node3D
-@export var xr_origin: Node3D
+@export var walk_speed := 4.0
+@export var sprint_speed := 7.0
+@export var jump_velocity := 5.0
+@export var mouse_sens := 0.002
+@export var gravity := 9.8
+
+var yaw := 0.0
+var pitch := 0.0
+
+@onready var cam: Camera3D = $Camera3D
 
 func _ready():
-	# Debug: verifica subito se qualcosa è null
-	print("desktop_player =", desktop_player)
-	print("xr_origin =", xr_origin)
+	call_deferred("_capture_mouse")
 
-	# Cerca OpenXR
-	var xr_interface := XRServer.find_interface("OpenXR")
+func _capture_mouse():
+	get_viewport().grab_focus()
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-	# Inizializza XR se possibile
-	if xr_interface and not xr_interface.is_initialized():
-		xr_interface.initialize()
+func _unhandled_input(event):
+	if event is InputEventMouseMotion:
+		yaw -= event.relative.x * mouse_sens
+		pitch -= event.relative.y * mouse_sens
+		pitch = clamp(pitch, -1.2, 1.2)
+		rotation.y = yaw
+		cam.rotation.x = pitch
 
-	var xr_available := xr_interface and xr_interface.is_initialized()
+	if event.is_action_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 
-	# Attiva o meno XR
-	get_viewport().use_xr = xr_available
-	_enable_vr(xr_available)
+func _physics_process(delta):
+	# Gravità
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+	else:
+		# Salto
+		if Input.is_action_just_pressed("jump"):
+			velocity.y = jump_velocity
 
+	# Direzione movimento
+	var input_dir := Vector3.ZERO
+	if Input.is_action_pressed("move_forward"):
+		input_dir.z -= 1
+	if Input.is_action_pressed("move_back"):
+		input_dir.z += 1
+	if Input.is_action_pressed("move_left"):
+		input_dir.x -= 1
+	if Input.is_action_pressed("move_right"):
+		input_dir.x += 1
 
-func _enable_vr(enable: bool) -> void:
-	# Desktop player
-	if is_instance_valid(desktop_player):
-		desktop_player.visible = not enable
-		desktop_player.set_process(not enable)
-		desktop_player.set_physics_process(not enable)
+	input_dir = input_dir.normalized()
 
-	# XR Origin
-	if is_instance_valid(xr_origin):
-		xr_origin.visible = enable
-		xr_origin.set_process(enable)
-		xr_origin.set_physics_process(enable)
+	var direction := (global_transform.basis * input_dir)
+	direction.y = 0
 
-	if enable:
-		get_viewport().use_xr = true
+	# Sprint
+	var current_speed := walk_speed
+	if Input.is_action_pressed("sprint"):
+		current_speed = sprint_speed
 
+	velocity.x = direction.x * current_speed
+	velocity.z = direction.z * current_speed
 
-# ─────────────────────────────
-# ESEMPIO SICURO DI ROTAZIONE
-# (non andrà mai in crash)
-# ─────────────────────────────
-func rotate_desktop_player(yaw_delta: float) -> void:
-	if not is_instance_valid(desktop_player):
-		return
-
-	desktop_player.rotation.y += yaw_delta
-
-
-func rotate_xr_origin(yaw_delta: float) -> void:
-	if not is_instance_valid(xr_origin):
-		return
-
-	xr_origin.rotation.y += yaw_delta
+	move_and_slide()

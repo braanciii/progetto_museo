@@ -3,6 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
 uid="uid://cgosrdlpj465x"
 path="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-f71042b714684e8d7d481f01eae62e6a.scn"
 
@@ -10,6 +11,15 @@ path="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.gl
 
 source_file="res://oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb"
 dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-f71042b714684e8d7d481f01eae62e6a.scn"]
+=======
+uid="uid://c0knxynew6lv6"
+path="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-2dc9c11f30e9b6f61c366ab02ac0bfe0.scn"
+
+[deps]
+
+source_file="res://Oggetti/rsa/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-2dc9c11f30e9b6f61c366ab02ac0bfe0.scn"]
+>>>>>>> 0eaa9024aa51f0bdbcfa306a6f1fab4ffed71cc8
 
 [params]
 

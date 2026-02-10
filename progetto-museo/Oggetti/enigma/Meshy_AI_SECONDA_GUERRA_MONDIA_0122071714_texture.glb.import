@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://rj8xd85sorfa"
-path="res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb-8f70de9fd19e9aaf1039d481838c8e6e.scn"
+path="res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb-f8380bf134189a987a2aabff316d3d1d.scn"
 
 [deps]
 
-source_file="res://oggetti/enigma/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb-8f70de9fd19e9aaf1039d481838c8e6e.scn"]
+source_file="res://Oggetti/enigma/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_SECONDA_GUERRA_MONDIA_0122071714_texture.glb-f8380bf134189a987a2aabff316d3d1d.scn"]
 
 [params]
 
