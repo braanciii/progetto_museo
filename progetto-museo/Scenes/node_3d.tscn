@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 [ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
+[ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkdvt"]
 size = Vector3(20, 0.2, 40)
@@ -218,3 +219,6 @@ current = true
 
 [node name="Quadro" parent="." unique_id=1224488107 instance=ExtResource("6_a8auw")]
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
+
+[node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="." unique_id=1144623127 instance=ExtResource("8_aeo3b")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0, 0.11, 17.97)
