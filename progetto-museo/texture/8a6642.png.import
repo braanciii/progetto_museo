@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm1yoppx5ekjq"
-path.s3tc="res://.godot/imported/pavimento2.jpg-fb4695b0835c157573714f7278f30017.s3tc.ctex"
+uid="uid://d3hodj5tof0y3"
+path.s3tc="res://.godot/imported/8a6642.png-552739b5140b504b01c3b4c60dab1ec5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://texture/pavimento2.jpg"
-dest_files=["res://.godot/imported/pavimento2.jpg-fb4695b0835c157573714f7278f30017.s3tc.ctex"]
+source_file="res://texture/8a6642.png"
+dest_files=["res://.godot/imported/8a6642.png-552739b5140b504b01c3b4c60dab1ec5.s3tc.ctex"]
 
 [params]
 
