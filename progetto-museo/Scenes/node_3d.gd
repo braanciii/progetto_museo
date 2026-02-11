@@ -14,8 +14,6 @@ func _ready():
 	# prova a inizializzare solo se l'interfaccia esiste e non è inizializzata
 	if xr_interface and not xr_interface.is_initialized():
 		var ok := xr_interface.initialize()
-		# opzionale: stampare per debug
-		# print("XR interface initialize -> ", ok)
 
 	# decide se attivare XR (solo se interfaccia inizializzata)
 	var xr_available := xr_interface and xr_interface.is_initialized()
