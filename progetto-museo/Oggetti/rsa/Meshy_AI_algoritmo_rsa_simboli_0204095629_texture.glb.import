@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c0knxynew6lv6"
+uid="uid://delftu6dgf1x7"
 path="res://.godot/imported/Meshy_AI_algoritmo_rsa_simboli_0204095629_texture.glb-2dc9c11f30e9b6f61c366ab02ac0bfe0.scn"
 
 [deps]
@@ -38,5 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-gltf/naming_version=0
+gltf/naming_version=2
 gltf/embedded_image_handling=1
