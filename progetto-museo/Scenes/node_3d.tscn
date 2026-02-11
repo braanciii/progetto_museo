@@ -152,6 +152,9 @@ size = Vector3(0.2, 4, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_lsvv6"]
 size = Vector3(0.2, 4, 40)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vudi7"]
+albedo_texture = ExtResource("2_aeo3b")
+
 [sub_resource type="BoxMesh" id="BoxMesh_vudi7"]
 size = Vector3(3, 0.2, 12)
 
@@ -441,6 +444,7 @@ shape = SubResource("BoxShape3D_lsvv6")
 
 [node name="Corridor_Floor" type="MeshInstance3D" parent="Room/Corridor" unique_id=1688670158]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+material_override = SubResource("StandardMaterial3D_vudi7")
 mesh = SubResource("BoxMesh_vudi7")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Corridor/Corridor_Floor" unique_id=2012459818]
