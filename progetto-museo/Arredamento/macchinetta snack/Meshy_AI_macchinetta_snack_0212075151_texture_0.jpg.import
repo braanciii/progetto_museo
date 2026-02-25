@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://7jkgeji2n7ti"
+path.s3tc="res://.godot/imported/Meshy_AI_macchinetta_snack_0212075151_texture_0.jpg-0438dfa5b3ef01ef28fbb228de9b95c7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "84c6bc936edd967c45a6e96d842adc0f"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/macchinetta snack/Meshy_AI_macchinetta_snack_0212075151_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_macchinetta_snack_0212075151_texture_0.jpg-0438dfa5b3ef01ef28fbb228de9b95c7.s3tc.ctex"]
 
 [params]
 

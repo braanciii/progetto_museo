@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://xshdpvh85kh1"
+path.s3tc="res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture_0.jpg-f36dcc3e7f69b8a04f5a0346ddcdbcc1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "6506446cf5802a6ebd23184b881d1a44"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Oggetti/Lorenz SZ 4042/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture_0.jpg-f36dcc3e7f69b8a04f5a0346ddcdbcc1.s3tc.ctex"]
 
 [params]
 

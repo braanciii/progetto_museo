@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://tvp3xrppj6qy"
+path.s3tc="res://.godot/imported/Meshy_AI_Stanchion_barrier_pos_0211095332_texture_0.jpg-6b9bdda997a95cc8aa77fd6f2f0a10d0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "b3aaa2009d719fdac70eb5a762b60b67"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/Barriera/Meshy_AI_Stanchion_barrier_pos_0211095332_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Stanchion_barrier_pos_0211095332_texture_0.jpg-6b9bdda997a95cc8aa77fd6f2f0a10d0.s3tc.ctex"]
 
 [params]
 

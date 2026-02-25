@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://5if568g64kky"
+path.s3tc="res://.godot/imported/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg-03665601c880e8113f724bd6cbf5a73d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "0b601f438c0471e041bac884ed9ccd58"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/Albero verde/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg-03665601c880e8113f724bd6cbf5a73d.s3tc.ctex"]
 
 [params]
 

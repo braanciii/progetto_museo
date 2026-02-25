@@ -2,24 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://47el30qpivlf"
+path="res://.godot/imported/Enigma_immagine.jpg-a650bc3a011fcc61557772b820524d16.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
-generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Oggetti/Enigma/Enigma_immagine.jpg"
+dest_files=["res://.godot/imported/Enigma_immagine.jpg-a650bc3a011fcc61557772b820524d16.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
@@ -27,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -41,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://01ci8cfcyjxa"
+path.s3tc="res://.godot/imported/Meshy_AI_Maid_with_Cleaning_Ca_0224081451_texture_0.jpg-44d3c31b1f30e065e0537fcae64ff54d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "97da88a8fb0d4dc34298ec19234908e3"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/donna_pulizie/Meshy_AI_Maid_with_Cleaning_Ca_0224081451_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Maid_with_Cleaning_Ca_0224081451_texture_0.jpg-44d3c31b1f30e065e0537fcae64ff54d.s3tc.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://ct2ptdanc80w"
+path.s3tc="res://.godot/imported/Meshy_AI_Red_Fire_Extinguisher_0212074614_texture_0.jpg-daedea0a4df1ba52c6eb2cbb188f1730.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "2f87c711da3a1a7971a1f25ba37a53d1"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/estintore/Meshy_AI_Red_Fire_Extinguisher_0212074614_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Red_Fire_Extinguisher_0212074614_texture_0.jpg-daedea0a4df1ba52c6eb2cbb188f1730.s3tc.ctex"]
 
 [params]
 

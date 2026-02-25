@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://ckt0au62xocoi"
+path.s3tc="res://.godot/imported/Meshy_AI_ponte_rotto_0219075033_texture_0.jpg-53044dbb5712ffcbcbf81941337058a8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "322f70ab2f1e8825c8cb9f84bf903c6a"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/ponte di legno/Meshy_AI_ponte_rotto_0219075033_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_ponte_rotto_0219075033_texture_0.jpg-53044dbb5712ffcbcbf81941337058a8.s3tc.ctex"]
 
 [params]
 

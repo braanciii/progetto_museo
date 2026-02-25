@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://cai84trbkm71p"
+path.s3tc="res://.godot/imported/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg-c10a6e4df6d755c1a0da9891ab769719.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "acf69f50fabc1b87e9fe1a17d01e5af8"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/pianta/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg-c10a6e4df6d755c1a0da9891ab769719.s3tc.ctex"]
 
 [params]
 

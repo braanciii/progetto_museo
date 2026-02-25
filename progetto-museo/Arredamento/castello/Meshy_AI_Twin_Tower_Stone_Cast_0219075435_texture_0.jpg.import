@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://2qtbun4r1oa8"
+path.s3tc="res://.godot/imported/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg-3b47fe57e8de640f5555e3623ce7edaa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "ef836e1f3552c1e87078c1752ae3cbdf"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Arredamento/castello/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg-3b47fe57e8de640f5555e3623ce7edaa.s3tc.ctex"]
 
 [params]
 

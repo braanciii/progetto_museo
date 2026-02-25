@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jcwfvfj1vl31"
-path.s3tc="res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"
+uid="uid://om7t0au15ukm"
+path.s3tc="res://.godot/imported/Meshy_AI_Wooden_alphabet_rings_0211095710_texture_0.jpg-57a15d70662ca6d8583a11c103742082.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "377bb6122075d20ad116345e8c656e34"
+"md5": "ba4df751ace6c989474b6281f7d0792b"
 }
 
 [deps]
 
-source_file="res://Arredamento/Lampadario/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Ornate_museum_style_c_0211092834_texture_0.jpg-49f244b5553d03895d3eef0f64add53f.s3tc.ctex"]
+source_file="res://Oggetti/Scitala_Spartana/Meshy_AI_Wooden_alphabet_rings_0211095710_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Wooden_alphabet_rings_0211095710_texture_0.jpg-57a15d70662ca6d8583a11c103742082.s3tc.ctex"]
 
 [params]
 
