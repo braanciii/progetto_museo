@@ -580,7 +580,7 @@ current = true
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
 
 [node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="." unique_id=1144623127 instance=ExtResource("8_aeo3b")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0, 0.11, 17.97)
+transform = Transform3D(-2.84124e-07, 0, 2, 0, 2, 0, -6.5, 0, -8.742278e-08, 0.1, 0.35, 14.464567)
 
 [node name="Meshy_AI_crea_una_poltroncina__0205074750_texture" type="Node3D" parent="." unique_id=354672007]
 transform = Transform3D(-0.99848044, 0, 0.055106994, 0, 1, 0, -0.055106994, 0, -0.99848044, -0.036655903, 1.0327475, 20.933891)
