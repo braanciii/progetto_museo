@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmyadykmmqdtc"
-path.s3tc="res://.godot/imported/Donna_pulizie_0.jpg-234e440c06d59bd331de51a3f1cfa9c8.s3tc.ctex"
+uid="uid://dv00r6gv61i75"
+path.s3tc="res://.godot/imported/Meshy_AI_Isometric_Yellow_Pane_0303085120_texture_0.jpg-e767e7912595d9d18488ee5cc953d64d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "97da88a8fb0d4dc34298ec19234908e3"
+"md5": "018c98d08bcfdc87127427555d63e3f8"
 }
 
 [deps]
 
-source_file="res://donna_pulizie2/Donna_pulizie_0.jpg"
-dest_files=["res://.godot/imported/Donna_pulizie_0.jpg-234e440c06d59bd331de51a3f1cfa9c8.s3tc.ctex"]
+source_file="res://Oggetti/Curva Ellittica/Meshy_AI_Isometric_Yellow_Pane_0303085120_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Isometric_Yellow_Pane_0303085120_texture_0.jpg-e767e7912595d9d18488ee5cc953d64d.s3tc.ctex"]
 
 [params]
 
