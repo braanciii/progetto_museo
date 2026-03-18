@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
 [ext_resource type="PackedScene" uid="uid://c62ahbejuw8i3" path="res://Arredamento/finestra/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb" id="9_worak"]
+[ext_resource type="Texture2D" uid="uid://cm7yp4axmm8qs" path="res://pergamena.png" id="11_cb6ip"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worak"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -577,14 +578,25 @@ shape = SubResource("CapsuleShape3D_ifh66")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10377693, 0)
 current = true
 
-[node name="Quadro" parent="." unique_id=1224488107 instance=ExtResource("6_a8auw")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
+[node name="Oggetti" type="Node3D" parent="." unique_id=2117104462]
 
-[node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="." unique_id=1144623127 instance=ExtResource("8_aeo3b")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0, 0.11, 17.97)
+[node name="Meshy_AI__Finestra_singola_fi_0211231832_texture" parent="Oggetti" unique_id=2081334049 instance=ExtResource("9_worak")]
+transform = Transform3D(-1.3987645e-07, -3.2, 0, 3.2, -1.3987645e-07, 0, 0, 0, 3.2, -0.015695095, 8.339818, 10.107414)
+visible = false
 
-[node name="Meshy_AI_crea_una_poltroncina__0205074750_texture" type="Node3D" parent="." unique_id=354672007]
+[node name="Meshy_AI_crea_una_poltroncina__0205074750_texture" type="Node3D" parent="Oggetti" unique_id=354672007]
 transform = Transform3D(-0.99848044, 0, 0.055106994, 0, 1, 0, -0.055106994, 0, -0.99848044, -0.036655903, 1.0327475, 20.933891)
 
-[node name="Meshy_AI__Finestra_singola_fi_0211231832_texture" parent="." unique_id=2081334049 instance=ExtResource("9_worak")]
-transform = Transform3D(-1.3987645e-07, -3.2, 0, 3.2, -1.3987645e-07, 0, 0, 0, 3.2, -0.015695095, 8.339818, 10.107414)
+[node name="Quadro" parent="Oggetti" unique_id=1224488107 instance=ExtResource("6_a8auw")]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
+
+[node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="Oggetti" unique_id=1144623127 instance=ExtResource("8_aeo3b")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0, 0.11, 17.97)
+
+[node name="TextureRect" type="TextureRect" parent="Oggetti" unique_id=1543645251]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_cb6ip")
