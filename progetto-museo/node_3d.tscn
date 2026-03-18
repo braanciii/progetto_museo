@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d3jnjbmnaugft"]
+
+[ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="1_a202f"]
+
+[node name="Node3D" type="Node3D" unique_id=289043458]
+
+[node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="." unique_id=429827014 instance=ExtResource("1_a202f")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.2509982, 0.8554088, 0.8923087)
