@@ -5,6 +5,10 @@ extends CharacterBody3D
 @export var jump_velocity := 5.0
 @export var mouse_sens := 0.002
 @export var gravity := 9.8
+@export var normal_fov := 75.0
+@export var zoom_fov := 30.0
+@export var zoom_speed := 10.0
+
 
 var yaw := 0.0
 var pitch := 0.0
@@ -63,3 +67,10 @@ func _physics_process(delta):
 	velocity.z = direction.z * current_speed
 
 	move_and_slide()
+
+func _process(delta):
+	var target_fov = normal_fov
+	
+	if Input.is_action_pressed("zoom"):
+		target_fov = zoom_fov
+	cam.fov = lerp(cam.fov, target_fov, zoom_speed * delta)
