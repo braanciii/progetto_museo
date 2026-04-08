@@ -18,7 +18,7 @@ albedo_texture = ExtResource("2_aeo3b")
 size = Vector3(20, 0.2, 40)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4wftv"]
-size = Vector3(19.879456, 0.2, 39.49518)
+size = Vector3(20, 0.2, 40)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -136,6 +136,7 @@ material = SubResource("StandardMaterial3D_worak")
 size = Vector3(20, 0.2, 40)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m2rse"]
+size = Vector3(20, 0.2, 40)
 
 [sub_resource type="BoxMesh" id="BoxMesh_rl1jb"]
 size = Vector3(0.2, 4, 40)
@@ -363,7 +364,7 @@ shape = SubResource("BoxShape3D_nivdu")
 [node name="Room_left" type="Node3D" parent="." unique_id=1592948789]
 
 [node name="Floor" type="MeshInstance3D" parent="Room_left" unique_id=203718543]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0, -10)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.93192, -9.536743e-07, -10.024648)
 mesh = SubResource("BoxMesh_062e5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_left/Floor" unique_id=2018775773]
