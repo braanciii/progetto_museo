@@ -9,8 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
-[ext_resource type="PackedScene" uid="uid://c62ahbejuw8i3" path="res://Arredamento/finestra/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb" id="9_worak"]
-[ext_resource type="Texture2D" uid="uid://cm7yp4axmm8qs" path="res://pergamena.png" id="11_cb6ip"]
 [ext_resource type="Texture2D" uid="uid://cb24nf2etfxat" path="res://Oggetti/pergamena/pergamena.png" id="12_vudi7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worak"]
@@ -574,6 +572,7 @@ metadata/_custom_type_script = "uid://ck4yn3hxuobj7"
 
 [node name="DesktopPlayer" type="CharacterBody3D" parent="Player" unique_id=633077980]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 20)
+visible = false
 script = ExtResource("6_ifh66")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player/DesktopPlayer" unique_id=72756000]
@@ -586,10 +585,6 @@ current = true
 
 [node name="Oggetti" type="Node3D" parent="." unique_id=2117104462]
 
-[node name="Meshy_AI__Finestra_singola_fi_0211231832_texture" parent="Oggetti" unique_id=2081334049 instance=ExtResource("9_worak")]
-transform = Transform3D(-1.3987645e-07, -3.2, 0, 3.2, -1.3987645e-07, 0, 0, 0, 3.2, -0.015695095, 8.339818, 10.107414)
-visible = false
-
 [node name="Meshy_AI_crea_una_poltroncina__0205074750_texture" type="Node3D" parent="Oggetti" unique_id=354672007]
 transform = Transform3D(-0.99848044, 0, 0.055106994, 0, 1, 0, -0.055106994, 0, -0.99848044, -0.036655903, 1.0327475, 20.933891)
 
@@ -598,14 +593,6 @@ transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.85
 
 [node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="Oggetti" unique_id=1144623127 instance=ExtResource("8_aeo3b")]
 transform = Transform3D(-2.6226832e-07, 0, 2, 0, 2, 0, -6, 0, -8.742278e-08, 0, 0.11, 15.589821)
-
-[node name="TextureRect" type="TextureRect" parent="Oggetti" unique_id=1543645251]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("11_cb6ip")
 
 [node name="pergamena" type="MeshInstance3D" parent="Oggetti" unique_id=1520902149]
 transform = Transform3D(5, 0, 0, 0, 3.7, 0, 0, 0, 3.7, -16, 2.0501134, -4.9)
