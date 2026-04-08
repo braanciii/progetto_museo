@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
 [ext_resource type="PackedScene" uid="uid://c62ahbejuw8i3" path="res://Arredamento/finestra/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb" id="9_worak"]
 [ext_resource type="Texture2D" uid="uid://cm7yp4axmm8qs" path="res://pergamena.png" id="11_cb6ip"]
+[ext_resource type="Texture2D" uid="uid://cb24nf2etfxat" path="res://Oggetti/pergamena/pergamena.png" id="12_vudi7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worak"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -208,6 +209,11 @@ size = Vector3(3, 4, 0.2)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ifh66"]
 height = 1.6
+
+[sub_resource type="QuadMesh" id="QuadMesh_1vwyg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
+albedo_texture = ExtResource("12_vudi7")
 
 [node name="Node3D" type="Node3D" unique_id=1149556530]
 script = ExtResource("1_7q7q3")
@@ -600,3 +606,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("11_cb6ip")
+
+[node name="pergamena" type="MeshInstance3D" parent="Oggetti" unique_id=1520902149]
+transform = Transform3D(5, 0, 0, 0, 3.7, 0, 0, 0, 3.7, -16, 2.0501134, -4.9)
+mesh = SubResource("QuadMesh_1vwyg")
+surface_material_override/0 = SubResource("StandardMaterial3D_ahc04")
