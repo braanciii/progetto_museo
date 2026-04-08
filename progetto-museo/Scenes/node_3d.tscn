@@ -456,7 +456,7 @@ shape = SubResource("BoxShape3D_lsvv6_alt")
 [node name="Corridor" type="Node3D" parent="Room" unique_id=1346803494]
 
 [node name="Corridor_Floor" type="MeshInstance3D" parent="Room/Corridor" unique_id=1688670158]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.1525574e-07, 16)
 material_override = SubResource("StandardMaterial3D_vudi7")
 mesh = SubResource("BoxMesh_vudi7")
 
@@ -564,7 +564,7 @@ script = ExtResource("3_t3l2h")
 metadata/_custom_type_script = "uid://kuxqh057vr5y"
 
 [node name="XRCamera3D" type="XRCamera3D" parent="Player/XROrigin3D" unique_id=343936308]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5220766, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.104, 0)
 
 [node name="XRToolsPlayerBody" type="CharacterBody3D" parent="Player/XROrigin3D" unique_id=1519920555]
 script = ExtResource("2_okq71")
@@ -592,7 +592,7 @@ transform = Transform3D(-0.99848044, 0, 0.055106994, 0, 1, 0, -0.055106994, 0, -
 transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
 
 [node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="Oggetti" unique_id=1144623127 instance=ExtResource("8_aeo3b")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0, 0.11, 17.97)
+transform = Transform3D(-2.6226832e-07, 0, 2, 0, 2, 0, -6, 0, -8.742278e-08, 0, 0.11, 15.589821)
 
 [node name="pergamena" type="MeshInstance3D" parent="Oggetti" unique_id=1520902149]
 transform = Transform3D(5, 0, 0, 0, 3.7, 0, 0, 0, 3.7, -16, 2.0501134, -4.9)
