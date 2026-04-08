@@ -119,4 +119,4 @@ func _snap_turning():
 			return false
 
 		_:
-			return XRToolsUserSettings.snap_turning
+			return true; #fallback

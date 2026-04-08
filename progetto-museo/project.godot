@@ -30,7 +30,3 @@ anti_aliasing/quality/use_taa=true
 [xr]
 
 openxr/enabled=true
-<<<<<<< HEAD
-=======
-shaders/enabled=true
->>>>>>> 092677bdd98521ab860b0e526980c8ab862d0066
