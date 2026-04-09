@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cbsj8ynl8guv1"]
+
+[ext_resource type="PackedScene" uid="uid://yxltdo85sdr6" path="res://Meshy_AI_Cipher_Wheel_0120082919_texture.glb" id="1_2fp3k"]
+[ext_resource type="ArrayMesh" uid="uid://dcbwknpxorbii" path="res://Meshy_AI_Piedistallo_di_un_mus_0121095047_texture.obj" id="2_478lr"]
+[ext_resource type="PackedScene" uid="uid://b2vo5vp2krf22" path="res://Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb" id="3_sn1id"]
+
+[node name="Node3D" type="Node3D" unique_id=1801114850]
+
+[node name="Meshy_AI_Cipher_Wheel_0120082919_texture" parent="." unique_id=335789010 instance=ExtResource("1_2fp3k")]
+transform = Transform3D(0.25, 0, 0, 0, 0.20528731, -0.14267838, 0, 0.14267838, 0.20528731, -0.21955015, 1.2825123, -1.8693776)
+
+[node name="MeshyAiPiedistalloDiUnMus0121095047Texture" type="MeshInstance3D" parent="." unique_id=509850348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23123646, 1.0744202, -1.8786962)
+mesh = ExtResource("2_478lr")
+
+[node name="Meshy_AI_Colorful_Potted_Plant_0204094928_texture" parent="." unique_id=176609896 instance=ExtResource("3_sn1id")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.38883147, 0.318, -1.8758668)

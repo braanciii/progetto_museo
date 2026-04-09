@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://5if568g64kky"
+path.s3tc="res://.godot/imported/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg-933770f3de6dd107ffd3c784f1908a1f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "0b601f438c0471e041bac884ed9ccd58"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://esterno/Giardino/Albero verde/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Emerald_Canopy_0212075226_texture_0.jpg-933770f3de6dd107ffd3c784f1908a1f.s3tc.ctex"]
 
 [params]
 

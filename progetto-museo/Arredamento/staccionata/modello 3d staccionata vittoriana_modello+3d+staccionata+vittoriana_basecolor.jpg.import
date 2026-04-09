@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://boc3xtdh8nyqi"
+path.s3tc="res://.godot/imported/modello 3d staccionata vittoriana_modello+3d+staccionata+vittoriana_basecolor.jpg-8d17a42970678d4887c163bc4c30f4be.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "78519fab7002d9f0f35c6509e7b95ef5"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://Arredamento/staccionata/modello 3d staccionata vittoriana_modello+3d+staccionata+vittoriana_basecolor.jpg"
+dest_files=["res://.godot/imported/modello 3d staccionata vittoriana_modello+3d+staccionata+vittoriana_basecolor.jpg-8d17a42970678d4887c163bc4c30f4be.s3tc.ctex"]
 
 [params]
 

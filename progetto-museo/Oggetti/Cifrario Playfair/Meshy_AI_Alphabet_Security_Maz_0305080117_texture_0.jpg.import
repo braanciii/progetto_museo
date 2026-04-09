@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://bw0fu38hhbghg"
+path.s3tc="res://.godot/imported/Meshy_AI_Alphabet_Security_Maz_0305080117_texture_0.jpg-91ceeda91e59b169b293db31b9e73d22.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "75297adac8d5393fb29fd94f4ed27e34"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://Oggetti/Cifrario Playfair/Meshy_AI_Alphabet_Security_Maz_0305080117_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Alphabet_Security_Maz_0305080117_texture_0.jpg-91ceeda91e59b169b293db31b9e73d22.s3tc.ctex"]
 
 [params]
 

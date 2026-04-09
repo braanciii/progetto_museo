@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bbmthu11xwqdy"]
+
+[ext_resource type="PackedScene" uid="uid://csye2kpn1kd8s" path="res://Arredamento/FrontDesk/Meshy_AI_Wooden_Reception_Desk_0128094106_texture.glb" id="1_5k32f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mk7n"]
+size = Vector3(1.4771729, 0.4906311, 0.31289673)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dwsjs"]
+size = Vector3(1, 0.47097778, 0.27926636)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y8t0s"]
+size = Vector3(0.32128906, 0.49768066, 1.392334)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ffd7p"]
+size = Vector3(0.3540039, 0.3304596, 0.42663574)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e8wod"]
+size = Vector3(0.34664917, 0.39819336, 0.41070557)
+
+[node name="Meshy_AI_Wooden_Reception_Desk_0128094106_texture" unique_id=2009538211 instance=ExtResource("1_5k32f")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=139900540]
+
+[node name="CollisionShape3D_north" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1943077755]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23858643, -0.014877319, 0.8509979)
+shape = SubResource("BoxShape3D_4mk7n")
+
+[node name="CollisionShape3D_north_west" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=1447963936]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0.60562944, -0.015914917, 0.6129817)
+shape = SubResource("BoxShape3D_dwsjs")
+
+[node name="CollisionShape3D_west" type="CollisionShape3D" parent="StaticBody3D" index="2" unique_id=112170939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.82401377, -0.0026245117, -0.3049458)
+shape = SubResource("BoxShape3D_y8t0s")
+
+[node name="CollisionShape3D_chair" type="CollisionShape3D" parent="StaticBody3D" index="3" unique_id=1225815815]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0.4027971, -0.010215759, -0.4016999)
+shape = SubResource("BoxShape3D_ffd7p")
+
+[node name="CollisionShape3D_chair2" type="CollisionShape3D" parent="StaticBody3D" index="4" unique_id=1914901274]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, -0.5299405, -0.04675293, 0.45791045)
+shape = SubResource("BoxShape3D_e8wod")

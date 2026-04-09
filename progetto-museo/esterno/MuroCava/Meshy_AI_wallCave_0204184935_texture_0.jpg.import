@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://d1ubb7m1oyuaa"
+path.s3tc="res://.godot/imported/Meshy_AI_wallCave_0204184935_texture_0.jpg-5206542c2c091de9bb91f22a5e8b29b4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "e24e98f8bbedee04d5519fc73eaf2265"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://esterno/MuroCava/Meshy_AI_wallCave_0204184935_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_wallCave_0204184935_texture_0.jpg-5206542c2c091de9bb91f22a5e8b29b4.s3tc.ctex"]
 
 [params]
 

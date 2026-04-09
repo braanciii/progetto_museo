@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://cnaod5ftxjtlg"
+path.s3tc="res://.godot/imported/Meshy_AI_entrata_di_un_museo_i_0210081700_texture_0.jpg-981c27dbf10a2f7d4deb295d003b4d7f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "d342b52cb1f4f29e04ed9ab12e579039"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://esterno/Entrata Museo/Meshy_AI_entrata_di_un_museo_i_0210081700_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_entrata_di_un_museo_i_0210081700_texture_0.jpg-981c27dbf10a2f7d4deb295d003b4d7f.s3tc.ctex"]
 
 [params]
 

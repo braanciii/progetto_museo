@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://cai84trbkm71p"
+path.s3tc="res://.godot/imported/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg-0e5c7d7b0da0b9d743e46e1177b3d37d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "acf69f50fabc1b87e9fe1a17d01e5af8"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://esterno/Giardino/pianta/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_creami_delle_piante_g_0212080312_texture_0.jpg-0e5c7d7b0da0b9d743e46e1177b3d37d.s3tc.ctex"]
 
 [params]
 

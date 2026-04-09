@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://17yjimq53hn6"
+path.s3tc="res://.godot/imported/Meshy_AI_arrow_0204152625_texture_0.jpg-e915b0bfec5a9d5efce5d17d31d525e4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "b4715a411f7f0b57cc99f73d3a17a596"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://Arredamento/freccia rossa con led/Meshy_AI_arrow_0204152625_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_arrow_0204152625_texture_0.jpg-e915b0bfec5a9d5efce5d17d31d525e4.s3tc.ctex"]
 
 [params]
 

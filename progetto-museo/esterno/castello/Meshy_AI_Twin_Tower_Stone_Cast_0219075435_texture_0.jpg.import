@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb24nf2etfxat"
-path.s3tc="res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"
+uid="uid://2qtbun4r1oa8"
+path.s3tc="res://.godot/imported/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg-d01299d375720c0a338278de5ff57a8b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "ef836e1f3552c1e87078c1752ae3cbdf"
+}
 
 [deps]
 
-source_file="res://Oggetti/pergamena/pergamena.png"
-dest_files=["res://.godot/imported/pergamena.png-7dc8a9015e15bc1d36a4f4b363d9c7f4.s3tc.ctex"]
+source_file="res://esterno/castello/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Twin_Tower_Stone_Cast_0219075435_texture_0.jpg-d01299d375720c0a338278de5ff57a8b.s3tc.ctex"]
 
 [params]
 
