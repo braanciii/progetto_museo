@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
 [ext_resource type="PackedScene" uid="uid://bbmthu11xwqdy" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
+[ext_resource type="PackedScene" uid="uid://becawfd5w4pit" path="res://Arredamento/Insegna_museo/museum sign 3d model.glb" id="12_1vwyg"]
 [ext_resource type="Texture2D" uid="uid://cb24nf2etfxat" path="res://Oggetti/pergamena/pergamena.png" id="12_vudi7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worak"]
@@ -495,3 +496,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ahc04")
 
 [node name="Meshy_AI_Wooden_Reception_Desk_0128094106_texture" parent="Oggetti" unique_id=2009538211 instance=ExtResource("11_cb6ip")]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -6.4017167, 0.7, 6.5765367)
+
+[node name="museum sign 3d model" parent="." unique_id=1356774200 instance=ExtResource("12_1vwyg")]
+transform = Transform3D(0.040270746, 0.0002937999, -2.4996755, -0.018238528, 2.4999335, 3.4724656e-10, 2.499609, 0.018236162, 0.04027188, 0, 5.25, 21.826)
