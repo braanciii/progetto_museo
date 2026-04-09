@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc61jn2is5ohl"]
+
+[ext_resource type="PackedScene" uid="uid://bwbvox2ioc82" path="res://Arredamento/divano/Meshy_AI_Chesterfield_Elegance_0128093337_texture.glb" id="1_gsvgc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xhc6l"]
+size = Vector3(2.0073242, 0.6352844, 0.8647461)
+
+[node name="Meshy_AI_Chesterfield_Elegance_0128093337_texture" unique_id=2098508132 instance=ExtResource("1_gsvgc")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(1921433356) index="0" unique_id=1540300340]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1095542069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0069732666, 0.06762695)
+shape = SubResource("BoxShape3D_xhc6l")

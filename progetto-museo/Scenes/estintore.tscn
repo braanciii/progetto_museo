@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ct0x725bhtshg"]
+
+[ext_resource type="PackedScene" uid="uid://cdltdvj6ljc3e" path="res://Arredamento/estintore/Meshy_AI_Red_Fire_Extinguisher_0212074614_texture.glb" id="1_010ki"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sa11y"]
+radius = 0.2763672
+
+[node name="Meshy_AI_Red_Fire_Extinguisher_0212074614_texture" unique_id=1277226559 instance=ExtResource("1_010ki")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(541930727) index="0" unique_id=1128611514]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=538040666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01985544, 0, 0)
+shape = SubResource("CylinderShape3D_sa11y")
