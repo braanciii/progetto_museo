@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c033jfiuxucv3"]
+
+[ext_resource type="PackedScene" uid="uid://becawfd5w4pit" path="res://Arredamento/Insegna_museo/museum sign 3d model.glb" id="1_pob74"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x36qv"]
+size = Vector3(0.45141602, 0.9871826, 0.9920654)
+
+[node name="museum sign 3d model" unique_id=1226428743 instance=ExtResource("1_pob74")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tripo_node_e7861855-ab94-453a-83f2-dec8cf762106" parent_id_path=PackedInt32Array(414847015) index="0" unique_id=466195333]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tripo_node_e7861855-ab94-453a-83f2-dec8cf762106/StaticBody3D" index="0" unique_id=2002785195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002319336, -6.1035156e-05, -0.003967285)
+shape = SubResource("BoxShape3D_x36qv")

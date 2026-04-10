@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b7wor7qusf3ml"]
+
+[ext_resource type="PackedScene" uid="uid://dh7g7xpgdk31o" path="res://Oggetti/Scitala_Spartana/Meshy_AI_Wooden_alphabet_rings_0211095710_texture.glb" id="1_0075v"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4bnll"]
+radius = 0.2607422
+
+[node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" unique_id=944688063 instance=ExtResource("1_0075v")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(1785301714) index="0" unique_id=401893079]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=191939790]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_4bnll")

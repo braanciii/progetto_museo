@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cofe72re0akgl"]
+
+[ext_resource type="PackedScene" uid="uid://cnr247bm1jpdb" path="res://Oggetti/Cifrario cesare/Cipher_Disk_1211075956_texture.glb" id="1_dwfk2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fl2wo"]
+size = Vector3(2.010498, 1.9966888, 0.09124756)
+
+[node name="Cipher_Disk_1211075956_texture" unique_id=1924463940 instance=ExtResource("1_dwfk2")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(1722975752) index="0" unique_id=1598744024]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=97628885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008911133, -0.001991272, -0.003753662)
+shape = SubResource("BoxShape3D_fl2wo")
