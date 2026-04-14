@@ -1,0 +1,130 @@
+GUIDA COMPLETA - FOGLIO CIFRATURA IN VR PER MUSEO DELLA CRITTOGRAFIA
+Godot 4 + OpenXR
+Partendo da un progetto museo già esistente
+
+====================================================================
+
+PASSO 1: CREARE IL FOGLIO CON TESTO DINAMICO
+
+1. Nella tua scena principale del museo, aggiungi un nuovo nodo:
+   → Node3D → rinominalo "FoglioCifratura"
+
+2. Dentro "FoglioCifratura" aggiungi questi nodi:
+
+   • MeshInstance3D → rinominalo "FoglioMesh"
+     - Mesh → New PlaneMesh
+     - Rotation Degrees → X = -90
+     - Scale → imposta circa (0.5, 0.7, 1)   [regola secondo necessità]
+     - Material Override → New StandardMaterial3D
+
+   • SubViewport → rinominalo "FoglioViewport"
+     - Size → 1024 × 1280
+     - Render Target → Update Mode = Always
+
+   • Dentro "FoglioViewport" aggiungi:
+     - Panel (Control)
+       - Ancora a Full Rect
+
+     • Dentro il Panel aggiungi:
+       - Label → rinominalo "TestoLabel"
+         - Text → scrivi qui il tuo messaggio in chiaro (esempio sotto)
+         - Font Size → 70 (regola fino a quando si legge bene)
+         - Horizontal Alignment → Center
+         - Vertical Alignment → Center
+         - Autowrap Mode → Word Smart
+
+Esempio di testo da mettere nel Label:
+Benvenuti al Museo della Crittografia!
+Questo messaggio contiene un segreto importante.
+La chiave è nascosta nella storia di Giulio Cesare.
+
+3. Torna sul nodo "FoglioMesh":
+   - Nel Material (StandardMaterial3D)
+   - Albedo Texture → New ViewportTexture
+   - Seleziona il tuo "FoglioViewport"
+
+====================================================================
+
+PASSO 2: AGGIUNGERE LO SCRIPT DI CIFRATURA
+
+1. Seleziona il nodo "FoglioCifratura"
+2. Tasto destro → Attach Script → nome: foglio_cifratura.gd
+
+Copia e incolla esattamente questo codice:
+
+```gdscript
+extends Node3D
+
+@onready var label: Label = $FoglioViewport/Panel/TestoLabel
+@onready var testo_originale: String = label.text
+
+var e_cifrato: bool = false
+
+# Cifratura Cesare (spostamento di 3 posizioni)
+func cesare_cifra(testo: String, shift: int = 3) -> String:
+    var risultato = ""
+    for c in testo:
+        if c.is_alpha():                       # solo lettere
+            var base = "A" if c.is_uppercase() else "a"
+            var nuovo_codice = (c.unicode() - base.unicode() + shift) % 26 + base.unicode()
+            risultato += char(nuovo_codice)
+        else:
+            risultato += c                     # spazi, numeri e punteggiatura rimangono
+    return risultato
+
+# Funzione chiamata dal pulsante
+func cifra_il_foglio():
+    if e_cifrato:
+        label.text = testo_originale           # torna in chiaro
+    else:
+        label.text = cesare_cifra(testo_originale)
+    
+    e_cifrato = !e_cifrato
+====================================================================
+PASSO 3: CREARE IL PULSANTE VR DA PREMERE
+
+Dentro il nodo "FoglioCifratura" aggiungi un nuovo nodo:
+→ Node3D → rinominalo "Pulsante"
+Dentro "Pulsante" aggiungi:• MeshInstance3D → rinominalo "PulsanteMesh"
+Mesh → New BoxMesh
+Scale → (0.15, 0.08, 0.15)
+Material Override → New StandardMaterial3D
+Albedo Color → rosso vivo (#FF0000)
+
+• Area3D
+Aggiungi CollisionShape3D
+Shape → New BoxShape3D (deve coprire il pulsante)
+
+Crea uno script sul nodo "Pulsante" → nome: pulsante_cifra.gd
+
+Copia e incolla questo codice:
+gdscriptextends Node3D
+
+signal premuto
+
+func _on_area_3d_input_event(camera: Node, event: InputEvent, position: Vector3, normal: Vector3, shape_idx: int):
+    if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+        emit_signal("premuto")
+
+Collega il segnale:
+Seleziona il nodo Area3D
+Nella scheda Signals (in basso a destra) → doppio clic su "input_event"
+Collegalo allo script del pulsante
+
+
+====================================================================
+PASSO 4: COLLEGare IL PULSANTE AL FOGLIO
+
+Seleziona il nodo "FoglioCifratura"
+Nella scheda Node (Signals) cerca il segnale "premuto" che arriva dal nodo "Pulsante"
+Collegalo alla funzione "cifra_il_foglio" dello script del foglio
+
+====================================================================
+PASSO 5: TEST E POSIZIONAMENTO
+
+Posiziona il nodo "FoglioCifratura" nella posizione desiderata nel tuo museo
+Assicurati che i controller VR possano interagire con l'Area3D (raycast o direct touch)
+Avvia la scena in VR
+Punta il controller sul pulsante rosso e premi il grilletto
+
+Il testo sul foglio dovrebbe cambiare tra chiaro e cifrato ogni volta che premi il pulsante.
