@@ -9,16 +9,17 @@
 [ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
-[ext_resource type="PackedScene" uid="uid://bbmthu11xwqdy" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
+[ext_resource type="PackedScene" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
 [ext_resource type="Texture2D" uid="uid://cb24nf2etfxat" path="res://Oggetti/pergamena/pergamena.png" id="12_vudi7"]
-[ext_resource type="PackedScene" uid="uid://dlic05156y534" path="res://Scenes/guardia.tscn" id="13_1vwyg"]
-[ext_resource type="PackedScene" uid="uid://bc61jn2is5ohl" path="res://Scenes/divano.tscn" id="14_062e5"]
-[ext_resource type="PackedScene" uid="uid://d3v2drww8tonq" path="res://Scenes/macchinetta_snack.tscn" id="15_m2rse"]
-[ext_resource type="PackedScene" uid="uid://c033jfiuxucv3" path="res://logo_museo.tscn" id="16_m2rse"]
-[ext_resource type="PackedScene" uid="uid://ct0x725bhtshg" path="res://Scenes/estintore.tscn" id="16_rl1jb"]
-[ext_resource type="PackedScene" uid="uid://ceifnh4cs1tqc" path="res://metal_detector.tscn" id="17_58eop"]
-[ext_resource type="PackedScene" uid="uid://cofe72re0akgl" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
-[ext_resource type="PackedScene" uid="uid://b7wor7qusf3ml" path="res://scitala_spartana.tscn" id="19_nivdu"]
+[ext_resource type="PackedScene" path="res://Scenes/guardia.tscn" id="13_1vwyg"]
+[ext_resource type="PackedScene" path="res://Scenes/divano.tscn" id="14_062e5"]
+[ext_resource type="PackedScene" path="res://Scenes/macchinetta_snack.tscn" id="15_m2rse"]
+[ext_resource type="PackedScene" path="res://logo_museo.tscn" id="16_m2rse"]
+[ext_resource type="PackedScene" path="res://Scenes/estintore.tscn" id="16_rl1jb"]
+[ext_resource type="PackedScene" path="res://metal_detector.tscn" id="17_58eop"]
+[ext_resource type="PackedScene" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
+[ext_resource type="PackedScene" path="res://scitala_spartana.tscn" id="19_nivdu"]
+[ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -517,7 +518,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.7
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -2.1541624, 0.896796, 9.610633)
 
 [node name="Meshy_AI_Red_Fire_Extinguisher_0212074614_texture" parent="Arredamento" unique_id=1277226559 instance=ExtResource("16_rl1jb")]
-transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -4.886006, 0.39901662, 9.71853)
+transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -4.886006, 1.3876197, 5.0959454)
 
 [node name="museum sign 3d model" parent="Arredamento" unique_id=1226428743 instance=ExtResource("16_m2rse")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.12880343, 5.5998306, 22.437937)
@@ -532,4 +533,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.1330185, 17.728624)
 
 [node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 14.390603)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 11.876621)
+
+[node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
