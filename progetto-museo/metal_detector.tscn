@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://ceifnh4cs1tqc"]
+
+[ext_resource type="PackedScene" uid="uid://cwy1pyn8m10h4" path="res://Arredamento/Metal Detector/security metal detector arch 3d model.glb" id="1_sjrcd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fvcnh"]
+size = Vector3(0.45239258, 1, 0.066223145)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4xkax"]
+size = Vector3(0.262146, 0.086364746, 0.38861084)
+
+[node name="security metal detector arch 3d model" unique_id=2049384561 instance=ExtResource("1_sjrcd")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=948679504]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1577369521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002930835, 0, 0.19021606)
+shape = SubResource("BoxShape3D_fvcnh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=783785893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0054411143, 0, -0.17679131)
+shape = SubResource("BoxShape3D_fvcnh")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2" unique_id=861371640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008148193, 0.45681763, -0.0020446777)
+shape = SubResource("BoxShape3D_4xkax")

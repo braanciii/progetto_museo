@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dlic05156y534"]
+
+[ext_resource type="PackedScene" uid="uid://4uenm5m8rk1m" path="res://Arredamento/guardia/Meshy_AI_g_0211093445_texture.glb" id="1_shat8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6w5ip"]
+size = Vector3(0.71313477, 2.0044556, 0.41791534)
+
+[node name="Meshy_AI_g_0211093445_texture" unique_id=968966929 instance=ExtResource("1_shat8")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(461046955) index="0" unique_id=1150389319]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1211812043]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015991211, 0.0009460449, -0.006580353)
+shape = SubResource("BoxShape3D_6w5ip")

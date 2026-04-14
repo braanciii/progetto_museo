@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d3v2drww8tonq"]
+
+[ext_resource type="PackedScene" uid="uid://btykh160eseo8" path="res://Arredamento/macchinetta snack/Meshy_AI_macchinetta_snack_0212075151_texture.glb" id="1_x30n2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_41fh4"]
+size = Vector3(0.7142334, 1.9990234, 1.0854187)
+
+[node name="Meshy_AI_macchinetta_snack_0212075151_texture" unique_id=753051512 instance=ExtResource("1_x30n2")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(1180144390) index="0" unique_id=661440574]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=541222119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011291504, -0.0073242188, -0.0047454834)
+shape = SubResource("BoxShape3D_41fh4")
