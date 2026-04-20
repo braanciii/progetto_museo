@@ -4,21 +4,22 @@
 [ext_resource type="Script" uid="uid://b8n6rjknhao0a" path="res://Scenes/player.gd" id="2_a8auw"]
 [ext_resource type="Texture2D" uid="uid://d3hodj5tof0y3" path="res://texture/8a6642.png" id="2_aeo3b"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
+[ext_resource type="PackedScene" uid="uid://bna70p7nxyy14" path="res://Arredamento/Barriera/Meshy_AI_Stanchion_barrier_pos_0211095332_texture.glb" id="3_4wftv"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 [ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
-[ext_resource type="PackedScene" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
+[ext_resource type="PackedScene" uid="uid://bbmthu11xwqdy" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
 [ext_resource type="Texture2D" uid="uid://cb24nf2etfxat" path="res://Oggetti/pergamena/pergamena.png" id="12_vudi7"]
-[ext_resource type="PackedScene" path="res://Scenes/guardia.tscn" id="13_1vwyg"]
-[ext_resource type="PackedScene" path="res://Scenes/divano.tscn" id="14_062e5"]
-[ext_resource type="PackedScene" path="res://Scenes/macchinetta_snack.tscn" id="15_m2rse"]
-[ext_resource type="PackedScene" path="res://logo_museo.tscn" id="16_m2rse"]
-[ext_resource type="PackedScene" path="res://Scenes/estintore.tscn" id="16_rl1jb"]
-[ext_resource type="PackedScene" path="res://metal_detector.tscn" id="17_58eop"]
-[ext_resource type="PackedScene" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
-[ext_resource type="PackedScene" path="res://scitala_spartana.tscn" id="19_nivdu"]
+[ext_resource type="PackedScene" uid="uid://dlic05156y534" path="res://Scenes/guardia.tscn" id="13_1vwyg"]
+[ext_resource type="PackedScene" uid="uid://bc61jn2is5ohl" path="res://Scenes/divano.tscn" id="14_062e5"]
+[ext_resource type="PackedScene" uid="uid://d3v2drww8tonq" path="res://Scenes/macchinetta_snack.tscn" id="15_m2rse"]
+[ext_resource type="PackedScene" uid="uid://c033jfiuxucv3" path="res://logo_museo.tscn" id="16_m2rse"]
+[ext_resource type="PackedScene" uid="uid://ct0x725bhtshg" path="res://Scenes/estintore.tscn" id="16_rl1jb"]
+[ext_resource type="PackedScene" uid="uid://ceifnh4cs1tqc" path="res://metal_detector.tscn" id="17_58eop"]
+[ext_resource type="PackedScene" uid="uid://cofe72re0akgl" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
+[ext_resource type="PackedScene" uid="uid://b7wor7qusf3ml" path="res://scitala_spartana.tscn" id="19_nivdu"]
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
@@ -210,6 +211,24 @@ mesh = SubResource("BoxMesh_vkdvt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Floor/StaticBody3D" unique_id=1172082662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor" unique_id=789614061 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 12.190117)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="Room_right/Floor" unique_id=83135723 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.031092422, -2.4027426e-05, 0.99951655, 0.001777984, 0.99999845, 7.932813e-05, -0.99951494, 0.0017795906, -0.031092327, 4.8372407, 0.9404109, 10.183275)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor/Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" unique_id=138667208 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.9978268, 0, -0.06589079, 0, 1, 0, 0.06589079, 0, -0.9978268, 0, 0, 0)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="Room_right/Floor" unique_id=741359009 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 6.1875463)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor/Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" unique_id=1955062361 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.99974275, 0, 0.022687314, 0, 1, 0, -0.022687314, 0, -0.99974275, 2.020378, 0, 0.057316303)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="Room_right/Floor" unique_id=24263697 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 0.09879303)
 
 [node name="Wall_north" type="MeshInstance3D" parent="Room_right" unique_id=901408796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -30)
@@ -537,3 +556,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 11.8766
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="." unique_id=305320202 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 4.169248)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="." unique_id=539160315 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -1.8145704)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="." unique_id=886304532 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -7.8465533)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="." unique_id=1661884902 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -12.08169)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" unique_id=953313547 instance=ExtResource("3_4wftv")]
+transform = Transform3D(-0.9929614, 0, -0.11843862, 0, 1, 0, 0.11843862, 0, -0.9929614, 2.0461483, 0, 0.058047295)

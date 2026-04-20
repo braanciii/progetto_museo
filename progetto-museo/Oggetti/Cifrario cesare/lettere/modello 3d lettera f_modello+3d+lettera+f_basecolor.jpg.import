@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mi83efbjmjci"
-path.s3tc="res://.godot/imported/abstractsymbol3dmodel_basecolor.JPEG-b9550dcb3b9d36f9566cc3e33a97f50a.s3tc.ctex"
+uid="uid://b8444y0lls60n"
+path.s3tc="res://.godot/imported/modello 3d lettera f_modello+3d+lettera+f_basecolor.jpg-2eb3a533b27d998721b6ec3a4eb1ceb1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "b3c499aa3d92b131c03c5d80ed508268"
+}
 
 [deps]
 
-source_file="res://Oggetti/Trasposizione meccanica/abstractsymbol3dmodel_basecolor.JPEG"
-dest_files=["res://.godot/imported/abstractsymbol3dmodel_basecolor.JPEG-b9550dcb3b9d36f9566cc3e33a97f50a.s3tc.ctex"]
+source_file="res://Oggetti/Cifrario cesare/lettere/modello 3d lettera f_modello+3d+lettera+f_basecolor.jpg"
+dest_files=["res://.godot/imported/modello 3d lettera f_modello+3d+lettera+f_basecolor.jpg-2eb3a533b27d998721b6ec3a4eb1ceb1.s3tc.ctex"]
 
 [params]
 
