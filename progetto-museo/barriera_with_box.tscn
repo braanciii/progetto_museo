@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dvd12dj88akn"]
+
+[ext_resource type="PackedScene" uid="uid://bna70p7nxyy14" path="res://Arredamento/Barriera/Meshy_AI_Stanchion_barrier_pos_0211095332_texture.glb" id="1_iqvwk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t8smq"]
+size = Vector3(2.0332642, 0.080078125, 0.9536743)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xf8y8"]
+size = Vector3(1.6776733, 1.6191406, 0.33862305)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" unique_id=1644019454 instance=ExtResource("1_iqvwk")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(2073088652) index="0" unique_id=1921979614]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1771364285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.009307861, -0.76171875, -0.016937256)
+shape = SubResource("BoxShape3D_t8smq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="1" unique_id=1600826730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028900146, 0.055664063, 0.00012207031)
+shape = SubResource("BoxShape3D_xf8y8")

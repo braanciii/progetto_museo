@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://b7wor7qusf3ml" path="res://scitala_spartana.tscn" id="19_nivdu"]
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
 [ext_resource type="PackedScene" uid="uid://d2phg1ag8nslk" path="res://Oggetti/Cifrario di Alberti/Meshy_AI_Cipher_Wheel_0204094227_texture.glb" id="22_odfm3"]
+[ext_resource type="PackedScene" uid="uid://cg8e55ysgxgd4" path="res://Scenes/bottone_verde.tscn" id="22_yvbty"]
 [ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="23_yvbty"]
 [ext_resource type="PackedScene" uid="uid://bsalarm5p7luy" path="res://Oggetti/Enigma/Meshy_AI_Enigma_Machine_0212071927_texture.glb" id="24_52o0n"]
 [ext_resource type="PackedScene" uid="uid://74j0fcekrtml" path="res://Oggetti/Lorenz SZ 4042/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb" id="25_kp5il"]
@@ -560,6 +561,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 11.8766
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
+
+[node name="Meshy_AI_bottone_amin_0409064529_texture" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
 
 [node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="." unique_id=305320202 instance=ExtResource("3_4wftv")]
 transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 4.169248)
