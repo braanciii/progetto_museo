@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw34nj1rsi210"
-path.s3tc="res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"
+uid="uid://fk37vlrfc34m"
+path.s3tc="res://.godot/imported/aes_3D_2.jpg-a81d46137699ae23583a454a485c798c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "48b68ccae0868d404de56544e27f11f6"
+}
 
 [deps]
 
-source_file="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"]
+source_file="res://Oggetti/na/decora/aes_3D_2.jpg"
+dest_files=["res://.godot/imported/aes_3D_2.jpg-a81d46137699ae23583a454a485c798c.s3tc.ctex"]
 
 [params]
 
@@ -27,7 +30,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
+roughness/src_normal="res://Oggetti/na/decora/aes_3D_2.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

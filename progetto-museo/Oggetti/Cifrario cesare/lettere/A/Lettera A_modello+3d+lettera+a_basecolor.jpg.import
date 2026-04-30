@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw34nj1rsi210"
-path.s3tc="res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"
+uid="uid://bbnmigsx1r4pn"
+path.s3tc="res://.godot/imported/Lettera A_modello+3d+lettera+a_basecolor.jpg-b41841043a0750eb1ecca70576ef502d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "16d11c05e3fd187ded657e619a6f86f8"
+}
 
 [deps]
 
-source_file="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"]
+source_file="res://Oggetti/Cifrario cesare/lettere/A/Lettera A_modello+3d+lettera+a_basecolor.jpg"
+dest_files=["res://.godot/imported/Lettera A_modello+3d+lettera+a_basecolor.jpg-b41841043a0750eb1ecca70576ef502d.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

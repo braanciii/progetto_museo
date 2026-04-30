@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cw34nj1rsi210"
-path.s3tc="res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"
+uid="uid://d1rjisikrsuh"
+path.s3tc="res://.godot/imported/RSA_1.jpg-fd0130c00694254911c32b2a1f39fc0e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "51dbf78fcd50edf347120e10b2182421"
+}
 
 [deps]
 
-source_file="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg-057525589536dd318e5af0c6b41e203e.s3tc.ctex"]
+source_file="res://Oggetti/na/decora/RSA_1.jpg"
+dest_files=["res://.godot/imported/RSA_1.jpg-fd0130c00694254911c32b2a1f39fc0e.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://Arredamento/buttone3/Meshy_AI_Big_Red_Button_0409063055_texture_2.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
