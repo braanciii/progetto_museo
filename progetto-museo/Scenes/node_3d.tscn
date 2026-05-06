@@ -14,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://dlic05156y534" path="res://Scenes/guardia.tscn" id="13_1vwyg"]
 [ext_resource type="PackedScene" uid="uid://bc61jn2is5ohl" path="res://Scenes/divano.tscn" id="14_062e5"]
 [ext_resource type="PackedScene" uid="uid://d3v2drww8tonq" path="res://Scenes/macchinetta_snack.tscn" id="15_m2rse"]
-[ext_resource type="PackedScene" uid="uid://c033jfiuxucv3" path="res://logo_museo.tscn" id="16_m2rse"]
 [ext_resource type="PackedScene" uid="uid://ct0x725bhtshg" path="res://Scenes/estintore.tscn" id="16_rl1jb"]
 [ext_resource type="PackedScene" uid="uid://ceifnh4cs1tqc" path="res://metal_detector.tscn" id="17_58eop"]
 [ext_resource type="PackedScene" uid="uid://cofe72re0akgl" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
@@ -563,9 +562,6 @@ transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-
 
 [node name="Meshy_AI_Red_Fire_Extinguisher_0212074614_texture" parent="Arredamento" unique_id=1277226559 instance=ExtResource("16_rl1jb")]
 transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -4.886006, 1.3876197, 5.0959454)
-
-[node name="museum sign 3d model" parent="Arredamento" unique_id=1226428743 instance=ExtResource("16_m2rse")]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.12880343, 5.5998306, 22.437937)
 
 [node name="security metal detector arch 3d model" parent="Arredamento" unique_id=2049384561 instance=ExtResource("17_58eop")]
 transform = Transform3D(-8.742278e-08, 0, 4, 0, 2, 0, -2, 0, -1.7484555e-07, 0, 1.0981536, 9.300596)
