@@ -603,4 +603,19 @@ transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -31.
 [node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture" parent="." unique_id=1760615010 instance=ExtResource("25_kp5il")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.724557, 1.6473666, -9.0776825)
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=284914582]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=400365105]
+custom_minimum_size = Vector2(6, 6)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.045198135, 0.8156242, 0.7527934, 1)
+
 [connection signal="input_event" from="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" to="." method="_on_button_area_input_event"]
