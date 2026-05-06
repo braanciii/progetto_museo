@@ -442,6 +442,26 @@ physics_material_override = SubResource("PhysicsMaterial_cb6ip")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_floor/StaticBody3D" unique_id=615137461]
 shape = SubResource("BoxShape3D_062e5")
 
+[node name="Corridor_south_floor" type="MeshInstance3D" parent="Corridor_south/Corridor_south_floor" unique_id=840343986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13173676, 0, -6.1914177)
+mesh = SubResource("BoxMesh_8cye3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor" unique_id=1154601551]
+physics_material_override = SubResource("PhysicsMaterial_cb6ip")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor/StaticBody3D" unique_id=1659329600]
+shape = SubResource("BoxShape3D_062e5")
+
+[node name="Corridor_south_floor" type="MeshInstance3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor" unique_id=1791635789]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24132156, 0, -5.8306694)
+mesh = SubResource("BoxMesh_8cye3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor/Corridor_south_floor" unique_id=1343742372]
+physics_material_override = SubResource("PhysicsMaterial_cb6ip")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor/Corridor_south_floor/StaticBody3D" unique_id=201995346]
+shape = SubResource("BoxShape3D_062e5")
+
 [node name="Corridor_south_wall_north" type="MeshInstance3D" parent="Corridor_south" unique_id=441584754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, -5.33)
 mesh = SubResource("BoxMesh_m2rse")
