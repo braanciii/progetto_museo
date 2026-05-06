@@ -200,6 +200,10 @@ height = 1.6
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_odfm3"]
+height = 1.7026367
+radius = 1.4135742
+
 [node name="Node3D" type="Node3D" unique_id=1149556530]
 script = ExtResource("1_7q7q3")
 
@@ -556,6 +560,12 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.1892
 
 [node name="Meshy_AI_bottone_amin_0409064529_texture" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
 transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 0.8350489, 19.29544)
+
+[node name="ButtonArea" type="Area3D" parent="Oggetti/Meshy_AI_bottone_amin_0409064529_texture" unique_id=2113474028]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" unique_id=579972472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14867401, 0)
+shape = SubResource("CylinderShape3D_odfm3")
 
 [node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="." unique_id=1644764462 instance=ExtResource("22_odfm3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83187294, 2.2381377, -29.86357)
