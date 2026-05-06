@@ -38,3 +38,8 @@ func _enable_vr(enable: bool) -> void:
 	# per sicurezza, se entri in VR assicurati che viewport usi XR
 	if enable:
 		get_viewport().use_xr = true
+
+
+func _on_button_area_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+	if event is InputEventMouseButton and event.pressed:
+		print("Bottone 3D cliccato!")
