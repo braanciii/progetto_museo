@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://b8n6rjknhao0a" path="res://Scenes/player.gd" id="2_a8auw"]
 [ext_resource type="Texture2D" uid="uid://d3hodj5tof0y3" path="res://texture/8a6642.png" id="2_aeo3b"]
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
-[ext_resource type="PackedScene" uid="uid://bna70p7nxyy14" path="res://Arredamento/Barriera/Meshy_AI_Stanchion_barrier_pos_0211095332_texture.glb" id="3_4wftv"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
 [ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
@@ -217,24 +216,6 @@ mesh = SubResource("BoxMesh_vkdvt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
 
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor" unique_id=789614061 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 12.190117)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="Room_right/Floor" unique_id=83135723 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.031092422, -2.4027426e-05, 0.99951655, 0.001777984, 0.99999845, 7.932813e-05, -0.99951494, 0.0017795906, -0.031092327, 4.8372407, 0.9404109, 10.183275)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor/Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" unique_id=138667208 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.9978268, 0, -0.06589079, 0, 1, 0, 0.06589079, 0, -0.9978268, 0, 0, 0)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="Room_right/Floor" unique_id=741359009 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 6.1875463)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor/Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" unique_id=1955062361 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.99974275, 0, 0.022687314, 0, 1, 0, -0.022687314, 0, -0.99974275, 2.020378, 0, 0.057316303)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="Room_right/Floor" unique_id=24263697 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 0.09879303)
-
 [node name="Floor2" type="MeshInstance3D" parent="Room_right" unique_id=1346932565]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 material_override = SubResource("StandardMaterial3D_58eop")
@@ -245,24 +226,6 @@ mesh = SubResource("BoxMesh_vkdvt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Floor2/StaticBody3D" unique_id=1134796242]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor2" unique_id=242222674 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 12.190117)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="Room_right/Floor2" unique_id=1593909098 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.031092422, -2.4027426e-05, 0.99951655, 0.001777984, 0.99999845, 7.932813e-05, -0.99951494, 0.0017795906, -0.031092327, 4.8372407, 0.9404109, 10.183275)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor2/Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" unique_id=1166754949 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.9978268, 0, -0.06589079, 0, 1, 0, 0.06589079, 0, -0.9978268, 0, 0, 0)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="Room_right/Floor2" unique_id=344682664 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 6.1875463)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Room_right/Floor2/Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" unique_id=907572363 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.99974275, 0, 0.022687314, 0, 1, 0, -0.022687314, 0, -0.99974275, 2.020378, 0, 0.057316303)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="Room_right/Floor2" unique_id=286538177 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 0.09879303)
 
 [node name="Wall_north" type="MeshInstance3D" parent="Room_right" unique_id=901408796]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -30)
@@ -592,22 +555,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 11.8766
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
 
 [node name="Meshy_AI_bottone_amin_0409064529_texture" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 2.1131866, 0)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="." unique_id=305320202 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, 4.169248)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="." unique_id=539160315 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -1.8145704)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="." unique_id=886304532 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -7.8465533)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="." unique_id=1661884902 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.0283578, 0, 0.99959785, 0, 1, 0, -0.99959785, 0, -0.0283578, 4.8372407, 0.9404109, -12.08169)
-
-[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" unique_id=953313547 instance=ExtResource("3_4wftv")]
-transform = Transform3D(-0.9929614, 0, -0.11843862, 0, 1, 0, 0.11843862, 0, -0.9929614, 2.0461483, 0, 0.058047295)
+transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 2.1131866, 19.29544)
 
 [node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="." unique_id=1644764462 instance=ExtResource("22_odfm3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83187294, 2.2381377, -29.86357)
