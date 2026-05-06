@@ -7,6 +7,9 @@ extends Node3D
 @onready var desktop_player: Node = get_node_or_null(desktop_player_path)
 @onready var xr_origin: Node = get_node_or_null(xr_origin_path)
 
+@onready var desktop_ray = $DesktopPlayer/Camera3D/RayCast3D
+@onready var xr_ray = $XROrigin3D/XRCamera3D/RayCast3D
+
 func _ready():
 	# tenta trovare l'interfaccia OpenXR
 	var xr_interface := XRServer.find_interface("OpenXR")
@@ -43,3 +46,23 @@ func _enable_vr(enable: bool) -> void:
 func _on_button_area_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		print("Bottone 3D cliccato!")
+		
+func get_active_ray():
+	if get_viewport().use_xr:
+		return xr_ray
+	else:
+		return desktop_ray
+
+func _process(delta):
+	var ray = get_active_ray()
+	
+	print(get_active_ray())
+
+	if ray and ray.is_colliding():
+		var obj = ray.get_collider()
+
+		if Input.is_action_just_pressed("click"):
+			print("Colpito:", obj.name)
+
+			if obj.has_method("on_clicked"):
+				obj.on_clicked()
