@@ -7,8 +7,8 @@ extends Node3D
 @onready var desktop_player: Node = get_node_or_null(desktop_player_path)
 @onready var xr_origin: Node = get_node_or_null(xr_origin_path)
 
-@onready var desktop_ray = $DesktopPlayer/Camera3D/RayCast3D
-@onready var xr_ray = $XROrigin3D/XRCamera3D/RayCast3D
+@onready var desktop_ray = $Player/DesktopPlayer/Camera3D/RayCast3D
+@onready var xr_ray = $Player/XROrigin3D/XRCamera3D/RayCast3D
 
 func _ready():
 	# tenta trovare l'interfaccia OpenXR
