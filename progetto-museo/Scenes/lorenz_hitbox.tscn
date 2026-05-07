@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://pd4aue8irvu2"]
+
+[ext_resource type="PackedScene" uid="uid://74j0fcekrtml" path="res://Oggetti/Lorenz SZ 4042/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb" id="1_b43uh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_at8tb"]
+size = Vector3(2.284729, 1.8744812, 2.0945892)
+
+[node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture" unique_id=524758272 instance=ExtResource("1_b43uh")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(221010522) index="0" unique_id=1094018329]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1308077963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06704712, 0.059249878, -0.054359436)
+shape = SubResource("BoxShape3D_at8tb")

@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://c654cfetp5742"
+path.s3tc="res://.godot/imported/Meshy_AI_Libro_proibito_della__0507065819_texture_2.jpg-6165ecb70032a2cf12bc2541ba452c41.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "2e141138c3f031c8c244396ea6be7cbf"
+}
+
+[deps]
+
+source_file="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Libro_proibito_della__0507065819_texture_2.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Libro_proibito_della__0507065819_texture_2.jpg-6165ecb70032a2cf12bc2541ba452c41.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Libro_proibito_della__0507065819_texture_2.jpg"
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
