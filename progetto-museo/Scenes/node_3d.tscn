@@ -505,6 +505,8 @@ max_speed = 2.0
 strafe = true
 metadata/_custom_type_script = "uid://dc4hg8kq5ia5y"
 
+[node name="RayCast3D" type="RayCast3D" parent="Player/XROrigin3D/RightHand" unique_id=965127241]
+
 [node name="LeftHand" type="XRController3D" parent="Player/XROrigin3D" unique_id=291582864]
 tracker = &"left_hand"
 
@@ -610,8 +612,11 @@ offset_bottom = 40.0
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=400365105]
 custom_minimum_size = Vector2(6, 6)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 937.0
+offset_top = 490.0
+offset_right = 977.0
+offset_bottom = 530.0
+mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
 
 [connection signal="input_event" from="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" to="." method="_on_button_area_input_event"]
