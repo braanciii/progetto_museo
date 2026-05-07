@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://cofe72re0akgl" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
 [ext_resource type="PackedScene" uid="uid://b7wor7qusf3ml" path="res://scitala_spartana.tscn" id="19_nivdu"]
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
+[ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/gold.glb" id="21_odfm3"]
 [ext_resource type="PackedScene" uid="uid://d2phg1ag8nslk" path="res://Oggetti/Cifrario di Alberti/Meshy_AI_Cipher_Wheel_0204094227_texture.glb" id="22_odfm3"]
 [ext_resource type="PackedScene" uid="uid://cg8e55ysgxgd4" path="res://Scenes/bottone_verde.tscn" id="22_yvbty"]
 [ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="23_yvbty"]
@@ -442,7 +443,7 @@ physics_material_override = SubResource("PhysicsMaterial_cb6ip")
 shape = SubResource("BoxShape3D_062e5")
 
 [node name="Corridor_south_floor" type="MeshInstance3D" parent="Corridor_south/Corridor_south_floor" unique_id=840343986]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13173676, 0, -6.1914177)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13173676, 0, -4.26632)
 mesh = SubResource("BoxMesh_8cye3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_floor/Corridor_south_floor" unique_id=1154601551]
@@ -586,6 +587,12 @@ transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" unique_id=579972472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14867401, 0)
 shape = SubResource("CylinderShape3D_odfm3")
+
+[node name="gold" parent="Oggetti" unique_id=1664065014 instance=ExtResource("21_odfm3")]
+transform = Transform3D(1.3430532, 0, 1.4819608, 0, 2, 0, -1.4819608, 0, 1.3430532, -27.099592, 1.2450342, -1.6494255)
+
+[node name="gold2" parent="Oggetti" unique_id=1696189282 instance=ExtResource("21_odfm3")]
+transform = Transform3D(1.5872805, 0, -1.2167752, 0, 2, 0, 1.2167752, 0, 1.5872805, -12.459427, 1.245, -1.9562073)
 
 [node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="." unique_id=1644764462 instance=ExtResource("22_odfm3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83187294, 2.2381377, -29.86357)
