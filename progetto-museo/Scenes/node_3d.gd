@@ -118,13 +118,13 @@ func _process(_delta: float) -> void:
 		return
 
 	# POSIZIONE ORIGINE RAGGIO
-	var from = ray.global_transform.origin
+	#var from = ray.global_transform.origin
 
 	# DIREZIONE RAGGIO
-	var to = ray.to_global(ray.target_position)
+	#var to = ray.to_global(ray.target_position)
 
-	print("RAY FROM: ", from)
-	print("RAY TO: ", to)
+	#print("RAY FROM: ", from)
+	#print("RAY TO: ", to)
 
 	# COLLISIONE
 	if ray.is_colliding():
@@ -133,10 +133,10 @@ func _process(_delta: float) -> void:
 		var collision_normal = ray.get_collision_normal()
 		var obj = ray.get_collider()
 
-		print("=== COLLISIONE ===")
-		print("Oggetto: ", obj.name)
-		print("Posizione collisione: ", collision_point)
-		print("Normale: ", collision_normal)
+		#print("=== COLLISIONE ===")
+		#print("Oggetto: ", obj.name)
+		#print("Posizione collisione: ", collision_point)
+		#print("Normale: ", collision_normal)
 
 		if Input.is_action_just_pressed("click"):
 

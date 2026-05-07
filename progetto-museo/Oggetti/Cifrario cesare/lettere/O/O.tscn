@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cyc02cw75v3n"]
+
+[ext_resource type="PackedScene" uid="uid://brolow7eugvci" path="res://Oggetti/Cifrario cesare/lettere/O/O.glb" id="1_crtbg"]
+
+[node name="O" unique_id=2101544514 instance=ExtResource("1_crtbg")]

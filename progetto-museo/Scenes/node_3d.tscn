@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://ck4yn3hxuobj7" path="res://addons/godot-xr-tools/player/player_body.gd" id="2_okq71"]
 [ext_resource type="Script" uid="uid://kuxqh057vr5y" path="res://addons/godot-xr-tools/functions/movement_turn.gd" id="3_t3l2h"]
 [ext_resource type="Script" uid="uid://dc4hg8kq5ia5y" path="res://addons/godot-xr-tools/functions/movement_direct.gd" id="3_wosnj"]
-[ext_resource type="PackedScene" uid="uid://dy0gg52mlyd2a" path="res://Arredamento/Quadro/Quadro.glb" id="6_a8auw"]
 [ext_resource type="Script" uid="uid://b2wly1j8ra2lr" path="res://Scenes/desktop_player.gd" id="6_ifh66"]
 [ext_resource type="PackedScene" uid="uid://bacqapoqvnqni" path="res://Arredamento/tapetto/Meshy_AI_creami_un_tappeto_ros_0210083747_texture.glb" id="8_aeo3b"]
 [ext_resource type="PackedScene" uid="uid://bbmthu11xwqdy" path="res://Scenes/reception_desk.tscn" id="11_cb6ip"]
@@ -19,9 +18,8 @@
 [ext_resource type="PackedScene" uid="uid://cofe72re0akgl" path="res://cifrario_cesare.tscn" id="17_rl1jb"]
 [ext_resource type="PackedScene" uid="uid://b7wor7qusf3ml" path="res://scitala_spartana.tscn" id="19_nivdu"]
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
-[ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/gold.glb" id="21_odfm3"]
+[ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/oro/gold.glb" id="21_odfm3"]
 [ext_resource type="PackedScene" uid="uid://pd4aue8irvu2" path="res://Scenes/lorenz_hitbox.tscn" id="22_52o0n"]
-[ext_resource type="PackedScene" uid="uid://d2phg1ag8nslk" path="res://Oggetti/Cifrario di Alberti/Meshy_AI_Cipher_Wheel_0204094227_texture.glb" id="22_odfm3"]
 [ext_resource type="PackedScene" uid="uid://cg8e55ysgxgd4" path="res://Scenes/bottone_verde.tscn" id="22_yvbty"]
 [ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="23_yvbty"]
 [ext_resource type="PackedScene" uid="uid://bsalarm5p7luy" path="res://Oggetti/Enigma/Meshy_AI_Enigma_Machine_0212071927_texture.glb" id="24_52o0n"]
@@ -537,13 +535,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10377693, 0)
 current = true
 
 [node name="RayCast3D" type="RayCast3D" parent="Player/DesktopPlayer/Camera3D" unique_id=1940813088]
+target_position = Vector3(0, 0, -5)
 
 [node name="Arredamento" type="Node3D" parent="." unique_id=2117104462]
 
-[node name="Quadro" parent="Arredamento" unique_id=1224488107 instance=ExtResource("6_a8auw")]
-transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 9.855611, 2.3169026, -10.045305)
-
-[node name="Meshy_AI_creami_un_tappeto_ros_0210083747_texture" parent="Arredamento" unique_id=1144623127 instance=ExtResource("8_aeo3b")]
+[node name="Tappeto_Entrata" parent="Arredamento" unique_id=1144623127 instance=ExtResource("8_aeo3b")]
 transform = Transform3D(-2.6226832e-07, 0, 2, 0, 2, 0, -6, 0, -8.742278e-08, 0, 0.11, 15.589821)
 
 [node name="pergamena" type="MeshInstance3D" parent="Arredamento" unique_id=1520902149]
@@ -576,17 +572,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.394045, 17.728624)
 
 [node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 11.876621)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 4.283922)
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
 
-[node name="Meshy_AI_bottone_amin_0409064529_texture" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
+[node name="bottone_cifrario" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
 transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 0.8350489, 19.29544)
 
-[node name="ButtonArea" type="Area3D" parent="Oggetti/Meshy_AI_bottone_amin_0409064529_texture" unique_id=2113474028]
+[node name="ButtonArea" type="Area3D" parent="Oggetti/bottone_cifrario" unique_id=2113474028]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" unique_id=579972472]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/bottone_cifrario/ButtonArea" unique_id=579972472]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14867401, 0)
 shape = SubResource("CylinderShape3D_odfm3")
 
@@ -599,31 +595,44 @@ transform = Transform3D(1.5872805, 0, -1.2167752, 0, 2, 0, 1.2167752, 0, 1.58728
 [node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture" parent="Oggetti" unique_id=524758272 instance=ExtResource("22_52o0n")]
 transform = Transform3D(-0.0057697534, 0.0021078289, 0.99998105, -0.06395639, 0.99794936, -0.0024725737, -0.99793595, -0.063969456, -0.005623109, -8.769452, 2.6659782, 0.93261814)
 
-[node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="." unique_id=1644764462 instance=ExtResource("22_odfm3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.83187294, 2.2381377, -29.86357)
+[node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="Oggetti" unique_id=1533549545 instance=ExtResource("23_yvbty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.556651, 1.6140337, -13.476538)
 
-[node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="." unique_id=1533549545 instance=ExtResource("23_yvbty")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.556651, 1.6140337, -23.476538)
-
-[node name="Meshy_AI_Enigma_Machine_0212071927_texture" parent="." unique_id=1442564289 instance=ExtResource("24_52o0n")]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -31.113352, 1.9645919, -26.282955)
+[node name="Meshy_AI_Enigma_Machine_0212071927_texture" parent="Oggetti" unique_id=1442564289 instance=ExtResource("24_52o0n")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -31.113352, 1.9645919, -16.282955)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
 
 [node name="Control" type="Control" parent="CanvasLayer" unique_id=284914582]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=400365105]
-custom_minimum_size = Vector2(6, 6)
-layout_mode = 0
-offset_left = 937.0
-offset_top = 490.0
-offset_right = 977.0
-offset_bottom = 530.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
 
-[connection signal="input_event" from="Oggetti/Meshy_AI_bottone_amin_0409064529_texture/ButtonArea" to="." method="_on_button_area_input_event"]
+[connection signal="input_event" from="Oggetti/bottone_cifrario/ButtonArea" to="." method="_on_button_area_input_event"]

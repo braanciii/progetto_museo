@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://gsqju7ohpsk5"]
+
+[ext_resource type="PackedScene" uid="uid://dlh0nwhtjnvvi" path="res://Oggetti/Cifrario cesare/lettere/B/B.glb" id="1_5rxnc"]
+
+[node name="B" unique_id=1022230399 instance=ExtResource("1_5rxnc")]
