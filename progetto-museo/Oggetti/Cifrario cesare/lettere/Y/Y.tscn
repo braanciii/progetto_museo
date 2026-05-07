@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c1wnykjna3wcq"]
+
+[ext_resource type="PackedScene" uid="uid://cqa0v0076rjmq" path="res://Oggetti/Cifrario cesare/lettere/Y/Meshy_AI_generami_la_lettera_Y_0507174344_texture.glb" id="1_1xjw3"]
+
+[node name="Meshy_AI_generami_la_lettera_Y_0507174344_texture" unique_id=1347372901 instance=ExtResource("1_1xjw3")]

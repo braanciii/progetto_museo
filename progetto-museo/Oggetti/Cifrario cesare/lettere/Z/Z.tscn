@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://4u8x8iwxkpu3"]
+
+[ext_resource type="PackedScene" uid="uid://dwkdcfsv5uttv" path="res://Oggetti/Cifrario cesare/lettere/Z/Meshy_AI_Creami_il_modello_del_0507174914_texture.glb" id="1_2g6xb"]
+
+[node name="Meshy_AI_Creami_il_modello_del_0507174914_texture" unique_id=1958502587 instance=ExtResource("1_2g6xb")]
