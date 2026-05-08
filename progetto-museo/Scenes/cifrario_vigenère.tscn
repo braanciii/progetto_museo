@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cqxgxa8g87d62"]
+
+[ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="1_nbje1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtcok"]
+size = Vector3(1.8994141, 1.4564514, 1)
+
+[node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" unique_id=590409892 instance=ExtResource("1_nbje1")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(2012596165) index="0" unique_id=1087193007]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=478051205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.072021484, -0.000869751, 0)
+shape = SubResource("BoxShape3D_xtcok")
