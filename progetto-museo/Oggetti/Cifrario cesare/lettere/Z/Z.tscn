@@ -5,4 +5,4 @@
 [node name="Meshy_AI_Creami_il_modello_del_0507174914_texture" unique_id=1958502587 instance=ExtResource("1_2g6xb")]
 
 [node name="Mesh" parent="." index="0" unique_id=1936383789]
-transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, 0, 0, 0)
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0, 0, 0)

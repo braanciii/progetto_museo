@@ -3,4 +3,4 @@
 [ext_resource type="PackedScene" uid="uid://c54ybl2rqgqqk" path="res://Oggetti/Cifrario cesare/lettere/D/D.glb" id="1_lmhh8"]
 
 [node name="D" unique_id=88871792 instance=ExtResource("1_lmhh8")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
