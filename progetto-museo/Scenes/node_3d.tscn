@@ -608,7 +608,7 @@ punto_spawn = NodePath("../PuntoSpawnLettere")
 terminale = NodePath("../TerminaleParola")
 
 [node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.729184, 1.4868184, 0)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 4.1799836, -8.439561)
 
 [node name="TerminaleParola" parent="." unique_id=131578165 instance=ExtResource("24_odfm3")]
 transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)

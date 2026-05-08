@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://byoy3nwqjo4qj" path="res://Oggetti/Cifrario cesare/lettere/P/Meshy_AI_crea_la_lettera_P_mai_0508150202_texture.glb" id="1_jwbpq"]
 
 [node name="Meshy_AI_crea_la_lettera_P_mai_0508150202_texture" unique_id=787819552 instance=ExtResource("1_jwbpq")]
+
+[node name="Mesh" parent="." index="0" unique_id=1452518475]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0, 0, 0)

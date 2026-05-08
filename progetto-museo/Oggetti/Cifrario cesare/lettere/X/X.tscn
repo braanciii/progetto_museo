@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://chl6p8n2dyedj" path="res://Oggetti/Cifrario cesare/lettere/X/Meshy_AI_Creami_il_modello_del_0507173922_texture.glb" id="1_ffrop"]
 
 [node name="Meshy_AI_Creami_il_modello_del_0507173922_texture" unique_id=1816441094 instance=ExtResource("1_ffrop")]
+
+[node name="Mesh" parent="." index="0" unique_id=391335221]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0, 0, 0)

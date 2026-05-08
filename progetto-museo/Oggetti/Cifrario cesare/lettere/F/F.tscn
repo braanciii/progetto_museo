@@ -3,3 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://bjfxpkpmbc6so" path="res://Oggetti/Cifrario cesare/lettere/F/Meshy_AI_creami_la_lettera_F_i_0508150757_texture.glb" id="1_hvoil"]
 
 [node name="Meshy_AI_creami_la_lettera_F_i_0508150757_texture" unique_id=1962203730 instance=ExtResource("1_hvoil")]
+
+[node name="Mesh" parent="." index="0" unique_id=1598078058]
+transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-08, 0, 0, 0)

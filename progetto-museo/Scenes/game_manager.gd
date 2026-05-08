@@ -56,21 +56,33 @@ func _su_testo_inserito(nuovo_testo: String):
 	# perché non servono più con il sistema 3D!
 
 func mostra_parola(parola: String):
+	print("--- INIZIO SPAWN ---")
+	print("La parola ricevuta è lunga: ", parola.length(), " lettere")
+	print("Parola ricevuta: ", parola)
+	
 	for lettera in lettere_in_scena:
 		lettera.queue_free()
 	lettere_in_scena.clear()
 	
-	var distanza_tra_lettere = 1.0 
-	var offset_x = 0.0
+	var distanza = 1.5 
+	var offset = 0.0
 	
 	for carattere in parola:
 		if modelli_lettere.has(carattere):
 			var istanza = modelli_lettere[carattere].instantiate()
 			punto_spawn.add_child(istanza)
-			istanza.position = Vector3(offset_x, 0, 0)
-			lettere_in_scena.append(istanza)
 			
-		offset_x += distanza_tra_lettere
+			# PROVA CAMBIO ASSE: Le spostiamo sull'asse Z invece che X (o Y se preferisci verso l'alto)
+			istanza.position = Vector3(0, 0, offset) 
+			
+			lettere_in_scena.append(istanza)
+			print("Generata lettera: ", carattere, " alla posizione: ", istanza.position)
+			
+			offset -= distanza
+		else:
+			print("ATTENZIONE: Modello non trovato per la lettera: ", carattere)
+			
+	print("Totale lettere in scena: ", lettere_in_scena.size())
 
 func _avvia_animazione_cifrario():
 	print("Avvio animazione e cifratura...")
