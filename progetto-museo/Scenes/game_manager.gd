@@ -4,6 +4,9 @@ extends Node3D
 @export var punto_spawn: Node3D
 @export var terminale: StaticBody3D
 
+# NUOVO: Questo numero controlla di quante lettere si sposta l'alfabeto (es. 3 -> A diventa D)
+@export var shift_cesare: int = 3 
+
 var modelli_lettere = {
 	"A": preload("res://oggetti/cifrario cesare/lettere/A/A.tscn"), 
 	"B": preload("res://oggetti/cifrario cesare/lettere/B/B.tscn"), 
@@ -40,31 +43,22 @@ func _ready():
 	if bottone:
 		bottone.bottone_premuto.connect(_avvia_animazione_cifrario)
 		
-	# Ascoltiamo il Terminale 3D invece del vecchio LineEdit
 	if terminale:
 		terminale.parola_confermata.connect(_su_testo_inserito)
 
-# Questa funzione viene chiamata quando il Terminale ci invia la parola finita
 func _su_testo_inserito(nuovo_testo: String):
-	# Trasforma tutto in maiuscolo (così "ciao" diventa "CIAO" e trova i modelli)
 	parola_attuale = nuovo_testo.to_upper()
-	
-	# Genera i modelli 3D
 	mostra_parola(parola_attuale)
-	
-	# Abbiamo rimosso casella_testo.clear() e l'impostazione del mouse
-	# perché non servono più con il sistema 3D!
 
 func mostra_parola(parola: String):
-	print("--- INIZIO SPAWN ---")
-	print("La parola ricevuta è lunga: ", parola.length(), " lettere")
-	print("Parola ricevuta: ", parola)
+	print("Mostro la parola: ", parola)
 	
+	# Distruggi le vecchie lettere
 	for lettera in lettere_in_scena:
 		lettera.queue_free()
 	lettere_in_scena.clear()
 	
-	var distanza = 1.5 
+	var distanza = 1.0 
 	var offset = 0.0
 	
 	for carattere in parola:
@@ -72,20 +66,19 @@ func mostra_parola(parola: String):
 			var istanza = modelli_lettere[carattere].instantiate()
 			punto_spawn.add_child(istanza)
 			
-			# PROVA CAMBIO ASSE: Le spostiamo sull'asse Z invece che X (o Y se preferisci verso l'alto)
+			# Modifica X o Z in base a come sei orientato nel livello
 			istanza.position = Vector3(0, 0, offset) 
 			
 			lettere_in_scena.append(istanza)
-			print("Generata lettera: ", carattere, " alla posizione: ", istanza.position)
-			
 			offset -= distanza
 		else:
-			print("ATTENZIONE: Modello non trovato per la lettera: ", carattere)
-			
-	print("Totale lettere in scena: ", lettere_in_scena.size())
+			print("Errore: Modello non trovato per ", carattere)
 
 func _avvia_animazione_cifrario():
-	print("Avvio animazione e cifratura...")
+	if parola_attuale == "":
+		return
+		
+	print("Avvio animazione...")
 	var tempo_animazione = 1.5
 	
 	for lettera in lettere_in_scena:
@@ -94,5 +87,31 @@ func _avvia_animazione_cifrario():
 		tween.parallel().tween_property(lettera, "position:y", 1.0, tempo_animazione/2.0).set_trans(Tween.TRANS_SINE)
 		tween.parallel().tween_property(lettera, "position:y", 0.0, tempo_animazione/2.0).set_trans(Tween.TRANS_BOUNCE).set_delay(tempo_animazione/2.0)
 	
+	# Aspetta che finisca l'animazione di salto
 	await get_tree().create_timer(tempo_animazione).timeout
-	print("Animazione finita!")
+	
+	# --- IL CIFRARIO DI CESARE ---
+	var parola_cifrata = calcola_cesare(parola_attuale, shift_cesare)
+	print("Trasformazione completata! Nuova parola: ", parola_cifrata)
+	
+	# Aggiorniamo la parola salvata
+	parola_attuale = parola_cifrata
+	
+	# Mostriamo i nuovi modelli cifrati! (E cancelliamo quelli vecchi)
+	mostra_parola(parola_cifrata)
+
+
+func calcola_cesare(testo: String, shift: int) -> String:
+	var risultato = ""
+	
+	for carattere in testo:
+		var codice_unicode = carattere.unicode_at(0)
+		
+		# Applica il cifrario solo alle lettere (Unicode da A a Z)
+		if codice_unicode >= 65 and codice_unicode <= 90:
+			var nuovo_codice = ((codice_unicode - 65 + shift) % 26) + 65
+			risultato += String.chr(nuovo_codice)
+		else:
+			risultato += carattere 
+			
+	return risultato
