@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://burk1t0eamr38"]
+
+[ext_resource type="PackedScene" uid="uid://byoy3nwqjo4qj" path="res://Oggetti/Cifrario cesare/lettere/P/Meshy_AI_crea_la_lettera_P_mai_0508150202_texture.glb" id="1_jwbpq"]
+
+[node name="Meshy_AI_crea_la_lettera_P_mai_0508150202_texture" unique_id=787819552 instance=ExtResource("1_jwbpq")]

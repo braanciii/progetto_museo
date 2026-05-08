@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://da0ler7m3a5m"]
+
+[ext_resource type="Script" uid="uid://ceoi6du283awh" path="res://static_body_3d.gd" id="1_skmgm"]
+[ext_resource type="PackedScene" uid="uid://cg8e55ysgxgd4" path="res://Scenes/bottone_verde.tscn" id="2_qijkw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qijkw"]
+size = Vector3(2, 0.5, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s54nc"]
+size = Vector3(1.5, 0.5, 0.1)
+
+[node name="TerminaleParola" type="StaticBody3D" unique_id=131578165]
+script = ExtResource("1_skmgm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1622961825]
+mesh = SubResource("BoxMesh_qijkw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=825608241]
+shape = SubResource("BoxShape3D_s54nc")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=577050456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18495423, 0, 0.089377105)
+text = "Clicca per scrivere"
+
+[node name="Meshy_AI_bottone_amin_0409064529_texture" parent="." unique_id=196949277 instance=ExtResource("2_qijkw")]
+transform = Transform3D(0.1, 0, 0, 0, -4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0.7066419, 0, 0.10137677)

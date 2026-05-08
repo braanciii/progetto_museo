@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bfqvb2oqnkc5l"]
+
+[ext_resource type="PackedScene" uid="uid://bjfxpkpmbc6so" path="res://Oggetti/Cifrario cesare/lettere/F/Meshy_AI_creami_la_lettera_F_i_0508150757_texture.glb" id="1_hvoil"]
+
+[node name="Meshy_AI_creami_la_lettera_F_i_0508150757_texture" unique_id=1962203730 instance=ExtResource("1_hvoil")]

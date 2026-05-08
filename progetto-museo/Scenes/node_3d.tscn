@@ -20,9 +20,10 @@
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
 [ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/oro/gold.glb" id="21_odfm3"]
 [ext_resource type="PackedScene" uid="uid://pd4aue8irvu2" path="res://Scenes/lorenz_hitbox.tscn" id="22_52o0n"]
-[ext_resource type="PackedScene" uid="uid://cg8e55ysgxgd4" path="res://Scenes/bottone_verde.tscn" id="22_yvbty"]
 [ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="23_yvbty"]
 [ext_resource type="PackedScene" uid="uid://bsalarm5p7luy" path="res://Oggetti/Enigma/Meshy_AI_Enigma_Machine_0212071927_texture.glb" id="24_52o0n"]
+[ext_resource type="Script" uid="uid://cfegbsrk0vbs1" path="res://Scenes/game_manager.gd" id="24_o74xe"]
+[ext_resource type="PackedScene" uid="uid://da0ler7m3a5m" path="res://Scenes/terminale_parola.tscn" id="24_odfm3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -209,10 +210,6 @@ height = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_odfm3"]
-height = 1.7026367
-radius = 1.4135742
 
 [node name="Node3D" type="Node3D" unique_id=1149556530]
 script = ExtResource("1_7q7q3")
@@ -589,15 +586,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 4.28392
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
 
-[node name="bottone_cifrario" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
-transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 0.8350489, 16.231697)
-
-[node name="ButtonArea" type="Area3D" parent="Oggetti/bottone_cifrario" unique_id=2113474028]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/bottone_cifrario/ButtonArea" unique_id=579972472]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.14867401, 0)
-shape = SubResource("CylinderShape3D_odfm3")
-
 [node name="gold" parent="Oggetti" unique_id=1664065014 instance=ExtResource("21_odfm3")]
 transform = Transform3D(1.3430532, 0, 1.4819608, 0, 2, 0, -1.4819608, 0, 1.3430532, -27.099592, 1.2450342, -1.6494255)
 
@@ -612,6 +600,18 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.5
 
 [node name="Meshy_AI_Enigma_Machine_0212071927_texture" parent="Oggetti" unique_id=1442564289 instance=ExtResource("24_52o0n")]
 transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -31.113352, 1.9645919, -16.282955)
+
+[node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
+script = ExtResource("24_o74xe")
+bottone = NodePath("../TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture/Mesh/StaticBody3D")
+punto_spawn = NodePath("../PuntoSpawnLettere")
+terminale = NodePath("../TerminaleParola")
+
+[node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.729184, 1.4868184, 0)
+
+[node name="TerminaleParola" parent="." unique_id=131578165 instance=ExtResource("24_odfm3")]
+transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
 
@@ -647,4 +647,5 @@ mouse_filter = 2
 mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
 
-[connection signal="input_event" from="Oggetti/bottone_cifrario/ButtonArea" to="." method="_on_button_area_input_event"]
+[editable path="TerminaleParola"]
+[editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]
