@@ -83,9 +83,5 @@ func _set_collision_enabled(node: Node, layer: int, enabled: bool) -> void:
 			_set_collision_enabled(child, layer, enabled)
 
 # Aggiungi questa funzione alla fine dello script del Player
-func _input(event):
-	if event.is_action_pressed("ui_cancel"): # Di default corrisponde al tasto ESC
-		if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE # Libera il mouse
-		else:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED # Ricattura il mouse
+
+ # Ricattura il mouse

@@ -51,7 +51,7 @@ func _su_testo_inserito(nuovo_testo: String):
 	mostra_parola(parola_attuale)
 
 func mostra_parola(parola: String):
-	print("Mostro la parola: ", parola)
+	
 	
 	# Distruggi le vecchie lettere
 	for lettera in lettere_in_scena:
@@ -71,14 +71,13 @@ func mostra_parola(parola: String):
 			
 			lettere_in_scena.append(istanza)
 			offset -= distanza
-		else:
-			print("Errore: Modello non trovato per ", carattere)
+		
 
 func _avvia_animazione_cifrario():
 	if parola_attuale == "":
 		return
 		
-	print("Avvio animazione...")
+	
 	var tempo_animazione = 1.5
 	
 	for lettera in lettere_in_scena:
@@ -92,7 +91,7 @@ func _avvia_animazione_cifrario():
 	
 	# --- IL CIFRARIO DI CESARE ---
 	var parola_cifrata = calcola_cesare(parola_attuale, shift_cesare)
-	print("Trasformazione completata! Nuova parola: ", parola_cifrata)
+	
 	
 	# Aggiorniamo la parola salvata
 	parola_attuale = parola_cifrata
