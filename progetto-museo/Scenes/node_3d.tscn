@@ -590,7 +590,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 4.28392
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
 
 [node name="bottone_cifrario" parent="Oggetti" unique_id=196949277 instance=ExtResource("22_yvbty")]
-transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 0.8350489, 19.29544)
+transform = Transform3D(-4.371139e-09, -0.1, 0, 0.1, -4.371139e-09, 0, 0, 0, 0.1, 9.846427, 0.8350489, 16.231697)
 
 [node name="ButtonArea" type="Area3D" parent="Oggetti/bottone_cifrario" unique_id=2113474028]
 
