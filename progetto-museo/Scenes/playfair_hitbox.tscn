@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cx4c1i4c62scb"]
+
+[ext_resource type="PackedScene" uid="uid://u3hd53xmx5x7" path="res://Oggetti/Cifrario Playfair/Meshy_AI_creami_un_cifrario_pl_0509225051_texture.glb" id="1_bkyc2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kjgu0"]
+size = Vector3(1.6629333, 0.7373047, 1.3417358)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ujos4"]
+size = Vector3(1.6374664, 0.38684082, 1)
+
+[node name="Meshy_AI_creami_un_cifrario_pl_0509225051_texture" unique_id=1167949815 instance=ExtResource("1_bkyc2")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(421766988) index="0" unique_id=857010103]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1323516549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013985336, -0.13134766, 0.32705688)
+shape = SubResource("BoxShape3D_kjgu0")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="1" unique_id=1503982735]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.006834388, 0.3065796, -0.60182)
+shape = SubResource("BoxShape3D_ujos4")
