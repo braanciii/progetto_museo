@@ -369,7 +369,7 @@ mesh = SubResource("BoxMesh_062e5")
 shape = SubResource("BoxShape3D_m2rse")
 
 [node name="Wall_weast" type="MeshInstance3D" parent="Room_left" unique_id=679165374]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -10.005)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.01912, 2, -10.036326)
 mesh = SubResource("BoxMesh_rl1jb")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_left/Wall_weast" unique_id=792246815]
@@ -583,13 +583,13 @@ transform = Transform3D(-8.742278e-08, 0, 4, 0, 2, 0, -2, 0, -1.7484555e-07, 0, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 
 [node name="Cipher_Disk_1211075956_texture" parent="Oggetti" unique_id=1924463940 instance=ExtResource("17_rl1jb")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.394045, 17.728624)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.3671052, 17.728624)
 
 [node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69706, 1.6936735, -1.9136333)
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 2.2870557, -14.189276)
 
 [node name="gold" parent="Oggetti" unique_id=1664065014 instance=ExtResource("21_odfm3")]
 transform = Transform3D(1.3430532, 0, 1.4819608, 0, 2, 0, -1.4819608, 0, 1.3430532, -27.099592, 1.2450342, -1.6494255)
@@ -598,10 +598,10 @@ transform = Transform3D(1.3430532, 0, 1.4819608, 0, 2, 0, -1.4819608, 0, 1.34305
 transform = Transform3D(1.5872805, 0, -1.2167752, 0, 2, 0, 1.2167752, 0, 1.5872805, -12.459427, 1.245, -1.9562073)
 
 [node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="Oggetti" unique_id=166922360 instance=ExtResource("24_kp5il")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.333683, 1.835392, -19.800636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.279877, 2.3213565, -19.800636)
 
 [node name="tripo_convert_a4de24e3-7f3b-4ab1-93f3-59a17de01e3c" parent="Oggetti" unique_id=568361500 instance=ExtResource("25_52o0n")]
-transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.4658434, -14.748425)
+transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.1762884, -14.748425)
 
 [node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture2" parent="Oggetti" unique_id=512615149 instance=ExtResource("22_52o0n")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -38.71391, 1.9532733, 18.99538)
@@ -613,13 +613,45 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.3
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.898243, 1.6765962, 14.279826)
 
 [node name="Meshy_AI_creami_un_cifrario_al_0509221842_texture" parent="Oggetti" unique_id=206968373 instance=ExtResource("25_ugn1w")]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.60134506, 2.1376667, -19.837173)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.60134506, 2.5017028, -19.837173)
 
 [node name="Meshy_AI_creami_un_cifrario_pl_0509225051_texture" parent="Oggetti" unique_id=1167949815 instance=ExtResource("26_ugn1w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.638554, 2.0183153, -18.854652)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture" parent="Oggetti" unique_id=1326165383 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5218685, 1.1300673, -19.796152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5802851, 0.8248122, -19.796152)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture2" parent="Oggetti" unique_id=1171426455 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.261776, 0.7539542, -19.796152)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.936905, 1.1300673, -19.796152)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.77939296, -14.182707)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture5" parent="Oggetti" unique_id=215170347 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 1.1300673, 1.178545)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture6" parent="Oggetti" unique_id=1632050831 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.79652727, 17.773315)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/Meshy_AI_Rectangular_wooden_se_0509231500_texture6" unique_id=897835905]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
+text = "Cifrario di Cesare
+50 a.C."
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture7" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.8536005, 1.1300673, -2.3041792)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture8" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -14.70923)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture9" parent="Oggetti" unique_id=1903760359 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, 12.096964)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture10" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.936905, 1.1300673, 19.844269)
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
@@ -628,7 +660,7 @@ punto_spawn = NodePath("../PuntoSpawnLettere")
 terminale = NodePath("../TerminaleParola")
 
 [node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, 0.31875134)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, -6.308674)
 
 [node name="TerminaleParola" parent="." unique_id=131578165 node_paths=PackedStringArray("giocatore") instance=ExtResource("24_odfm3")]
 transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)
