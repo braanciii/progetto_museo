@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://byqssp8a3yahx"]
+
+[ext_resource type="PackedScene" uid="uid://bsalarm5p7luy" path="res://Oggetti/Enigma/Meshy_AI_Enigma_Machine_0212071927_texture.glb" id="1_5fp63"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_grepy"]
+size = Vector3(1.2099304, 0.67809296, 2.0382385)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6srdv"]
+size = Vector3(1.1478424, 1.097168, 0.59332275)
+
+[node name="Meshy_AI_Enigma_Machine_0212071927_texture" unique_id=99207490 instance=ExtResource("1_5fp63")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(229427621) index="0" unique_id=91397638]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=908041798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010360718, -0.28287125, 0.0025177002)
+shape = SubResource("BoxShape3D_grepy")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="1" unique_id=1255737686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01940155, 0.048583984, -0.7020475)
+shape = SubResource("BoxShape3D_6srdv")

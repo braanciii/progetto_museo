@@ -20,10 +20,12 @@
 [ext_resource type="PackedScene" uid="uid://8s3sdcvo31bd" path="res://Scenes/ALKINDI.tscn" id="20_nivdu"]
 [ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/oro/gold.glb" id="21_odfm3"]
 [ext_resource type="PackedScene" uid="uid://pd4aue8irvu2" path="res://Scenes/lorenz_hitbox.tscn" id="22_52o0n"]
-[ext_resource type="PackedScene" uid="uid://qtxenp0tlxqm" path="res://Oggetti/Cifrario vigenère/Meshy_AI_Cifrario_di_Vigenère_0205072344_texture.glb" id="23_yvbty"]
-[ext_resource type="PackedScene" uid="uid://bsalarm5p7luy" path="res://Oggetti/Enigma/Meshy_AI_Enigma_Machine_0212071927_texture.glb" id="24_52o0n"]
+[ext_resource type="PackedScene" uid="uid://d2phg1ag8nslk" path="res://Oggetti/Cifrario di Alberti/Meshy_AI_Cipher_Wheel_0204094227_texture.glb" id="24_kp5il"]
 [ext_resource type="Script" uid="uid://cfegbsrk0vbs1" path="res://Scenes/game_manager.gd" id="24_o74xe"]
 [ext_resource type="PackedScene" uid="uid://da0ler7m3a5m" path="res://Scenes/terminale_parola.tscn" id="24_odfm3"]
+[ext_resource type="PackedScene" uid="uid://byqssp8a3yahx" path="res://Scenes/enigma_hitbox.tscn" id="24_yvbty"]
+[ext_resource type="PackedScene" uid="uid://7avpaliyg6ku" path="res://Oggetti/Trasposizione meccanica/tripo_convert_a4de24e3-7f3b-4ab1-93f3-59a17de01e3c.glb" id="25_52o0n"]
+[ext_resource type="PackedScene" uid="uid://d4k0qcmr13fyv" path="res://Scenes/vigenere_hitbox.tscn" id="25_kp5il"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -581,7 +583,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.394045, 17.728624)
 
 [node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7173195, 1.2121278, 4.283922)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69706, 1.6936735, -1.9136333)
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 1.9139526, -14.189276)
@@ -592,14 +594,20 @@ transform = Transform3D(1.3430532, 0, 1.4819608, 0, 2, 0, -1.4819608, 0, 1.34305
 [node name="gold2" parent="Oggetti" unique_id=1696189282 instance=ExtResource("21_odfm3")]
 transform = Transform3D(1.5872805, 0, -1.2167752, 0, 2, 0, 1.2167752, 0, 1.5872805, -12.459427, 1.245, -1.9562073)
 
-[node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture" parent="Oggetti" unique_id=524758272 instance=ExtResource("22_52o0n")]
-transform = Transform3D(-0.0057697534, 0.0021078289, 0.99998105, -0.06395639, 0.99794936, -0.0024725737, -0.99793595, -0.063969456, -0.005623109, -8.769452, 2.6659782, 0.93261814)
+[node name="Meshy_AI_Cipher_Wheel_0204094227_texture" parent="Oggetti" unique_id=166922360 instance=ExtResource("24_kp5il")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.333683, 1.835392, -19.800636)
 
-[node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="Oggetti" unique_id=1533549545 instance=ExtResource("23_yvbty")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.556651, 1.6140337, -13.476538)
+[node name="tripo_convert_a4de24e3-7f3b-4ab1-93f3-59a17de01e3c" parent="Oggetti" unique_id=568361500 instance=ExtResource("25_52o0n")]
+transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.4658434, -14.748425)
 
-[node name="Meshy_AI_Enigma_Machine_0212071927_texture" parent="Oggetti" unique_id=1442564289 instance=ExtResource("24_52o0n")]
-transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -31.113352, 1.9645919, -16.282955)
+[node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture2" parent="Oggetti" unique_id=512615149 instance=ExtResource("22_52o0n")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -38.71391, 1.9532733, 18.99538)
+
+[node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="Oggetti" unique_id=799144937 instance=ExtResource("25_kp5il")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.344816, 0.96880424, 0)
+
+[node name="Meshy_AI_Enigma_Machine_0212071927_texture2" parent="Oggetti" unique_id=99207490 instance=ExtResource("24_yvbty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.898243, 1.6765962, 14.279826)
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
