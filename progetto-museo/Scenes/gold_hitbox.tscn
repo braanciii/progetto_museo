@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d4cq8c1o81wi5"]
+
+[ext_resource type="PackedScene" uid="uid://eebsof4ewi2d" path="res://Arredamento/secret_room/oro/gold.glb" id="1_n751v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jch8q"]
+size = Vector3(1.1601563, 0.7904663, 0.7415924)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_idlhb"]
+size = Vector3(0.61990356, 1.0916748, 0.5866699)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7myk6"]
+size = Vector3(2.053955, 0.10290527, 1.9624023)
+
+[node name="gold" unique_id=1225743416 instance=ExtResource("1_n751v")]
+
+[node name="Mesh" parent="." index="0" unique_id=1406082013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.001421988, 0, -0.015048891)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=234725200]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1560979371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23995775, -0.104766846, -0.60928804)
+shape = SubResource("BoxShape3D_jch8q")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=508288437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19108796, 0.045837402, 0.32293764)
+shape = SubResource("BoxShape3D_idlhb")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2" unique_id=1453740270]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010157108, -0.5022037, -0.010253906)
+shape = SubResource("BoxShape3D_7myk6")
