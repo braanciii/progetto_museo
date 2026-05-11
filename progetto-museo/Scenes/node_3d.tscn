@@ -590,10 +590,10 @@ transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -0.00
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Scitala_Spartana/Piedistallo" unique_id=483809142]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
-light_color = Color(1, 0, 1, 1)
+light_color = Color(1, 1, 0, 1)
 shadow_enabled = true
 distance_fade_enabled = true
-spot_range = 1.0015292
+spot_range = 0.97905385
 spot_angle = 20.74781
 
 [node name="Billboard" parent="Oggetti/Scitala_Spartana" unique_id=215170347 instance=ExtResource("27_8ms6x")]
@@ -661,6 +661,14 @@ transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.34344
 
 [node name="gold" parent="Oggetti" unique_id=1788517010 instance=ExtResource("28_tw2p7")]
 transform = Transform3D(1.5867066, 0, -1.2175229, 0, 2, 0, 1.2175229, 0, 1.5867066, -12.459, 1.1769813, -1.9560003)
+
+[node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture11" parent="Oggetti" unique_id=1220313760 instance=ExtResource("27_8ms6x")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 8.903299, 0.62365866, -1.6811371)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/Meshy_AI_Rectangular_wooden_se_0509231500_texture11" unique_id=1721434946]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
+text = "Scitala Spartana
+V secolo a.C."
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
