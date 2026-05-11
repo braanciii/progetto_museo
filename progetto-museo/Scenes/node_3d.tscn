@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://ces0r0m45ta5k" path="res://Oggetti/Nuovo cifrario monoalfabetico medievale/Meshy_AI_creami_un_cifrario_al_0509221842_texture.glb" id="25_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://cx4c1i4c62scb" path="res://Scenes/playfair_hitbox.tscn" id="26_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
+[ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -586,7 +587,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.805908, 2.3671052, 17.728624)
 
 [node name="Meshy_AI_Wooden_alphabet_rings_0211095710_texture" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.69706, 1.6936735, -1.9136333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.377521, 1.3744199, -1.6918077)
 
 [node name="Meshy_AI_Cryptic_Code_Scroll_0210082021_texture" parent="Oggetti" unique_id=1312171655 instance=ExtResource("20_nivdu")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 2.2870557, -14.189276)
@@ -652,6 +653,9 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture10" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.936905, 1.1300673, 19.844269)
+
+[node name="Meshy_AI_Piedistallo_di_un_mus_0121095047_texture_gbl" parent="Oggetti" unique_id=1888761026 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.4398596, 9.376649, 1.1177732, -1.6942892)
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")

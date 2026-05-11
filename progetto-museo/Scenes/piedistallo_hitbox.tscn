@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b3u1dn1ft23f6"]
+
+[ext_resource type="PackedScene" uid="uid://brghbu4d8erb7" path="res://Arredamento/espositore/Meshy_AI_Piedistallo_di_un_mus_0121095047_texture.gbl.glb" id="1_ly6n6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bneyg"]
+size = Vector3(1, 2.0775757, 1)
+
+[node name="Meshy_AI_Piedistallo_di_un_mus_0121095047_texture_gbl" unique_id=1888761026 instance=ExtResource("1_ly6n6")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1673031690]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=2140539386]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0066833496, 0)
+shape = SubResource("BoxShape3D_bneyg")
