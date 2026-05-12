@@ -610,19 +610,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.279877, 2.3213565, -19.80
 transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.1762884, -14.748425)
 
 [node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture2" parent="Oggetti" unique_id=512615149 instance=ExtResource("22_52o0n")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -38.71391, 1.9532733, 18.99538)
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, -38.391106, 1.6128151, 19.177343)
 
 [node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="Oggetti" unique_id=799144937 instance=ExtResource("25_kp5il")]
 transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, -9.344816, 0.9376848, 0)
 
 [node name="Meshy_AI_Enigma_Machine_0212071927_texture2" parent="Oggetti" unique_id=99207490 instance=ExtResource("24_yvbty")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.898243, 1.6765962, 14.279826)
+transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, -49.237286, 1.5293003, 14.059423)
 
 [node name="Meshy_AI_creami_un_cifrario_al_0509221842_texture" parent="Oggetti" unique_id=206968373 instance=ExtResource("25_ugn1w")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.60134506, 2.5017028, -19.837173)
 
 [node name="Meshy_AI_creami_un_cifrario_pl_0509225051_texture" parent="Oggetti" unique_id=1167949815 instance=ExtResource("26_ugn1w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.638554, 2.0183153, -18.854652)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -43.544827, 1.3893263, -19.229603)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture" parent="Oggetti" unique_id=1326165383 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5802851, 0.8248122, -19.796152)
@@ -631,7 +631,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5802851, 0.8248122, -19.79
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.261776, 0.7539542, -19.796152)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.936905, 1.1300673, -19.796152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.647022, 0.67265093, -18.511366)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.77939296, -14.182707)
@@ -651,10 +651,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.8
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -14.70923)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture9" parent="Oggetti" unique_id=1903760359 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, 12.096964)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.57335, 0.6329392, 14.012581)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture10" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.936905, 1.1300673, 19.844269)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.39613, 0.6046903, 18.579264)
 
 [node name="gold3" parent="Oggetti" unique_id=1225743416 instance=ExtResource("28_tw2p7")]
 transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.3434411, -27.1, 1.177, -1.649)
@@ -670,10 +670,43 @@ transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.0
 text = "Scitala Spartana
 V secolo a.C."
 
-[node name="Piedistallo_vigenere" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
-transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -9.36028, 1.2001865, -0.0027570724)
+[node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(-6.3200496e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.4458588, 0, -1.1849962e-07, -43.594593, 1.2001865, -19.174902)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_vigenere" unique_id=342298111]
+[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_playfair" unique_id=342298111]
+transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
+light_color = Color(1, 1, 0, 1)
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 0.97905385
+spot_angle = 20.74781
+
+[node name="Piedistallo_vigenere" parent="Oggetti" unique_id=1774181845 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -9.384973, 1.1770064, -0.0027570724)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_vigenere" unique_id=1514175371]
+transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
+light_color = Color(1, 1, 0, 1)
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 0.97905385
+spot_angle = 20.74781
+
+[node name="Piedistallo_Enigma" parent="Oggetti" unique_id=499115068 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(1.3926437, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.226215, 1.2033126, 14.098101)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_Enigma" unique_id=412201017]
+transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
+light_color = Color(1, 1, 0, 1)
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 0.97905385
+spot_angle = 20.74781
+
+[node name="Piedistallo_lorenz" parent="Oggetti" unique_id=247100733 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(-5.8077973e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.3286692, 0, -1.1849962e-07, -38.43018, 1.1900164, 19.187424)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_lorenz" unique_id=279593097]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
 light_color = Color(1, 1, 0, 1)
 shadow_enabled = true
