@@ -613,7 +613,7 @@ transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -38.71391, 1.9532733, 18.99538)
 
 [node name="Meshy_AI_Cifrario_di_Vigenère_0205072344_texture" parent="Oggetti" unique_id=799144937 instance=ExtResource("25_kp5il")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.344816, 0.96880424, 0)
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, -9.344816, 0.9376848, 0)
 
 [node name="Meshy_AI_Enigma_Machine_0212071927_texture2" parent="Oggetti" unique_id=99207490 instance=ExtResource("24_yvbty")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.898243, 1.6765962, 14.279826)
@@ -645,7 +645,7 @@ text = "Cifrario di Cesare
 50 a.C."
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture7" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.8536005, 1.1300673, -2.3041792)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.870237, 0.6065061, -0.024199486)
 
 [node name="Meshy_AI_Rectangular_wooden_se_0509231500_texture8" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -14.70923)
@@ -669,6 +669,17 @@ transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
 text = "Scitala Spartana
 V secolo a.C."
+
+[node name="Piedistallo_vigenere" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
+transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -9.36028, 1.2001865, -0.0027570724)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_vigenere" unique_id=342298111]
+transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
+light_color = Color(1, 1, 0, 1)
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 0.97905385
+spot_angle = 20.74781
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
