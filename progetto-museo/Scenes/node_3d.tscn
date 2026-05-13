@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
+[ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -713,6 +714,51 @@ shadow_enabled = true
 distance_fade_enabled = true
 spot_range = 0.97905385
 spot_angle = 20.74781
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture" parent="Oggetti" unique_id=1644019454 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.0331073, 0.71625465, 14.488248)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture2" parent="Oggetti" unique_id=1548449418 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 10.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture3" parent="Oggetti" unique_id=202678935 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 12.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture4" parent="Oggetti" unique_id=2090746833 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 8.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture5" parent="Oggetti" unique_id=903118854 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 4.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture6" parent="Oggetti" unique_id=155500898 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 6.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture7" parent="Oggetti" unique_id=1666416630 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 2.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture8" parent="Oggetti" unique_id=370452655 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -1.4879999)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture9" parent="Oggetti" unique_id=1883800210 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 0.48799992)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture10" parent="Oggetti" unique_id=92979771 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -3.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture11" parent="Oggetti" unique_id=809310128 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -7.487999)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture12" parent="Oggetti" unique_id=2138221355 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -5.488)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture13" parent="Oggetti" unique_id=773042324 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -9.487999)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture14" parent="Oggetti" unique_id=830923438 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -11.487999)
+
+[node name="Meshy_AI_Stanchion_barrier_pos_0211095332_texture15" parent="Oggetti" unique_id=1818342745 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6052117, 0.958, -12.097275)
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
