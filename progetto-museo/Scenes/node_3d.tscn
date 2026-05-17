@@ -117,6 +117,10 @@ size = Vector3(20, 0.2, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_m2rse"]
 size = Vector3(20, 0.2, 40)
 
+[sub_resource type="BoxMesh" id="BoxMesh_8ljg1"]
+material = SubResource("StandardMaterial3D_worak")
+size = Vector3(20, 0.2, 40)
+
 [sub_resource type="BoxMesh" id="BoxMesh_rl1jb"]
 size = Vector3(0.2, 4, 40)
 
@@ -317,7 +321,7 @@ mesh = SubResource("BoxMesh_062e5_alt")
 shape = SubResource("BoxShape3D_m2rse_alt")
 
 [node name="Corridor_EndWall" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=536955163]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.153412, 22)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 22)
 mesh = SubResource("BoxMesh_rl1jb_alt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Corridor/Corridor_EndWall" unique_id=1508405499]
@@ -345,6 +349,15 @@ mesh = SubResource("BoxMesh_062e5")
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_left/Floor/Floor" unique_id=1674830633]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_left/Floor/Floor/StaticBody3D" unique_id=1595651951]
+shape = SubResource("BoxShape3D_m2rse")
+
+[node name="Floor2" type="MeshInstance3D" parent="Room_left/Floor" unique_id=2012853710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.571, 4, 0.113)
+mesh = SubResource("BoxMesh_8ljg1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room_left/Floor/Floor2" unique_id=786027516]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_left/Floor/Floor2/StaticBody3D" unique_id=425836932]
 shape = SubResource("BoxShape3D_m2rse")
 
 [node name="Wall_weast" type="MeshInstance3D" parent="Room_left" unique_id=679165374]
@@ -492,10 +505,23 @@ shape = SubResource("BoxShape3D_nivdu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.025122)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights" unique_id=2087547349]
-transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, 0, 0, 0)
+transform = Transform3D(0.99999994, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 3.5, -7)
+light_energy = 0.3
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="Lights" unique_id=1730043269]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 3.5, 7)
+light_energy = 0.3
+sky_mode = 1
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="Lights" unique_id=578407106]
-transform = Transform3D(0.7071068, -0.5, 0.5, 0, 0.7071068, 0.70710677, -0.7071068, -0.5, 0.5, -40, -0.013241768, 0)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -40, 3.5, 7)
+light_energy = 0.3
+sky_mode = 1
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="Lights" unique_id=6820691]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -40, 3.5, -7)
+light_energy = 0.3
 sky_mode = 1
 
 [node name="Player" type="Node3D" parent="." unique_id=141625243]
@@ -588,12 +614,11 @@ transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 9.377521, 1.3744199, -1
 transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -0.0009689331, -0.28516304, -0.0027570724)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Scitala_Spartana/Piedistallo" unique_id=483809142]
-transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
-light_color = Color(1, 1, 0, 1)
-shadow_enabled = true
+transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -7.342853e-09, 0, 1.1350838, 0)
 distance_fade_enabled = true
-spot_range = 0.97905385
-spot_angle = 20.74781
+spot_range = 1.4205228
+spot_angle = 53.445713
+spot_angle_attenuation = 0.03589684
 
 [node name="Billboard" parent="Oggetti/Scitala_Spartana" unique_id=215170347 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-3.885457e-08, 0, 0.88888896, 0, 0.88888896, 0, -0.88888896, 0, -3.885457e-08, -0.5406771, -0.8378208, -0.015929222)
@@ -780,7 +805,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1044251126]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1242323537]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
