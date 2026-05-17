@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://74j0fcekrtml"
-path="res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb-add0d54e2d4f67fd9ca7a23d57d96630.scn"
+path="res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb-d822c29e3dd39366859f69257edf297e.scn"
 
 [deps]
 
-source_file="res://Oggetti/Lorenz SZ 4042/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb-add0d54e2d4f67fd9ca7a23d57d96630.scn"]
+source_file="res://Oggetti/MacchinaCifrario/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb-d822c29e3dd39366859f69257edf297e.scn"]
 
 [params]
 

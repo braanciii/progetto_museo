@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dso4i43l4c1cg"
-path.s3tc="res://.godot/imported/Meshy_AI_Big_Red_Button_0409070032_texture_1.jpg-baa0a6787c22922ba5470f82b161e708.s3tc.ctex"
+uid="uid://d1kq2s0rc3dv3"
+path.s3tc="res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture_0.jpg-6d8b14a57654fcb29968b00e83046fca.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "6ab1d1c71adc51effedd22a577f17ce8"
+"md5": "2611c21f9c70d897f2d787347c4ba272"
 }
 
 [deps]
 
-source_file="res://Arredamento/bottone/Meshy_AI_Big_Red_Button_0409070032_texture_1.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Big_Red_Button_0409070032_texture_1.jpg-baa0a6787c22922ba5470f82b161e708.s3tc.ctex"]
+source_file="res://Arredamento/candelabbro/Meshy_AI_Hanukkah_Menorah_0318093754_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture_0.jpg-6d8b14a57654fcb29968b00e83046fca.s3tc.ctex"]
 
 [params]
 

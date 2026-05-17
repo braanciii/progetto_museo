@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddwlug2i33mc6"
-path.s3tc="res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg-94088005a01f9ad8de292ba6966dfa15.s3tc.ctex"
+path.s3tc="res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg-b889b642529f610ecf023894a9fe7620.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://Arredamento/candelabro/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg-94088005a01f9ad8de292ba6966dfa15.s3tc.ctex"]
+source_file="res://Arredamento/candelabbro/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318095459_texture_0.jpg-b889b642529f610ecf023894a9fe7620.s3tc.ctex"]
 
 [params]
 
