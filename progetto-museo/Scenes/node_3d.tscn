@@ -638,37 +638,59 @@ visible = false
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 9.834744, 2.2870557, -14.189276)
 
 [node name="CifrarioAlberti" parent="Oggetti" unique_id=166922360 instance=ExtResource("24_kp5il")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.279877, 2.3213565, -19.800636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.431087, 2.3213565, -19.800636)
 
 [node name="TrasposizioneMeccanica" parent="Oggetti" unique_id=568361500 instance=ExtResource("25_52o0n")]
-transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.1762884, -14.748425)
+transform = Transform3D(1, 0, 0, 0, 2.7368598, 0, 0, 0, 2.5603151, -49.75917, 2.1762884, -2.7222948)
 
 [node name="Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture2" parent="Oggetti" unique_id=512615149 instance=ExtResource("22_52o0n")]
-transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, -38.391106, 1.6128151, 19.177343)
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -49.25533, 1.6128151, 14.825274)
 
 [node name="CifrarioVignere" parent="Oggetti" unique_id=799144937 instance=ExtResource("25_kp5il")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, -9.344816, 0.9376848, 0)
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -33.762775, 0.9376848, -19.326492)
 
 [node name="EnigmaMachine" parent="Oggetti" unique_id=99207490 instance=ExtResource("24_yvbty")]
-transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, -49.237286, 1.5293003, 14.059423)
+transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, -49.237286, 1.5293003, 5.299279)
 
 [node name="CifrarioMonoalfabeticoMedievale" parent="Oggetti" unique_id=206968373 instance=ExtResource("25_ugn1w")]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.60134506, 2.5017028, -19.837173)
 
 [node name="PlayFair" parent="Oggetti" unique_id=1167949815 instance=ExtResource("26_ugn1w")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -43.544827, 1.3893263, -19.229603)
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, -49.19143, 1.3893263, -11.100409)
 
 [node name="CartelloLegno1" parent="Oggetti" unique_id=1326165383 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5802851, 0.8248122, -19.796152)
 
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno1" unique_id=860866459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005437732, 0.01085639, 0.042808533)
+pixel_size = 0.0045
+text = "Cifrario monoalfabetico
+medievale
+VIII secolo"
+
 [node name="CartelloLegno2" parent="Oggetti" unique_id=1171426455 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.261776, 0.7539542, -19.796152)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.412987, 0.7539542, -19.796152)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno2" unique_id=237970727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+text = "Cifrario di Alberti
+1467"
 
 [node name="CartelloLegno3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.647022, 0.67265093, -18.511366)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.4942, 0.6460408, -11.044806)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno3" unique_id=756182732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+text = "Cifrario di Playfair
+1854"
 
 [node name="CartelloLegno4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.77939296, -14.182707)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno4" unique_id=1560718417]
+transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
+text = "Cifrario di AL Kindi
+IX secolo"
 
 [node name="CartelloLegno5" parent="Oggetti" unique_id=1632050831 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.79652727, 17.773315)
@@ -679,19 +701,41 @@ text = "Cifrario di Cesare
 50 a.C."
 
 [node name="CartelloLegno6" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.870237, 0.6065061, -0.024199486)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.778854, 0.6065061, -18.818802)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno6" unique_id=1147612625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+text = "Cifrario di Vigenère
+1586"
 
 [node name="CartelloLegno7" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -14.70923)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -2.6831007)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno7" unique_id=791410288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+pixel_size = 0.0045
+text = "Cifrario a trasposizione
+meccanica
+XX secolo"
 
 [node name="CartelloLegno8" parent="Oggetti" unique_id=1903760359 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.57335, 0.6329392, 14.012581)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.57335, 0.6329392, 5.318186)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno8" unique_id=1128757700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+text = "Enigma machine
+1918"
 
 [node name="CartelloLegno9" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.39613, 0.6046903, 18.579264)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.6451, 0.60936856, 14.80568)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno9" unique_id=1697733659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
+text = "Cifrario di Lorenz
+1942"
 
 [node name="Oro1" parent="Oggetti" unique_id=1225743416 instance=ExtResource("28_tw2p7")]
-transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.3434411, -27.1, 1.177, -1.649)
+transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.3434411, -27.1, 1.177, -2.163621)
 
 [node name="Oro2" parent="Oggetti" unique_id=1788517010 instance=ExtResource("28_tw2p7")]
 transform = Transform3D(1.5867066, 0, -1.2175229, 0, 2, 0, 1.2175229, 0, 1.5867066, -12.459, 1.1769813, -1.9560003)
@@ -705,7 +749,7 @@ text = "Scitala Spartana
 V secolo a.C."
 
 [node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
-transform = Transform3D(-6.3200496e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.4458588, 0, -1.1849962e-07, -43.594593, 1.2001865, -19.174902)
+transform = Transform3D(1.4458588, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.159824, 1.2001867, -11.059715)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_playfair" unique_id=342298111]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
@@ -716,7 +760,7 @@ spot_range = 0.97905385
 spot_angle = 20.74781
 
 [node name="Piedistallo_vigenere" parent="Oggetti" unique_id=1774181845 instance=ExtResource("28_8ms6x")]
-transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -9.384973, 1.1770064, -0.0027570724)
+transform = Transform3D(-4.856821e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.1111112, 0, -1.1849962e-07, -33.76512, 1.1770064, -19.368912)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_vigenere" unique_id=1514175371]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
@@ -727,7 +771,7 @@ spot_range = 0.97905385
 spot_angle = 20.74781
 
 [node name="Piedistallo_Enigma" parent="Oggetti" unique_id=499115068 instance=ExtResource("28_8ms6x")]
-transform = Transform3D(1.3926437, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.226215, 1.2033126, 14.098101)
+transform = Transform3D(1.3926437, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.226215, 1.2033126, 5.3379564)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_Enigma" unique_id=412201017]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
@@ -738,7 +782,7 @@ spot_range = 0.97905385
 spot_angle = 20.74781
 
 [node name="Piedistallo_lorenz" parent="Oggetti" unique_id=247100733 instance=ExtResource("28_8ms6x")]
-transform = Transform3D(-5.8077973e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.3286692, 0, -1.1849962e-07, -38.43018, 1.1900164, 19.187424)
+transform = Transform3D(1.3286692, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.268135, 1.1900164, 14.835355)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_lorenz" unique_id=279593097]
 transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
@@ -842,7 +886,7 @@ punto_spawn = NodePath("../PuntoSpawnLettere")
 terminale = NodePath("../TerminaleParola")
 
 [node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, 5.0718145)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, 0.4434936)
 
 [node name="TerminaleParola" parent="." unique_id=131578165 node_paths=PackedStringArray("giocatore") instance=ExtResource("24_odfm3")]
 transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)
@@ -857,7 +901,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=903430332]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1203310125]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
