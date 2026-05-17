@@ -557,22 +557,22 @@ transform = Transform3D(5, 0, 0, 0, 3.7, 0, 0, 0, 3.7, -20, 2, -5.211205)
 mesh = SubResource("QuadMesh_1vwyg")
 surface_material_override/0 = SubResource("StandardMaterial3D_ahc04")
 
-[node name="Meshy_AI_Wooden_Reception_Desk_0128094106_texture" parent="Arredamento" unique_id=2009538211 instance=ExtResource("11_cb6ip")]
+[node name="TavoloRicevimento" parent="Arredamento" unique_id=2009538211 instance=ExtResource("11_cb6ip")]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -6.4017167, 0.60297936, 6.023865)
 
-[node name="Meshy_AI_g_0211093445_texture" parent="Arredamento" unique_id=968966929 instance=ExtResource("13_1vwyg")]
+[node name="Guardia" parent="Arredamento" unique_id=968966929 instance=ExtResource("13_1vwyg")]
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -6.099777, 0.89757836, 7.667939)
 
-[node name="Meshy_AI_Chesterfield_Elegance_0128093337_texture" parent="Arredamento" unique_id=2098508132 instance=ExtResource("14_062e5")]
+[node name="Divano" parent="Arredamento" unique_id=2098508132 instance=ExtResource("14_062e5")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -3.7319002, 0.42260212, 9.532663)
 
-[node name="Meshy_AI_macchinetta_snack_0212075151_texture" parent="Arredamento" unique_id=753051512 instance=ExtResource("15_m2rse")]
+[node name="MacchinaSnack" parent="Arredamento" unique_id=753051512 instance=ExtResource("15_m2rse")]
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -2.1541624, 0.896796, 9.610633)
 
-[node name="Meshy_AI_Red_Fire_Extinguisher_0212074614_texture" parent="Arredamento" unique_id=1277226559 instance=ExtResource("16_rl1jb")]
+[node name="Estintore" parent="Arredamento" unique_id=1277226559 instance=ExtResource("16_rl1jb")]
 transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -4.886006, 1.3876197, 5.0959454)
 
-[node name="security metal detector arch 3d model" parent="Arredamento" unique_id=2049384561 instance=ExtResource("17_58eop")]
+[node name="MetalDetector" parent="Arredamento" unique_id=2049384561 instance=ExtResource("17_58eop")]
 transform = Transform3D(-8.742278e-08, 0, 4, 0, 2, 0, -2, 0, -1.7484555e-07, 0, 1.0981536, 9.300596)
 
 [node name="Oggetti" type="Node3D" parent="." unique_id=1921975652]
