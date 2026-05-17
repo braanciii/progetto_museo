@@ -468,7 +468,7 @@ physics_material_override = SubResource("PhysicsMaterial_cb6ip")
 shape = SubResource("BoxShape3D_062e5")
 
 [node name="Corridor_south_wall_north" type="MeshInstance3D" parent="Corridor_south" unique_id=441584754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, -5.33)
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, -25.87594, 2, -5.33)
 mesh = SubResource("BoxMesh_m2rse")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_wall_north" unique_id=397648919]
@@ -478,6 +478,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3, 0, 0)
 shape = SubResource("BoxShape3D_rl1jb")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Corridor_south/Corridor_south_wall_north/StaticBody3D" unique_id=841121717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3, 0, 0)
+shape = SubResource("BoxShape3D_kp5il")
+debug_color = Color(0.8490715, 0.0009241104, 0.9035326, 0.41960785)
+
+[node name="Corridor_south_wall_north2" type="MeshInstance3D" parent="Corridor_south" unique_id=641500923]
+transform = Transform3D(0.4, 0, 0, 0, 1, 0, 0, 0, 1, -14.013402, 2, -5.33)
+mesh = SubResource("BoxMesh_m2rse")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_wall_north2" unique_id=176530805]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_wall_north2/StaticBody3D" unique_id=171779665]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3, 0, 0)
+shape = SubResource("BoxShape3D_rl1jb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Corridor_south/Corridor_south_wall_north2/StaticBody3D" unique_id=530462813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.3, 0, 0)
 shape = SubResource("BoxShape3D_kp5il")
 debug_color = Color(0.8490715, 0.0009241104, 0.9035326, 0.41960785)
