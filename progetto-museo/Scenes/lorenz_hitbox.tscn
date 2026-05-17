@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://pd4aue8irvu2"]
 
-[ext_resource type="PackedScene" uid="uid://74j0fcekrtml" path="res://Oggetti/Lorenz SZ 4042/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb" id="1_b43uh"]
+[ext_resource type="PackedScene" uid="uid://74j0fcekrtml" path="res://Oggetti/MacchinaCifrario/Meshy_AI_Lorenz_Cipher_Machine_0210082804_texture.glb" id="1_b43uh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_at8tb"]
 size = Vector3(2.284729, 1.8744812, 2.0945892)
