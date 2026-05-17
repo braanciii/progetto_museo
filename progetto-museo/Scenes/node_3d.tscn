@@ -344,7 +344,7 @@ mesh = SubResource("BoxMesh_062e5_alt")
 shape = SubResource("BoxShape3D_m2rse_alt")
 
 [node name="Corridor_EndWall" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=536955163]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 22)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.153412, 22)
 mesh = SubResource("BoxMesh_rl1jb_alt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Corridor/Corridor_EndWall" unique_id=1508405499]
@@ -841,7 +841,7 @@ shape = SubResource("BoxShape3D_4wftv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
 multimesh = SubResource("MultiMesh_edoog")
 script = ExtResource("32_f528r")
-area_size = Vector2(10, 10)
+area_size = Vector2(1, 1)
 density = 1.0
 
 [node name="erba" parent="Floor2" unique_id=829614343 instance=ExtResource("32_edoog")]
