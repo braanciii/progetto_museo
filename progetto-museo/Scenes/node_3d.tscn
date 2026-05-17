@@ -36,6 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
 [ext_resource type="Script" uid="uid://btk55jxjl7uyv" path="res://Scenes/grass_field.gd" id="32_f528r"]
 [ext_resource type="PackedScene" uid="uid://dupmnf5e4cguw" path="res://esterno/Giardino/cespuglio/cespuglio.glb" id="36_j3itv"]
+[ext_resource type="PackedScene" uid="uid://c018sg0bigbuv" path="res://esterno/Giardino/pozzo/Meshy_AI_Pozzo_0212080349_texture.glb" id="37_28k2w"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -1082,6 +1083,9 @@ transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, -88.23044, 6.9353275, 76.4
 
 [node name="cespuglio53" parent="." unique_id=238643701 instance=ExtResource("36_j3itv")]
 transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 29.862137, 6.9353275, 76.46045)
+
+[node name="Meshy_AI_Pozzo_0212080349_texture" parent="." unique_id=1096997971 instance=ExtResource("37_28k2w")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -72.95168, 1.2739363, 40.46566)
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]
