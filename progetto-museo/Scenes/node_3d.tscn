@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
 [ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
+[ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -818,6 +819,22 @@ grow_vertical = 2
 mouse_filter = 2
 mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
+
+[node name="Floor2" type="MeshInstance3D" parent="." unique_id=40777792]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 5, -28.244534, -2.9500504, -10)
+material_override = SubResource("StandardMaterial3D_58eop")
+mesh = SubResource("BoxMesh_vkdvt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor2" unique_id=1072589958]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2/StaticBody3D" unique_id=994878710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
+shape = SubResource("BoxShape3D_4wftv")
+
+[node name="erba" parent="." unique_id=2107452954 instance=ExtResource("32_edoog")]
+
+[node name="erba2" parent="." unique_id=2088025897 instance=ExtResource("32_edoog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.61521, -1.9267578, 58.20628)
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]

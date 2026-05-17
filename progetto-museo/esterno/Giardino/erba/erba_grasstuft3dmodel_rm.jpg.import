@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dy5ktunlt2h4m"
-path.s3tc="res://.godot/imported/erba_grasstuft3dmodel_normal.jpg-4aeb93f29b3105f17977e1a7a3f3291f.s3tc.ctex"
+uid="uid://cs6vuvvn5rbsw"
+path.s3tc="res://.godot/imported/erba_grasstuft3dmodel_rm.jpg-1ff33001c9add25bf775ef7d072a1291.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "3fe338db15b75ce16465d8eda3bfc1ef"
+"md5": "6e27da25ed4278f3c11f6f56d8fc6e93"
 }
 
 [deps]
 
-source_file="res://esterno/Giardino/erba/erba_grasstuft3dmodel_normal.jpg"
-dest_files=["res://.godot/imported/erba_grasstuft3dmodel_normal.jpg-4aeb93f29b3105f17977e1a7a3f3291f.s3tc.ctex"]
+source_file="res://esterno/Giardino/erba/erba_grasstuft3dmodel_rm.jpg"
+dest_files=["res://.godot/imported/erba_grasstuft3dmodel_rm.jpg-1ff33001c9add25bf775ef7d072a1291.s3tc.ctex"]
 
 [params]
 
@@ -25,12 +25,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://esterno/Giardino/erba/erba_grasstuft3dmodel_normal.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
