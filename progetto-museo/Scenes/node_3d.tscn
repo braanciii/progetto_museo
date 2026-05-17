@@ -31,7 +31,9 @@
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
 [ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
+[ext_resource type="ArrayMesh" uid="uid://cwclww10ac30u" path="res://esterno/Giardino/erba/new_array_mesh.tres" id="32_e0x74"]
 [ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
+[ext_resource type="Script" uid="uid://btk55jxjl7uyv" path="res://Scenes/grass_field.gd" id="32_f528r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -215,6 +217,10 @@ height = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
+
+[sub_resource type="MultiMesh" id="MultiMesh_edoog"]
+transform_format = 1
+mesh = ExtResource("32_e0x74")
 
 [node name="Node3D" type="Node3D" unique_id=1149556530]
 script = ExtResource("1_7q7q3")
@@ -831,10 +837,15 @@ mesh = SubResource("BoxMesh_vkdvt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
 
-[node name="erba" parent="." unique_id=2107452954 instance=ExtResource("32_edoog")]
+[node name="GrassField" type="MultiMeshInstance3D" parent="Floor2" unique_id=1134051189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
+multimesh = SubResource("MultiMesh_edoog")
+script = ExtResource("32_f528r")
+area_size = Vector2(100, 100)
+density = 20.0
 
-[node name="erba2" parent="." unique_id=2088025897 instance=ExtResource("32_edoog")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.61521, -1.9267578, 58.20628)
+[node name="erba" parent="Floor2" unique_id=829614343 instance=ExtResource("32_edoog")]
+transform = Transform3D(0.125, 0, 0, 0, 0.125, 0, 0, 0, 0.2, -4.0692067, 0.12791061, 10.564809)
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]
