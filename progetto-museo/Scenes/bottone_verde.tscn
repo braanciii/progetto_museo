@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cg8e55ysgxgd4"]
 
-[ext_resource type="PackedScene" uid="uid://b76iqt2e6x2iu" path="res://Arredamento/buttone4/Meshy_AI_bottone_amin_0409064529_texture.glb" id="1_yc5yv"]
+[ext_resource type="PackedScene" uid="uid://b76iqt2e6x2iu" path="res://Arredamento/bottone/Meshy_AI_bottone_amin_0409064529_texture.glb" id="1_yc5yv"]
 [ext_resource type="Script" uid="uid://do41p02x864vy" path="res://Scenes/static_body_3d.gd" id="2_frsqh"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_frsqh"]

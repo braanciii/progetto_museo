@@ -830,25 +830,25 @@ mouse_filter = 2
 mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
 
-[node name="Floor2" type="MeshInstance3D" parent="." unique_id=40777792]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 5, -28.38659, -1.0310197, -10)
+[node name="Floor_esterno" type="MeshInstance3D" parent="." unique_id=40777792]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 5, -28.386772, -0.96077967, -10.0713625)
 material_override = SubResource("StandardMaterial3D_58eop")
 mesh = SubResource("BoxMesh_vkdvt")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Floor2" unique_id=1072589958]
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor_esterno" unique_id=1072589958]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2/StaticBody3D" unique_id=994878710]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor_esterno/StaticBody3D" unique_id=994878710]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
 
-[node name="GrassField" type="MultiMeshInstance3D" parent="Floor2" unique_id=1134051189]
+[node name="GrassField" type="MultiMeshInstance3D" parent="Floor_esterno" unique_id=1134051189]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
 multimesh = SubResource("MultiMesh_edoog")
 script = ExtResource("32_f528r")
 area_size = Vector2(1, 1)
 density = 1.0
 
-[node name="erba" parent="Floor2" unique_id=829614343 instance=ExtResource("32_edoog")]
+[node name="erba" parent="Floor_esterno" unique_id=829614343 instance=ExtResource("32_edoog")]
 transform = Transform3D(0.125, 0, 0, 0, 0.125, 0, 0, 0, 0.2, -4.0692067, 0.12791061, 10.564809)
 
 [editable path="TerminaleParola"]
