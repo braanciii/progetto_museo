@@ -767,11 +767,23 @@ punto_spawn = NodePath("../PuntoSpawnLettere")
 terminale = NodePath("../TerminaleParola")
 
 [node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, -6.308674)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, 5.0718145)
 
 [node name="TerminaleParola" parent="." unique_id=131578165 node_paths=PackedStringArray("giocatore") instance=ExtResource("24_odfm3")]
 transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)
 giocatore = NodePath("../Player/DesktopPlayer")
+
+[node name="MeshInstance3D" parent="TerminaleParola" index="0" unique_id=1622961825]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.51639, 1.0061882, -2.7644782)
+
+[node name="CollisionShape3D" parent="TerminaleParola" index="1" unique_id=825608241]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.51639, 1.0061882, -2.7644782)
+
+[node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
+
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1044251126]
+transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
 
