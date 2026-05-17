@@ -749,49 +749,91 @@ spot_range = 0.97905385
 spot_angle = 20.74781
 
 [node name="Barriera1" parent="Oggetti" unique_id=1644019454 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.0331073, 0.71625465, 14.488248)
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 14.488248)
 
-[node name="Barriera2" parent="Oggetti" unique_id=1548449418 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 10.488)
+[node name="Barriera2" parent="Oggetti" unique_id=1197118354 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 13.470221)
 
-[node name="Barriera3" parent="Oggetti" unique_id=202678935 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 12.488)
+[node name="Barriera3" parent="Oggetti" unique_id=787545728 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 12.437563)
 
-[node name="Barriera4" parent="Oggetti" unique_id=2090746833 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 8.488)
+[node name="Barriera4" parent="Oggetti" unique_id=1320362842 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 11.44317)
 
-[node name="Barriera5" parent="Oggetti" unique_id=903118854 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 4.488)
+[node name="Barriera5" parent="Oggetti" unique_id=1029760663 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 10.425142)
 
-[node name="Barriera6" parent="Oggetti" unique_id=155500898 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 6.488)
+[node name="Barriera6" parent="Oggetti" unique_id=187799325 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 9.392485)
 
-[node name="Barriera7" parent="Oggetti" unique_id=1666416630 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 2.488)
+[node name="Barriera7" parent="Oggetti" unique_id=939861158 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 8.38797)
 
-[node name="Barriera8" parent="Oggetti" unique_id=370452655 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -1.4879999)
+[node name="Barriera8" parent="Oggetti" unique_id=1636844715 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 7.369943)
 
-[node name="Barriera9" parent="Oggetti" unique_id=1883800210 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, 0.48799992)
+[node name="Barriera9" parent="Oggetti" unique_id=1259207917 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 6.3372855)
 
-[node name="Barriera10" parent="Oggetti" unique_id=92979771 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -3.488)
+[node name="Barriera10" parent="Oggetti" unique_id=1119378407 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 5.342892)
 
-[node name="Barriera11" parent="Oggetti" unique_id=809310128 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -7.487999)
+[node name="Barriera11" parent="Oggetti" unique_id=300654252 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 4.324865)
 
-[node name="Barriera12" parent="Oggetti" unique_id=2138221355 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -5.488)
+[node name="Barriera12" parent="Oggetti" unique_id=183472375 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 3.2922072)
 
-[node name="Barriera13" parent="Oggetti" unique_id=773042324 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -9.487999)
+[node name="Barriera13" parent="Oggetti" unique_id=972583699 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 2.3061552)
 
-[node name="Barriera14" parent="Oggetti" unique_id=830923438 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 3.033, 0.71625465, -11.487999)
+[node name="Barriera14" parent="Oggetti" unique_id=506774507 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 1.2881279)
 
-[node name="Barriera15" parent="Oggetti" unique_id=1818342745 instance=ExtResource("29_tw2p7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6052117, 0.958, -12.097275)
+[node name="Barriera15" parent="Oggetti" unique_id=1615082144 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, 0.25547028)
+
+[node name="Barriera16" parent="Oggetti" unique_id=1861121906 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -0.7389231)
+
+[node name="Barriera17" parent="Oggetti" unique_id=255066071 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -1.7569504)
+
+[node name="Barriera18" parent="Oggetti" unique_id=273511263 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -2.789608)
+
+[node name="Barriera19" parent="Oggetti" unique_id=1417717932 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -3.7941227)
+
+[node name="Barriera20" parent="Oggetti" unique_id=2135709920 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -4.812149)
+
+[node name="Barriera21" parent="Oggetti" unique_id=1450549739 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -5.8448067)
+
+[node name="Barriera22" parent="Oggetti" unique_id=1005041323 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -6.839201)
+
+[node name="Barriera23" parent="Oggetti" unique_id=570998333 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -7.8572273)
+
+[node name="Barriera24" parent="Oggetti" unique_id=1570181706 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -8.889885)
+
+[node name="Barriera25" parent="Oggetti" unique_id=310032457 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -9.909023)
+
+[node name="Barriera26" parent="Oggetti" unique_id=39484576 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -10.941681)
+
+[node name="Barriera27" parent="Oggetti" unique_id=2123516386 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -11.936075)
+
+[node name="Barriera28" parent="Oggetti" unique_id=1116790136 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -12.954102)
+
+[node name="Barriera29" parent="Oggetti" unique_id=1579586754 instance=ExtResource("29_tw2p7")]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 3.0331073, 0.5190855, -13.986759)
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
@@ -815,7 +857,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=793482835]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=903430332]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
