@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://jnuer630jpa5"
-path="res://.godot/imported/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb-42bfcf97b6b2a2613fecd45573ed3927.scn"
+path="res://.godot/imported/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb-f83913e990d36a53bf5f8e4b8a2c8328.scn"
 
 [deps]
 
-source_file="res://esterno/Giardino/Piantev1/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb-42bfcf97b6b2a2613fecd45573ed3927.scn"]
+source_file="res://esterno/Giardino/piantaVasi/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Colorful_Potted_Plant_0204094928_texture.glb-f83913e990d36a53bf5f8e4b8a2c8328.scn"]
 
 [params]
 
