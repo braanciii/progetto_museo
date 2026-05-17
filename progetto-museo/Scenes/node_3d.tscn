@@ -31,6 +31,9 @@
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
 [ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
+[ext_resource type="ArrayMesh" uid="uid://cwclww10ac30u" path="res://esterno/Giardino/erba/new_array_mesh.tres" id="32_e0x74"]
+[ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
+[ext_resource type="Script" uid="uid://btk55jxjl7uyv" path="res://Scenes/grass_field.gd" id="32_f528r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_aeo3b")
@@ -218,6 +221,10 @@ height = 1.6
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
 
+[sub_resource type="MultiMesh" id="MultiMesh_edoog"]
+transform_format = 1
+mesh = ExtResource("32_e0x74")
+
 [node name="Node3D" type="Node3D" unique_id=1149556530]
 script = ExtResource("1_7q7q3")
 
@@ -353,7 +360,7 @@ mesh = SubResource("BoxMesh_062e5_alt")
 shape = SubResource("BoxShape3D_m2rse_alt")
 
 [node name="Corridor_EndWall" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=536955163]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 22)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.153412, 22)
 mesh = SubResource("BoxMesh_rl1jb_alt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Corridor/Corridor_EndWall" unique_id=1508405499]
@@ -794,11 +801,23 @@ punto_spawn = NodePath("../PuntoSpawnLettere")
 terminale = NodePath("../TerminaleParola")
 
 [node name="PuntoSpawnLettere" type="Marker3D" parent="." unique_id=555011099]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, -6.308674)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.729184, 1.6971638, 5.0718145)
 
 [node name="TerminaleParola" parent="." unique_id=131578165 node_paths=PackedStringArray("giocatore") instance=ExtResource("24_odfm3")]
 transform = Transform3D(-4.371139e-08, 0.34202012, -0.9396926, 0, 0.9396926, 0.34202012, 1, 1.4950174e-08, -4.1075268e-08, 6.8748884, 0.80982494, 0.5492755)
 giocatore = NodePath("../Player/DesktopPlayer")
+
+[node name="MeshInstance3D" parent="TerminaleParola" index="0" unique_id=1622961825]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.51639, 1.0061882, -2.7644782)
+
+[node name="CollisionShape3D" parent="TerminaleParola" index="1" unique_id=825608241]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.51639, 1.0061882, -2.7644782)
+
+[node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
+transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
+
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1044251126]
+transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
 
@@ -833,6 +852,27 @@ grow_vertical = 2
 mouse_filter = 2
 mouse_behavior_recursive = 2
 color = Color(0.045198135, 0.8156242, 0.7527934, 1)
+
+[node name="Floor2" type="MeshInstance3D" parent="." unique_id=40777792]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 5, -28.244534, -2.9500504, -10)
+material_override = SubResource("StandardMaterial3D_58eop")
+mesh = SubResource("BoxMesh_vkdvt")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor2" unique_id=1072589958]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2/StaticBody3D" unique_id=994878710]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
+shape = SubResource("BoxShape3D_4wftv")
+
+[node name="GrassField" type="MultiMeshInstance3D" parent="Floor2" unique_id=1134051189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
+multimesh = SubResource("MultiMesh_edoog")
+script = ExtResource("32_f528r")
+area_size = Vector2(1, 1)
+density = 1.0
+
+[node name="erba" parent="Floor2" unique_id=829614343 instance=ExtResource("32_edoog")]
+transform = Transform3D(0.125, 0, 0, 0, 0.125, 0, 0, 0, 0.2, -4.0692067, 0.12791061, 10.564809)
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]
