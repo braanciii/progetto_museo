@@ -841,8 +841,8 @@ shape = SubResource("BoxShape3D_4wftv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
 multimesh = SubResource("MultiMesh_edoog")
 script = ExtResource("32_f528r")
-area_size = Vector2(100, 100)
-density = 20.0
+area_size = Vector2(10, 10)
+density = 1.0
 
 [node name="erba" parent="Floor2" unique_id=829614343 instance=ExtResource("32_edoog")]
 transform = Transform3D(0.125, 0, 0, 0, 0.125, 0, 0, 0, 0.2, -4.0692067, 0.12791061, 10.564809)
