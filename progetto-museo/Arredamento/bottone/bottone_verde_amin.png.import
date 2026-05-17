@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3sa3m0anqb6m"
-path="res://.godot/imported/bottone_verde_amin.png-0c2667690ee2d7be6492ee3c18bb0906.ctex"
+path="res://.godot/imported/bottone_verde_amin.png-80ccb618746ee4ddd304666e37f43c7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arredamento/buttone4/bottone_verde_amin.png"
-dest_files=["res://.godot/imported/bottone_verde_amin.png-0c2667690ee2d7be6492ee3c18bb0906.ctex"]
+source_file="res://Arredamento/bottone/bottone_verde_amin.png"
+dest_files=["res://.godot/imported/bottone_verde_amin.png-80ccb618746ee4ddd304666e37f43c7c.ctex"]
 
 [params]
 

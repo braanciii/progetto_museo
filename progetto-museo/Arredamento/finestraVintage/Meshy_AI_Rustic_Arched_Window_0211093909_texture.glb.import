@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://chlic0suvtbe3"
-path="res://.godot/imported/Cartello Età Contemporanea.glb-d53818e166af6329c04b159d11d36440.scn"
+uid="uid://q381r8dyq0wb"
+path="res://.godot/imported/Meshy_AI_Rustic_Arched_Window_0211093909_texture.glb-378aa70d838a1b363ec922d545072938.scn"
 
 [deps]
 
-source_file="res://Arredamento/Cartello età contemporanea/Cartello Età Contemporanea.glb"
-dest_files=["res://.godot/imported/Cartello Età Contemporanea.glb-d53818e166af6329c04b159d11d36440.scn"]
+source_file="res://Arredamento/finestraVintage/Meshy_AI_Rustic_Arched_Window_0211093909_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Rustic_Arched_Window_0211093909_texture.glb-378aa70d838a1b363ec922d545072938.scn"]
 
 [params]
 

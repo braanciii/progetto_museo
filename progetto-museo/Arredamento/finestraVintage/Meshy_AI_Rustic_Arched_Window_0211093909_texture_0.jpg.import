@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fh03k4dxtvyl"
-path.s3tc="res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture_0.jpg-c3c707fbb832669135338153e1bcb1d3.s3tc.ctex"
+uid="uid://2o7h1ciol81n"
+path.s3tc="res://.godot/imported/Meshy_AI_Rustic_Arched_Window_0211093909_texture_0.jpg-e1a09e7e79efb26a10723d06996dfd9d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "70f0efa68abe2de495ba53d708810967"
+"md5": "a1ba7ee38d09d75f94e55c2819d2da46"
 }
 
 [deps]
 
-source_file="res://Arredamento/buttone4/Meshy_AI_bottone_amin_0409064529_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture_0.jpg-c3c707fbb832669135338153e1bcb1d3.s3tc.ctex"]
+source_file="res://Arredamento/finestraVintage/Meshy_AI_Rustic_Arched_Window_0211093909_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI_Rustic_Arched_Window_0211093909_texture_0.jpg-e1a09e7e79efb26a10723d06996dfd9d.s3tc.ctex"]
 
 [params]
 

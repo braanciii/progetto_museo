@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b76iqt2e6x2iu"
-path="res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture.glb-5564287452cd76bc9b54da38425ce624.scn"
+uid="uid://c62ahbejuw8i3"
+path="res://.godot/imported/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb-630d7d284cad2733ed8425e90029c2e3.scn"
 
 [deps]
 
-source_file="res://Arredamento/buttone4/Meshy_AI_bottone_amin_0409064529_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture.glb-5564287452cd76bc9b54da38425ce624.scn"]
+source_file="res://Arredamento/finestraModerna/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI__Finestra_singola_fi_0211231832_texture.glb-630d7d284cad2733ed8425e90029c2e3.scn"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqgebken0ao4y"
-path.s3tc="res://.godot/imported/Meshy_AI_Row_of_Stalls_in_a_Mo_0318093838_texture_0.jpg-5ec91d7c61802aadbd984b0b92c40fa6.s3tc.ctex"
+uid="uid://b6tgif8v210uy"
+path.s3tc="res://.godot/imported/Meshy_AI__Finestra_singola_fi_0211231832_texture_0.jpg-90ae786782c57157a3c0c1092cad7d10.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "92612b2a7a091dd30f76f81b6cfcd5db"
+"md5": "30155c309a0174b4ea5881266731b796"
 }
 
 [deps]
 
-source_file="res://Arredamento/bagni/Meshy_AI_Row_of_Stalls_in_a_Mo_0318093838_texture_0.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_Row_of_Stalls_in_a_Mo_0318093838_texture_0.jpg-5ec91d7c61802aadbd984b0b92c40fa6.s3tc.ctex"]
+source_file="res://Arredamento/finestraModerna/Meshy_AI__Finestra_singola_fi_0211231832_texture_0.jpg"
+dest_files=["res://.godot/imported/Meshy_AI__Finestra_singola_fi_0211231832_texture_0.jpg-90ae786782c57157a3c0c1092cad7d10.s3tc.ctex"]
 
 [params]
 

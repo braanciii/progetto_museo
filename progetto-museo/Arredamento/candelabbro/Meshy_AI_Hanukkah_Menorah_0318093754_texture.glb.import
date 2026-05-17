@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bh6kfh6ns87vg"
-path="res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb-e894e627ccca5aade4cc1ccff3f83f8a.scn"
+path="res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb-a80aec188c578a57bf1d2ed44725ce47.scn"
 
 [deps]
 
-source_file="res://Arredamento/candelabro/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb"
-dest_files=["res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb-e894e627ccca5aade4cc1ccff3f83f8a.scn"]
+source_file="res://Arredamento/candelabbro/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb"
+dest_files=["res://.godot/imported/Meshy_AI_Hanukkah_Menorah_0318093754_texture.glb-a80aec188c578a57bf1d2ed44725ce47.scn"]
 
 [params]
 

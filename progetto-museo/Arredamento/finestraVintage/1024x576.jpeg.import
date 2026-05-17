@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt131ax0qlqhm"
-path.s3tc="res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture_1.jpg-7fbc82c69590ce51bd37cebbb36bf929.s3tc.ctex"
+uid="uid://5bp3aksv2dhp"
+path.s3tc="res://.godot/imported/1024x576.jpeg-703958d45a1bb0fb3845e2097d9f1f5a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "e7a30c04dff74617d0b58df735ed39dc"
-}
 
 [deps]
 
-source_file="res://Arredamento/buttone4/Meshy_AI_bottone_amin_0409064529_texture_1.jpg"
-dest_files=["res://.godot/imported/Meshy_AI_bottone_amin_0409064529_texture_1.jpg-7fbc82c69590ce51bd37cebbb36bf929.s3tc.ctex"]
+source_file="res://Arredamento/finestraVintage/1024x576.jpeg"
+dest_files=["res://.godot/imported/1024x576.jpeg-703958d45a1bb0fb3845e2097d9f1f5a.s3tc.ctex"]
 
 [params]
 
