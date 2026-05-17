@@ -41,6 +41,9 @@ size = Vector3(20, 0.2, 40)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4wftv"]
 size = Vector3(20, 0.2, 40)
 
+[sub_resource type="BoxMesh" id="BoxMesh_tw2p7"]
+size = Vector3(20, 0.2, 40)
+
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
 
@@ -229,6 +232,19 @@ mesh = SubResource("BoxMesh_vkdvt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Floor/StaticBody3D" unique_id=1172082662]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
+shape = SubResource("BoxShape3D_4wftv")
+
+[node name="Floor3" type="MeshInstance3D" parent="Room_right" unique_id=1214294866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -10)
+material_override = SubResource("StandardMaterial3D_58eop")
+mesh = SubResource("BoxMesh_tw2p7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Floor3" unique_id=1013814616]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Floor3/StaticBody3D" unique_id=325861863]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
+visible = false
 shape = SubResource("BoxShape3D_4wftv")
 
 [node name="Floor2" type="MeshInstance3D" parent="Room_right" unique_id=1346932565]
@@ -494,10 +510,19 @@ shape = SubResource("BoxShape3D_nivdu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.025122)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights" unique_id=2087547349]
-transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3, 9)
+light_energy = 0.5
+sky_mode = 1
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="Lights" unique_id=1756303631]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 4, -7)
+light_energy = 0.5
+shadow_reverse_cull_face = true
+sky_mode = 1
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="Lights" unique_id=578407106]
 transform = Transform3D(0.7071068, -0.5, 0.5, 0, 0.7071068, 0.70710677, -0.7071068, -0.5, 0.5, -40, -0.013241768, 0)
+visible = false
 sky_mode = 1
 
 [node name="Player" type="Node3D" parent="." unique_id=141625243]
@@ -590,12 +615,14 @@ transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 9.377521, 1.3744199, -1
 transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -0.0009689331, -0.28516304, -0.0027570724)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Scitala_Spartana/Piedistallo" unique_id=483809142]
-transform = Transform3D(1, 0, 0, 0, -1.7915532e-08, 1, 0, -0.4098596, -4.371139e-08, 0, 0.9233149, 0)
-light_color = Color(1, 1, 0, 1)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.9233149, 0)
+light_size = 1.0
 shadow_enabled = true
 distance_fade_enabled = true
-spot_range = 0.97905385
-spot_angle = 20.74781
+spot_range = 1.244
+spot_attenuation = -1.51
+spot_angle = 73.87
+spot_angle_attenuation = 0.009957481
 
 [node name="Billboard" parent="Oggetti/Scitala_Spartana" unique_id=215170347 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-3.885457e-08, 0, 0.88888896, 0, 0.88888896, 0, -0.88888896, 0, -3.885457e-08, -0.5406771, -0.8378208, -0.015929222)
