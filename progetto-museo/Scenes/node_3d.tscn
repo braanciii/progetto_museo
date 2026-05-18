@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
+[ext_resource type="Script" uid="uid://dat3t4smp3dsr" path="res://Oggetti/cartello/meshy_ai_rectangular_wooden_se_0509231500_texture.gd" id="29_i8p8r"]
 [ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
 [ext_resource type="ArrayMesh" uid="uid://cwclww10ac30u" path="res://esterno/Giardino/erba/new_array_mesh.tres" id="32_e0x74"]
 [ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
@@ -39,6 +40,7 @@
 [ext_resource type="PackedScene" uid="uid://dupmnf5e4cguw" path="res://esterno/Giardino/cespuglio/cespuglio.glb" id="36_j3itv"]
 [ext_resource type="PackedScene" uid="uid://c018sg0bigbuv" path="res://esterno/Giardino/pozzo/Meshy_AI_Pozzo_0212080349_texture.glb" id="37_28k2w"]
 [ext_resource type="PackedScene" uid="uid://cp158ul7o6e0k" path="res://Arredamento/Telecamera/security camera 3d model.glb" id="39_anhy5"]
+[ext_resource type="Script" uid="uid://bbn50g8ullihk" path="res://Scenes/ui.gd" id="40_jh8ph"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -218,6 +220,9 @@ height = 1.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ltyky"]
+size = Vector3(1.9697876, 2.5638428, 1.198761)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_8ljg1")
@@ -679,11 +684,18 @@ IX secolo"
 
 [node name="CartelloLegno5" parent="Oggetti" unique_id=1632050831 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.79652727, 17.773315)
+script = ExtResource("29_i8p8r")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno5" unique_id=897835905]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
 text = "Cifrario di Cesare
 50 a.C."
+
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno5" unique_id=730414332]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno5/Area3D" unique_id=1229871333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016998291, 0.4406128, -0.42933655)
+shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno6" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.778854, 0.6065061, -18.818802)
@@ -886,7 +898,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=392408735]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=1203310125]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
@@ -1180,6 +1192,51 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -72.95168, 1.2739363, 40.4656
 
 [node name="security camera 3d model" parent="." unique_id=1582071266 instance=ExtResource("39_anhy5")]
 transform = Transform3D(0.3856726, 0.22981334, -0.39804837, 0, 0.51961523, 0.3, 0.45962667, -0.1928363, 0.33400226, -1.3191822, 3.4887724, 10.070625)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1129610088]
+script = ExtResource("40_jh8ph")
+
+[node name="Panel" type="Panel" parent="UI" unique_id=550524469]
+visible = false
+custom_minimum_size = Vector2(700, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -200.0
+offset_right = 350.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="UI/Panel" unique_id=939418791]
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 49.0
+text = "Titolo
+	"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description" type="RichTextLabel" parent="UI/Panel" unique_id=1049895179]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 699.0
+offset_bottom = 400.0
+text = "Decrizione del cifrario..."
+horizontal_alignment = 1
+
+[node name="CloseButton" type="Button" parent="UI/Panel" unique_id=154179960]
+layout_mode = 0
+offset_left = 681.0
+offset_right = 699.0
+offset_bottom = 31.0
+text = "X"
+
+[connection signal="body_entered" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_exited"]
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]
