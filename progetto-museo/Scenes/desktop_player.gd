@@ -15,6 +15,7 @@ var is_flying = false             # Stato del volo
 var yaw := 0.0
 var pitch := 0.0
 
+@onready var ui_hint = $UIHint
 @onready var cam: Camera3D = $Camera3D
 
 func _ready():
@@ -103,3 +104,6 @@ func _process(delta):
 	if Input.is_action_pressed("zoom"):
 		target_fov = zoom_fov
 	cam.fov = lerp(cam.fov, target_fov, zoom_speed * delta)
+	
+func show_prompt(value: bool):
+	ui_hint.visible = value
