@@ -227,8 +227,38 @@ height = 1.6
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahc04"]
 albedo_texture = ExtResource("12_vudi7")
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_2e31y"]
+size = Vector3(2.0683594, 1.1798096, 0.59765625)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_po56r"]
+size = Vector3(2.08844, 1, 0.8083496)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tnq4a"]
+size = Vector3(2.0733643, 1, 1.111206)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_navl6"]
+size = Vector3(2.1674805, 1, 0.8499756)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ltyky"]
-size = Vector3(6.8161697, 4.493553, 5.754105)
+size = Vector3(2.193314, 1.1115599, 0.835196)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xquve"]
+size = Vector3(1.9876099, 1, 1.3631592)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pam7q"]
+size = Vector3(2.0552979, 1, 0.7869873)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4dhj3"]
+size = Vector3(1.9976807, 1, 1.0909424)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tee0j"]
+size = Vector3(2.09964, 1, 1.2336426)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_idlc8"]
+size = Vector3(1.9802246, 1, 1.1843262)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rpwmr"]
+size = Vector3(6.304718, 3.3411865, 6.9988556)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_8ljg1")
@@ -825,12 +855,11 @@ text = "Cifrario monoalfabetico
 medievale
 VIII secolo"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno1" unique_id=513866067]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5604515)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno1" unique_id=1655922562]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno1/Area3D" unique_id=1141548662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.9912853)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno1/Area3D" unique_id=1462490962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0009765625, -0.15081787, 0.20117188)
+shape = SubResource("BoxShape3D_2e31y")
 
 [node name="CartelloLegno2" parent="Oggetti" unique_id=1171426455 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.412987, 0.7539542, -19.796152)
@@ -841,12 +870,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 
 text = "Cifrario di Alberti
 1467"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno2" unique_id=157742604]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1279507)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno2" unique_id=40454977]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno2/Area3D" unique_id=1536979107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.91225433)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno2/Area3D" unique_id=1503668877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03793335, 0, 0.14489746)
+shape = SubResource("BoxShape3D_po56r")
 
 [node name="CartelloLegno3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.4942, 0.6460408, -11.044806)
@@ -857,12 +885,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 
 text = "Cifrario di Playfair
 1854"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno3" unique_id=1921965621]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.029705)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno3" unique_id=1905748551]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno3/Area3D" unique_id=2006517904]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.77272415)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno3/Area3D" unique_id=89997163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.01373291, 0, 0.055603027)
+shape = SubResource("BoxShape3D_tnq4a")
 
 [node name="CartelloLegno4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.77939296, -14.182707)
@@ -873,11 +900,11 @@ transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.0
 text = "Cifrario di AL Kindi
 IX secolo"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno4" unique_id=1248142892]
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno4" unique_id=185364142]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno4/Area3D" unique_id=1244564213]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno4/Area3D" unique_id=2034018775]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0031738281, 0, -0.20489502)
+shape = SubResource("BoxShape3D_navl6")
 
 [node name="CartelloLegno5" parent="Oggetti" unique_id=1632050831 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.79652727, 17.773315)
@@ -891,7 +918,7 @@ text = "Cifrario di Cesare
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno5" unique_id=730414332]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno5/Area3D" unique_id=1229871333]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020021439, -0.087380886, -0.40377522)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno6" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
@@ -903,12 +930,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 
 text = "Cifrario di Vigenère
 1586"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno6" unique_id=1041575711]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.380827)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno6" unique_id=2110574584]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno6/Area3D" unique_id=429134318]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.9653702)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno6/Area3D" unique_id=1141443392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013031006, 0, 0.18157959)
+shape = SubResource("BoxShape3D_xquve")
 
 [node name="CartelloLegno7" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -2.6831007)
@@ -921,12 +947,11 @@ text = "Cifrario a trasposizione
 meccanica
 XX secolo"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno7" unique_id=1438267720]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0454559)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno7" unique_id=1113123115]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno7/Area3D" unique_id=888320682]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno7/Area3D" unique_id=149155246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026184082, 0, 0.17279053)
+shape = SubResource("BoxShape3D_pam7q")
 
 [node name="CartelloLegno8" parent="Oggetti" unique_id=1903760359 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.57335, 0.6329392, 5.318186)
@@ -937,12 +962,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 
 text = "Enigma machine
 1918"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno8" unique_id=518633116]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0340767)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno8" unique_id=1667035982]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno8/Area3D" unique_id=954177379]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno8/Area3D" unique_id=672580111]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0119018555, 0, 0.04547119)
+shape = SubResource("BoxShape3D_4dhj3")
 
 [node name="CartelloLegno9" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.6451, 0.60936856, 14.80568)
@@ -953,12 +977,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 
 text = "Cifrario di Lorenz
 1942"
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno9" unique_id=426062032]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.032589)
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno9" unique_id=1581085198]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno9/Area3D" unique_id=1488435250]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno9/Area3D" unique_id=700013038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029251099, 0, 0.11682129)
+shape = SubResource("BoxShape3D_tee0j")
 
 [node name="Oro1" parent="Oggetti" unique_id=1225743416 instance=ExtResource("28_tw2p7")]
 transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.3434411, -27.1, 1.177, -2.163621)
@@ -975,11 +998,11 @@ transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.0
 text = "Scitala Spartana
 V secolo a.C."
 
-[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno10" unique_id=1353583875]
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno10" unique_id=473743825]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno10/Area3D" unique_id=393970057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno10/Area3D" unique_id=1111140797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030889511, 0, -0.092163086)
+shape = SubResource("BoxShape3D_idlc8")
 
 [node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
 transform = Transform3D(1.4458588, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.159824, 1.2001867, -11.059715)
@@ -1440,12 +1463,11 @@ transform = Transform3D(-0.5, 0, -4.371139e-08, 0, 0.5, 0, 4.371139e-08, 0, -0.5
 transform = Transform3D(0.19563349, -0.058078617, 0.21989639, -2.592259e-09, 0.29005373, 0.076608434, -0.2274369, -0.04995725, 0.18914738, -88.01006, -0.026699156, -84.87243)
 script = ExtResource("41_2e31y")
 
-[node name="Area3D" type="Area3D" parent="Oggetti/Meshy_AI_Chatty_Apple_0518224900_texture4" unique_id=943661223]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.032589)
+[node name="Area3D" type="Area3D" parent="Oggetti/Meshy_AI_Chatty_Apple_0518224900_texture4" unique_id=618405212]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Meshy_AI_Chatty_Apple_0518224900_texture4/Area3D" unique_id=1208411560]
-transform = Transform3D(1, 0, -8.940697e-08, -1.4901161e-08, 1, 1.4901161e-08, 2.9802322e-08, -7.450581e-09, 0.99999964, -0.15219116, 1.5188522, 1.7475586)
-shape = SubResource("BoxShape3D_ltyky")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Meshy_AI_Chatty_Apple_0518224900_texture4/Area3D" unique_id=1662028206]
+transform = Transform3D(1, 0, -8.940697e-08, -1.4901161e-08, 1, 1.4901161e-08, 2.9802322e-08, -7.450581e-09, 0.99999964, 0.37789917, -0.7223892, 2.5794067)
+shape = SubResource("BoxShape3D_rpwmr")
 
 [node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture" parent="Oggetti" unique_id=1383464667 instance=ExtResource("42_2e31y")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.0921335, 1.5488791, 1.8088608)
@@ -1480,7 +1502,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=285081989]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=489671086]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
@@ -1879,6 +1901,9 @@ transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.119594e-08
 pixel_size = 0.0045
 text = "Modello segreto della chiave utilizzata per cifrare
 "
+
+[node name="Meshy_AI_Chatty_Apple_0518224900_texture" parent="." unique_id=450746844 instance=ExtResource("31_i8p8r")]
+transform = Transform3D(599.99994, 0, 0, 0, 144.44173, -582.3543, 0, 582.3543, 144.44173, -64.5166, 1594.1064, -315.28326)
 
 [connection signal="body_entered" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_exited"]
