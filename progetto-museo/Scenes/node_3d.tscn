@@ -227,7 +227,7 @@ height = 1.6
 albedo_texture = ExtResource("12_vudi7")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ltyky"]
-size = Vector3(2.0219803, 1.1416931, 1.8737946)
+size = Vector3(2.0219803, 1.1416931, 0.72534955)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_8ljg1")
@@ -825,9 +825,10 @@ medievale
 VIII secolo"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno1" unique_id=513866067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5604515)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno1/Area3D" unique_id=1141548662]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.9912853)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno2" parent="Oggetti" unique_id=1171426455 instance=ExtResource("27_8ms6x")]
@@ -840,9 +841,10 @@ text = "Cifrario di Alberti
 1467"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno2" unique_id=157742604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1279507)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno2/Area3D" unique_id=1536979107]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.91225433)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
@@ -855,9 +857,10 @@ text = "Cifrario di Playfair
 1854"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno3" unique_id=1921965621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.029705)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno3/Area3D" unique_id=2006517904]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.77272415)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
@@ -900,9 +903,10 @@ text = "Cifrario di Vigenère
 1586"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno6" unique_id=1041575711]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.380827)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno6/Area3D" unique_id=429134318]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.9653702)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno7" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
@@ -917,6 +921,7 @@ meccanica
 XX secolo"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno7" unique_id=1438267720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0454559)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno7/Area3D" unique_id=888320682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
@@ -932,6 +937,7 @@ text = "Enigma machine
 1918"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno8" unique_id=518633116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.0340767)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno8/Area3D" unique_id=954177379]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
@@ -947,6 +953,7 @@ text = "Cifrario di Lorenz
 1942"
 
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno9" unique_id=426062032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.032589)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno9/Area3D" unique_id=1488435250]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
