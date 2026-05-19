@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://i48w76ik4sje"]
+
+[ext_resource type="PackedScene" uid="uid://ccedg5cmfgtqg" path="res://Arredamento/trattore/Meshy_AI_Vintage_1940s_1950s_a_0423063136_texture.glb" id="1_h4kjt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n57mu"]
+size = Vector3(0.46777344, 0.8251953, 1.9467773)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p3kbu"]
+size = Vector3(0.24199677, 0.88757324, 0.9398804)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gs3wu"]
+size = Vector3(0.14654541, 0.4794922, 0.47979736)
+
+[node name="Meshy_AI_Vintage_1940s_1950s_a_0423063136_texture" unique_id=647626601 instance=ExtResource("1_h4kjt")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(1269290727) index="0" unique_id=418140197]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1439567382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.02368164, -0.087402344, -0.0017089844)
+shape = SubResource("BoxShape3D_n57mu")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="1" unique_id=1678177115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.41356373, -0.18344392, -0.48763373)
+shape = SubResource("BoxShape3D_p3kbu")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="2" unique_id=440431967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37246424, -0.18344392, -0.48763373)
+shape = SubResource("BoxShape3D_p3kbu")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="3" unique_id=1820367056]
+transform = Transform3D(0.9835746, 0, 0.18050197, 0, 1, 0, -0.18050197, 0, 0.9835746, 0.45394635, -0.3391116, 0.71444756)
+shape = SubResource("BoxShape3D_gs3wu")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="4" unique_id=808267683]
+transform = Transform3D(0.9835746, 0, 0.18050197, 0, 1, 0, -0.18050197, 0, 0.9835746, -0.43044102, -0.3391116, 0.76480037)
+shape = SubResource("BoxShape3D_gs3wu")
