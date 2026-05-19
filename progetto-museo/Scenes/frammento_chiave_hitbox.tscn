@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bwggyj8jmafso"]
+
+[ext_resource type="PackedScene" uid="uid://bl310gqs0nck6" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Frammento_di_chiave_p_0507065828_texture.glb" id="1_8us4p"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t1fde"]
+size = Vector3(1.7164307, 1.5820313, 0.52368164)
+
+[node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture" unique_id=1383464667 instance=ExtResource("1_8us4p")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(808125983) index="0" unique_id=2131536737]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1964725416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06072998, 0.026367188, 0.0062193573)
+shape = SubResource("BoxShape3D_t1fde")

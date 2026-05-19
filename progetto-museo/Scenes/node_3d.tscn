@@ -51,8 +51,8 @@
 [ext_resource type="PackedScene" uid="uid://cp158ul7o6e0k" path="res://Arredamento/Telecamera/security camera 3d model.glb" id="39_anhy5"]
 [ext_resource type="Script" uid="uid://bbn50g8ullihk" path="res://Scenes/ui.gd" id="40_jh8ph"]
 [ext_resource type="Script" uid="uid://dhdx74a11fqhv" path="res://Arredamento/Mela/meshy_ai_chatty_apple_0518224900_texture.gd" id="41_2e31y"]
-[ext_resource type="PackedScene" uid="uid://bl310gqs0nck6" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Frammento_di_chiave_p_0507065828_texture.glb" id="42_ypsc0"]
-[ext_resource type="PackedScene" uid="uid://bvm1g6g2y81u4" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Libro_proibito_della__0507065819_texture.glb" id="43_0hp1g"]
+[ext_resource type="PackedScene" uid="uid://bwggyj8jmafso" path="res://Scenes/frammento_chiave_hitbox.tscn" id="42_2e31y"]
+[ext_resource type="PackedScene" uid="uid://b3ahr8upwphco" path="res://Scenes/libro_proibito_hitbox.tscn" id="43_po56r"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -1447,6 +1447,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.032589)
 transform = Transform3D(1, 0, -8.940697e-08, -1.4901161e-08, 1, 1.4901161e-08, 2.9802322e-08, -7.450581e-09, 0.99999964, -0.15219116, 1.5188522, 1.7475586)
 shape = SubResource("BoxShape3D_ltyky")
 
+[node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture" parent="Oggetti" unique_id=1383464667 instance=ExtResource("42_2e31y")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.0921335, 1.5488791, 1.8088608)
+
+[node name="Meshy_AI_Libro_proibito_della__0507065819_texture" parent="Oggetti" unique_id=1782460092 instance=ExtResource("43_po56r")]
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.4, 0, -1.4, 0, -6.119594e-08, -27.992, 0.654, 2.166048)
+
+[node name="Label3D" type="Label3D" parent="Oggetti/Meshy_AI_Libro_proibito_della__0507065819_texture" unique_id=1104182206]
+transform = Transform3D(1, 0, -1.8626451e-09, 0, 1, 0, 1.8626451e-09, 0, 1, -0.053717136, 0.8206, -1.2841625)
+pixel_size = 0.007
+text = "Libro perduto della crittografia"
+
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
 bottone = NodePath("../TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture/Mesh/StaticBody3D")
@@ -1863,21 +1874,11 @@ physics_material_override = SubResource("PhysicsMaterial_t3l2h")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_weast2/StaticBody3D" unique_id=806300727]
 shape = SubResource("BoxShape3D_58eop")
 
-[node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture2" parent="." unique_id=2051189058 instance=ExtResource("42_ypsc0")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11.112652, 1.5686831, -7.9585676)
-
 [node name="Label3D2" type="Label3D" parent="." unique_id=1817056284]
-transform = Transform3D(1.4, 0, 4.895675e-07, 0, 1.4, 0, -4.895675e-07, 0, 1.4, -13.666482, 2.4403129, -8.5700035)
+transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.119594e-08, -11.083844, 2.4403129, -7.9970446)
+pixel_size = 0.0045
 text = "Modello segreto della chiave utilizzata per cifrare
 "
-
-[node name="Meshy_AI_Libro_proibito_della__0507065819_texture" parent="." unique_id=76366279 instance=ExtResource("43_0hp1g")]
-transform = Transform3D(0.014440601, 0, 1.3999255, 0, 1.4, 0, -1.3999255, 0, 0.014440601, -27.991804, 0.65400726, -8.143533)
-
-[node name="Label3D" type="Label3D" parent="Meshy_AI_Libro_proibito_della__0507065819_texture" unique_id=1086776630]
-transform = Transform3D(1, 0, -1.8626451e-09, 0, 1, 0, 1.8626451e-09, 0, 1, -0.053717136, 0.8206, -1.2841625)
-pixel_size = 0.007
-text = "Libro perduto della crittografia"
 
 [connection signal="body_entered" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_exited"]

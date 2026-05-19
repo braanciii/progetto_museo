@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b3ahr8upwphco"]
+
+[ext_resource type="PackedScene" uid="uid://bvm1g6g2y81u4" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Libro_proibito_della__0507065819_texture.glb" id="1_c5lfq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nsul0"]
+size = Vector3(1.9779663, 1.0615234, 1.9684448)
+
+[node name="Meshy_AI_Libro_proibito_della__0507065819_texture" unique_id=1782460092 instance=ExtResource("1_c5lfq")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Mesh" parent_id_path=PackedInt32Array(786311500) index="0" unique_id=676641473]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Mesh/StaticBody3D" index="0" unique_id=1398137880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039641023, -0.030761719, -0.04411018)
+shape = SubResource("BoxShape3D_nsul0")
