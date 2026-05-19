@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario monoalfabetico medievale"
+@export_multiline var descrizione := "In questo sistema ogni lettera viene sostituita sempre con un altro simbolo o lettera. Per esempio, A potrebbe diventare X e B potrebbe diventare M. Era più sicuro del cifrario di Cesare, ma con abbastanza pazienza poteva essere decifrato analizzando le lettere più usate."
 
 var player_near = false
 

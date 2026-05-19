@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario di Playfair"
+@export_multiline var descrizione := "Invece di cifrare una lettera alla volta, lavora su coppie di lettere. Usa una tabella 5×5 costruita con una parola chiave. Questo metodo rendeva più complicata l’analisi delle frequenze usata per rompere i cifrari più semplici."
 
 var player_near = false
 

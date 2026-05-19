@@ -53,7 +53,7 @@
 [ext_resource type="Script" uid="uid://dhdx74a11fqhv" path="res://Arredamento/Mela/meshy_ai_chatty_apple_0518224900_texture.gd" id="41_2e31y"]
 [ext_resource type="PackedScene" uid="uid://bwggyj8jmafso" path="res://Scenes/frammento_chiave_hitbox.tscn" id="42_2e31y"]
 [ext_resource type="PackedScene" uid="uid://b3ahr8upwphco" path="res://Scenes/libro_proibito_hitbox.tscn" id="43_po56r"]
-[ext_resource type="PackedScene" uid="uid://i48w76ik4sje" path="res://Scenes/trattore_hitbox.tscn" id="44_po56r"]
+[ext_resource type="PackedScene" path="res://Scenes/trattore_hitbox.tscn" id="44_po56r"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -291,6 +291,9 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [sub_resource type="FontFile" id="FontFile_ltyky"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -312,6 +315,9 @@ cache/0/30/0/underline_thickness = 0.0
 cache/0/30/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_ypsc0"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -333,6 +339,9 @@ cache/0/20/0/underline_thickness = 0.0
 cache/0/20/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_0hp1g"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -349,6 +358,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_kpsu7"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -365,6 +377,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_vaous"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -381,6 +396,9 @@ cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
 [sub_resource type="FontFile" id="FontFile_1ty6y"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -1554,6 +1572,9 @@ mesh = SubResource("BoxMesh_062e5")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Ceiling/StaticBody3D" unique_id=1039064492]
 shape = SubResource("BoxShape3D_m2rse")
 
+[node name="Meshy_AI_Chatty_Apple_0518224900_texture5" parent="Oggetti" unique_id=450746844 instance=ExtResource("31_i8p8r")]
+transform = Transform3D(-0.04, 0, -6.0398317e-09, 0, 0.04, 0, 6.0398317e-09, 0, -0.04, -2.1212869, 1.0400112, 19.355366)
+
 [node name="GameManager" type="Node3D" parent="." unique_id=1975570132 node_paths=PackedStringArray("bottone", "punto_spawn", "terminale")]
 script = ExtResource("24_o74xe")
 bottone = NodePath("../TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture/Mesh/StaticBody3D")
@@ -1576,7 +1597,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=285081989]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=489671086]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
@@ -1625,7 +1646,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017852783, 0, 0.017547607)
 shape = SubResource("BoxShape3D_4wftv")
 
 [node name="GrassField" type="MultiMeshInstance3D" parent="Floor_esterno" unique_id=1134051189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.043541, -0.45217413, 0)
 multimesh = SubResource("MultiMesh_edoog")
 script = ExtResource("32_f528r")
 area_size = Vector2(1, 1)
@@ -1975,6 +1996,9 @@ transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.119594e-08
 pixel_size = 0.0045
 text = "Modello segreto della chiave utilizzata per cifrare
 "
+
+[node name="Meshy_AI_Chatty_Apple_0518224900_texture2" parent="." unique_id=1375973588 instance=ExtResource("31_i8p8r")]
+transform = Transform3D(-1.7484555e-09, 0, 0.04, 0, 0.04, 0, -0.04, 0, -1.7484555e-09, -6.0327215, 0.86727774, 7.4988103)
 
 [connection signal="body_entered" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_exited"]

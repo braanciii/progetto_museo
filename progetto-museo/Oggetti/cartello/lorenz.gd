@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario di Lorenz"
+@export_multiline var descrizione := "Era una macchina ancora più complessa di Enigma, usata per comunicazioni militari di alto livello. Funzionava con telescriventi e generava cifrature molto sofisticate. Gli inglesi svilupparono alcuni dei primi computer per riuscire a decifrarla."
 
 var player_near = false
 

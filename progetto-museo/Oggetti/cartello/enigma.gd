@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Enigma machine"
+@export_multiline var descrizione := "Era una macchina elettromeccanica usata dalla Germania nazista. Ogni tasto premuto cambiava automaticamente il modo di cifrare la lettera successiva. Sembrava impossibile da decifrare, ma gli Alleati riuscirono a romperne il codice, influenzando la guerra."
 
 var player_near = false
 

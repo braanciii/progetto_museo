@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario di Cesare"
+@export_multiline var descrizione := "È uno dei cifrari più semplici: ogni lettera del messaggio viene spostata di un certo numero di posti nell’alfabeto. Per esempio, con uno spostamento di 3, A diventa D e B diventa E. Era usato da Giulio Cesare per inviare messaggi segreti ai suoi generali."
 
 var player_near = false
 

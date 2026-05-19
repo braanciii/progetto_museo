@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario di Alberti"
+@export_multiline var descrizione := "Inventò un sistema con due dischi rotanti pieni di lettere. Girando i dischi durante la scrittura del messaggio, la sostituzione cambiava continuamente, rendendo il cifrario molto più difficile da rompere."
 
 var player_near = false
 

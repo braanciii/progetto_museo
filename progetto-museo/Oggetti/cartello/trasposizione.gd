@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario a trasposizione meccanica"
+@export_multiline var descrizione := "Qui le lettere non vengono cambiate, ma mescolate seguendo uno schema preciso, spesso con strumenti meccanici o griglie. Il messaggio contiene sempre le stesse lettere originali, ma in ordine diverso."
 
 var player_near = false
 

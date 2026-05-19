@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Scitala Spartana"
+@export_multiline var descrizione := "Era un bastone attorno a cui si avvolgeva una striscia di pelle o carta. Il messaggio veniva scritto lungo il bastone; una volta srotolata la striscia, le lettere sembravano senza senso. Solo chi aveva un bastone della stessa dimensione poteva leggere il testo corretto."
 
 var player_near = false
 

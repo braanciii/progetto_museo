@@ -1,7 +1,7 @@
 extends Node3D
 
-@export var titolo := "Titolo"
-@export_multiline var descrizione := "Descrizione"
+@export var titolo := "Cifrario di Al Kindi"
+@export_multiline var descrizione := "Non inventò un nuovo cifrario famoso, ma sviluppò il primo metodo scientifico per decifrare messaggi segreti. Studiando la frequenza delle lettere nelle lingue, riusciva a capire quali simboli corrispondevano alle lettere vere. È considerato uno dei padri della crittanalisi."
 
 var player_near = false
 
