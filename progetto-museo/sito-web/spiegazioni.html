@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTOS | Timeline Storica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #00f2ff;
+            --purple: #8b5cf6;
+            --bg: #020617;
+            --glass: rgba(15, 23, 42, 0.6);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            background: var(--bg);
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Sfondo con pattern futuristico leggero */
+        body {
+            background-image: 
+                radial-gradient(at 80% 20%, rgba(0, 242, 255, 0.05) 0px, transparent 50%),
+                radial-gradient(at 20% 80%, rgba(139, 92, 243, 0.05) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        header {
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(2, 6, 23, 0.8);
+        }
+
+        .logo { font-weight: 800; letter-spacing: 4px; font-size: 1.2rem; }
+        
+        .btn-back {
+            padding: 10px 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-family: 'JetBrains Mono';
+            transition: 0.3s all;
+        }
+        .btn-back:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .timeline-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* Linea centrale della Timeline */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent), var(--purple), transparent);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+            width: 50%;
+        }
+
+        /* Alternanza destra/sinistra */
+        .timeline-item.left { left: 0; padding-right: 40px; box-sizing: border-box; }
+        .timeline-item.right { left: 50%; padding-left: 40px; box-sizing: border-box; }
+
+        /* Punti di snodo sulla linea */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--bg);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            top: 40px;
+            z-index: 2;
+        }
+        .timeline-item.left::after { right: -7px; }
+        .timeline-item.right::after { left: -5px; }
+
+        .content-box {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            padding: 40px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            transition: 0.4s all;
+        }
+
+        .content-box:hover {
+            border-color: rgba(0, 242, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 242, 255, 0.05);
+        }
+
+        h2 { font-size: 2rem; margin: 0 0 10px 0; font-weight: 800; line-height: 1.1; }
+        .tag { font-family: 'JetBrains Mono'; color: var(--accent); font-size: 0.75rem; margin-bottom: 15px; display: block; letter-spacing: 2px;}
+        p { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+        /* Responsive per schermi piccoli */
+        @media (max-width: 768px) {
+            .timeline-container::before { left: 20px; }
+            .timeline-item { width: 100%; left: 0 !important; padding-left: 40px !important; padding-right: 0 !important; }
+            .timeline-item::after { left: 14px !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MUSEO DIGITALE</div>
+        <a href="index.html" class="btn-back">< TORNA ALLA HOMEPAGE</a>
+    </header>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">ANTICA GRECIA • TRASPOSIZIONE</span>
+                <h2>Scitala Spartana</h2>
+                <p>Uno dei più antichi sistemi crittografici documentati. Consisteva in un nastro di pelle avvolto attorno a un bastone cilindrico di specifico diametro. Il messaggio diventava leggibile solo riavvolgendo il nastro su una scitala identica, modificando l'ordine geometrico delle lettere.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">ROMA CLASSICA • SOSTITUZIONE</span>
+                <h2>Cifrario di Cesare</h2>
+                <p>Algoritmo a sostituzione monoalfabetica basato sullo spostamento fisso delle lettere dell'alfabeto (tipicamente di 3 posizioni). Utilizzato da Giulio Cesare per le comunicazioni militari, era matematicamente debole ma efficace in un'epoca ad alfabetizzazione ridotta.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">IX SECOLO • CRITTANALISI</span>
+                <h2>Al-Kindi</h2>
+                <p>Il filosofo arabo che scardinò la crittografia classica inventando l'analisi delle frequenze. Scoprì che in ogni lingua scritta alcune lettere ricorrono più spesso di altre. Contando la frequenza dei simboli in un testo cifrato, divenne possibile forzare qualsiasi codice a sostituzione monoalfabetica.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">MEDIOEVO • EVOLUZIONE</span>
+                <h2>Sostituzione Medievale</h2>
+                <p>Per contrastare le scoperte di Al-Kindi, gli scribi medievali introdussero varianti nei cifrari monoalfabetici, aggiungendo "nulle" (lettere senza significato) o simboli speciali per i digrammi più frequenti. Rimaneva comunque vulnerabile a testi cifrati molto lunghi.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">RINASCIMENTO • REINVENZIONE</span>
+                <h2>Disco di Alberti</h2>
+                <p>Leon Battista Alberti inventò il primo cifrario polialfabetico della storia. Ideò un dispositivo meccanico composto da due dischi concentrici metallici. Ruotando il disco interno durante la cifratura, la chiave cambiava ad ogni lettera, neutralizzando l'analisi delle frequenze.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">XVI SECOLO • IL CODICE INDECIFRABILE</span>
+                <h2>Cifrario di Vigenère</h2>
+                <p>Evoluzione del lavoro di Alberti, formalizzato da Blaise de Vigenère. Utilizza una parola chiave ripetuta per determinare lo slittamento di ogni singola lettera tramite una tavola geometrica ($26 \times 26$). Considerato inviolabile per tre secoli fino alla metà dell'Ottocento.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">ERA VITTORIANA • DIGRAFICO</span>
+                <h2>Cifrario Playfair</h2>
+                <p>Primo sistema a crittografare coppie di lettere (digrammi) invece di singoli caratteri, basandosi su una matrice geometrica $5 \times 5$. Inventato da Charles Wheatstone, riduceva drasticamente la ripetitività del testo e fu ampiamente usato dall'esercito britannico nella Prima Guerra Mondiale.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">INIZIO '900 • AUTOMAZIONE</span>
+                <h2>Trasposizione Meccanica</h2>
+                <p>Con l'avvento del telegrafo e della radio, la crittografia si automatizza. I cifrari a trasposizione iniziano a usare griglie geometriche rotanti e macchine a tastiera che rimescolano la posizione dei caratteri secondo permutazioni matematiche complesse e ripetute in più stadi.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">WWII • ROTORI ELETTROMECCANICI</span>
+                <h2>Macchina Enigma</h2>
+                <p>La celebre macchina tedesca basata su rotori cablati interni che giravano a ogni pressione di tasto, mutando il circuito elettrico di cifratura. Generava miliardi di combinazioni. Fu violata a Bletchley Park grazie alle intuizioni di Alan Turing e all'uso dei calcolatori elettromeccanici "Bombe".</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">WWII • TELECOMENTO DI ALTO LIVELLO</span>
+                <h2>Cifratrice Lorenz SZ42</h2>
+                <p>Molto più complessa di Enigma, era utilizzata dall'Alto Comando tedesco per comunicazioni strategiche dirette. Sfruttava 12 ruote dentate per generare un flusso pseudo-casuale combinato con il codice TeleX. Per decifrarla, i britannici costruirono *Colossus*, il primo computer elettronico programmabile.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">ERA MODERNA • SIMMETRICO STANDARD</span>
+                <h2>AES (Advanced Encryption Standard)</h2>
+                <p>Algoritmo a chiave simmetrica standard adottato globalmente dal governo USA nel 2001. Elabora blocchi di dati attraverso matrici matematiche applicando sostituzioni, permutazioni e trasformazioni lineari ripetute in molteplici round (chiavi a 128, 192 o 256 bit). Attualmente indistruttibile ad attacchi di forza bruta.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content-box">
+                <span class="tag">ERA MODERNA • ASIMMETRICO chiavi PUBBLICA/PRIVATA</span>
+                <h2>Algoritmo RSA</h2>
+                <p>Fondamento della sicurezza web moderna (Rivest-Shamir-Adleman). Introduce la crittografia asimmetrica: una chiave pubblica per cifrare e una chiave privata per decifrare. La sua sicurezza si basa sulla difficoltà matematica di fattorizzare numeri primi di dimensioni colossali.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content-box">
+                <span class="tag">AVANGUARDIA • CRITTOGRAFIA ASIMMETRICA LEGGERA</span>
+                <h2>Crittografia a Curve Ellittiche</h2>
+                <p>L'evoluzione di RSA. Invece di basarsi sulla fattorizzazione dei numeri primi, sfrutta le proprietà algebriche delle curve ellittiche su campi finiti. Offre lo stesso identico livello di sicurezza di RSA ma con chiavi drasticamente più corte, riducendo il consumo computazionale su smartphone, blockchain e dispositivi IoT.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

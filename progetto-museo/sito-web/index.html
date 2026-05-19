@@ -1,354 +1,281 @@
-import os
-
-# Definiamo il contenuto del file HTML/CSS
-html_content = """
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRYPTOS | Museo del Cifrario - 5BINF</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <title>CRYPTOS | Virtual Museum</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
+    </head>
     <style>
         :root {
-            --bg-dark: #05070a;
-            --accent-cyan: #00f2ff;
-            --accent-purple: #7000ff;
-            --text-main: #e2e8f0;
-            --glass: rgba(15, 23, 42, 0.7);
-            --border-glass: rgba(255, 255, 255, 0.1);
+            --accent: #00f2ff;
+            --bg: #020617;
+            --glass: rgba(15, 23, 42, 0.6);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
+        body, html {
+            margin: 0; padding: 0;
+            background: var(--bg);
+            color: white;
             font-family: 'Plus Jakarta Sans', sans-serif;
             overflow-x: hidden;
-            line-height: 1.6;
         }
 
-        /* --- BACKGROUND EFFECTS --- */
-        .bg-glow {
+        #viewport {
             position: fixed;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, var(--accent-purple) 0%, transparent 70%);
-            filter: blur(100px);
-            opacity: 0.15;
-            z-index: -1;
-            top: -100px;
-            right: -100px;
+            top: 0; left: 0;
+            width: 100%; height: 100vh;
+            z-index: 1;
         }
 
-        .bg-glow-2 {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
-            filter: blur(100px);
-            opacity: 0.1;
-            z-index: -1;
-            bottom: -100px;
-            left: -100px;
-        }
-
-        /* --- NAVIGATION --- */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(5, 7, 10, 0.8);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            border-bottom: 1px solid var(--border-glass);
-        }
-
-        .logo {
-            font-weight: 700;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            color: var(--accent-cyan);
-            text-transform: uppercase;
-        }
-
-        .nav-links a {
-            color: var(--text-main);
-            text-decoration: none;
-            margin-left: 30px;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: 0.3s;
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-cyan);
-            text-shadow: 0 0 10px var(--accent-cyan);
-        }
-
-        /* --- HERO SECTION --- */
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            background: linear-gradient(to bottom, transparent, var(--bg-dark));
-        }
-
-        .hero-badge {
-            background: rgba(0, 242, 255, 0.1);
-            border: 1px solid var(--accent-cyan);
-            color: var(--accent-cyan);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        h1 {
-            font-size: 5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
-
-        .hero-sub {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
-
-        .btn-vr {
-            padding: 15px 40px;
-            background: linear-gradient(45deg, var(--accent-cyan), var(--accent-purple));
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: 0.4s;
-            box-shadow: 0 0 30px rgba(112, 0, 255, 0.3);
-        }
-
-        .btn-vr:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 50px rgba(0, 242, 255, 0.5);
-        }
-
-        /* --- CONTENT SECTIONS --- */
-        section {
-            padding: 100px 10%;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .section-title::after {
-            content: '';
-            height: 1px;
-            flex-grow: 1;
-            background: linear-gradient(to right, var(--accent-cyan), transparent);
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: var(--glass);
-            border: 1px solid var(--border-glass);
-            padding: 40px;
-            border-radius: 15px;
-            transition: 0.3s;
+        .ui-layer {
             position: relative;
-            overflow: hidden;
-        }
-
-        .card:hover {
-            border-color: var(--accent-cyan);
-            transform: translateY(-10px);
-            background: rgba(15, 23, 42, 0.9);
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: var(--accent-cyan);
-            font-family: 'JetBrains Mono', monospace;
-        }
-
-        .card p {
-            color: #94a3b8;
-            font-size: 1rem;
-        }
-
-        .card-number {
-            position: absolute;
-            top: -10px;
-            right: 10px;
-            font-size: 4rem;
-            font-weight: 900;
-            color: rgba(255,255,255,0.03);
+            z-index: 10;
             pointer-events: none;
         }
 
-        /* --- ABOUT SECTION --- */
-        .about-box {
+        .ui-layer section, .ui-layer nav, .ui-layer .content-box {
+            pointer-events: auto;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            padding: 40px;
+            display: flex; justify-content: space-between;
+            mix-blend-mode: difference;
+            z-index: 100;
+        }
+
+        .logo { font-weight: 800; letter-spacing: 4px; font-size: 1.2rem; }
+
+        section {
+            height: 100vh;
             display: flex;
             align-items: center;
-            gap: 50px;
-            background: linear-gradient(135deg, rgba(112, 0, 255, 0.1), rgba(0, 242, 255, 0.1));
+            padding: 0 10%;
+        }
+
+        .content-box {
+            max-width: 450px;
+            background: var(--glass);
+            backdrop-filter: blur(20px);
             padding: 50px;
-            border-radius: 20px;
-            border: 1px solid var(--border-glass);
+            border-radius: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transform: translateX(-50px);
+            opacity: 0;
+            transition: 1.2s cubic-bezier(0.17, 0.67, 0.83, 0.67) all;
         }
 
-        .about-text h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
+        section.visible .content-box {
+            transform: translateX(0);
+            opacity: 1;
         }
 
-        /* --- FOOTER --- */
-        footer {
-            padding: 50px;
-            text-align: center;
-            border-top: 1px solid var(--border-glass);
-            color: #64748b;
-            font-size: 0.9rem;
+        h2 { font-size: 3rem; margin-bottom: 10px; font-weight: 800; line-height: 1; }
+        .tag { font-family: 'JetBrains Mono'; color: var(--accent); font-size: 0.8rem; margin-bottom: 20px; display: block; letter-spacing: 2px; margin-right: 100px; margin-top: 3px;}
+        p { color: #94a3b8; font-size: 1.1rem; line-height: 1.6; }
+
+        .vr-badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            font-weight: 700;
         }
 
-        /* Responsività */
-        @media (max-width: 768px) {
-            h1 { font-size: 3rem; }
-            nav { padding: 20px; }
-            .nav-links { display: none; }
-            .about-box { flex-direction: column; text-align: center; }
+        .scroll-indicator {
+            position: fixed;
+            bottom: 40px; left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            opacity: 0.5;
+            letter-spacing: 2px;
+        }
+
+        .btn-explore {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            background: transparent;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        .btn-explore:hover {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: 0 0 15px var(--accent);
         }
     </style>
-</head>
 <body>
 
-    <div class="bg-glow"></div>
-    <div class="bg-glow-2"></div>
+    <div id="viewport"></div>
 
-    <nav>
-        <div class="logo">CRYPTOS</div>
-        <div class="nav-links">
-            <a href="#storia">Storia</a>
-            <a href="#modernita">Modernità</a>
-            <a href="#ai">AI Act</a>
-            <a href="#chisiamo">Chi Siamo</a>
-        </div>
-    </nav>
+    <div class="ui-layer">
+        <nav>
+            <div class="logo">MUSEO DIGITALE</div>
+            <div class="tag">5BINF | LEONARDO DA VINCI</div>
+        </nav>
 
-    <header>
-        <div class="hero-badge">Centro Studi Leonardo da Vinci - Bergamo</div>
-        <h1>MUSEO 3D VR</h1>
-        <p class="hero-sub">Esplora l'evoluzione del segreto. Dai messaggi di Cesare alla crittografia quantistica, in un'esperienza virtuale immersiva.</p>
-        <a href="#" class="btn-vr">ENTRA NEL VISORE VR</a>
-    </header>
-
-    <section id="chisiamo">
-        <div class="about-box">
-            <div class="about-text">
-                <h2>Chi Siamo</h2>
-                <p>Siamo la classe <b>5BINF</b> dell'Istituto Leonardo da Vinci di Bergamo. Abbiamo sviluppato questo progetto per unire la nostra passione per l'informatica alla storia della sicurezza digitale. Il nostro obiettivo è rendere tangibile l'astrattezza degli algoritmi tramite la visualizzazione 3D.</p>
+        <section id="hero" class="visible">
+            <div class="content-box">
+                <span class="tag">INTRODUZIONE</span>
+                <h2>L'arte della crittografia</h2>
+                <p>Benvenuti nel museo virtuale della 5BINF. Un viaggio immersivo tra i codici che hanno cambiato la storia dell'umanità.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="storia">
-        <div class="section-title">Reperti Storici</div>
-        <div class="grid-container">
-            <div class="card">
-                <div class="card-number">01</div>
-                <h3>Cifrario di Cesare</h3>
-                <p>La tecnica di sostituzione più antica. Spostando le lettere dell'alfabeto, Cesare proteggeva i suoi ordini militari. Nel museo potrai ruotare il disco fisico per decifrare i messaggi.</p>
+        <section id="cesare">
+            <div class="content-box">
+                <span class="tag">ERA CLASSICA</span>
+                <h2>Cifrario di Cesare</h2>
+                <p>Il reperto 3D che vedi rappresenta il disco cifrante. Una semplice rotazione logica che ha protetto i segreti dell'Impero Romano per secoli.</p>
             </div>
-            <div class="card">
-                <div class="card-number">02</div>
-                <h3>Scitala Spartana</h3>
-                <p>Uno dei primi esempi di crittografia per trasposizione. Un nastro avvolto attorno a un bastone svela il messaggio solo a chi possiede un cilindro dello stesso diametro.</p>
-            </div>
-            <div class="card">
-                <div class="card-number">03</div>
-                <h3>Macchina Enigma</h3>
-                <p>Il cuore della crittografia meccanica. Un sistema di rotori complesso che ha sfidato le menti più brillanti del secolo scorso. Esplorala pezzo per pezzo in VR.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="modernita" style="background: rgba(0,0,0,0.3);">
-        <div class="section-title">Algoritmi Moderni</div>
-        <div class="grid-container">
-            <div class="card" style="border-left: 4px solid var(--accent-purple);">
-                <h3>RSA & Asimmetria</h3>
-                <p>Il fondamento del web moderno. Scopri come i numeri primi giganti proteggono le tue password e le tue transazioni bancarie ogni giorno.</p>
+        <section id="enigma">
+            <div class="content-box">
+                <span class="tag">SEC. XX - MECCANICA</span>
+                <h2>Enigma Machine</h2>
+                <p>Osserva i rotori. Milioni di combinazioni generate da un cuore meccanico. La sfida più grande per Alan Turing e i decrittatori di Bletchley Park.</p>
             </div>
-            <div class="card" style="border-left: 4px solid var(--accent-cyan);">
-                <h3>Blockchain</h3>
-                <p>La crittografia applicata alla decentralizzazione. Visualizza i blocchi di dati collegati da hash immutabili nel nostro spazio 3D.</p>
+        </section>
+
+        <section id="modern">
+            <div class="content-box">
+                <span class="tag">FUTURO & AI ACT</span>
+                <h2>Digital Trust</h2>
+                <p>Dall'algoritmo RSA alla protezione dei dati nell'era dell'Intelligenza Artificiale. Naviga i protocolli dell'AI Act europeo.</p>
+                <a href="spiegazioni.html" class="btn-explore">Esplora la Timeline</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section id="ai">
-        <div class="section-title">Futuro & AI Act</div>
-        <div class="card" style="width: 100%; background: linear-gradient(to right, var(--glass), transparent);">
-            <h3>Regolamentazione e Sicurezza</h3>
-            <p>L'intelligenza artificiale sta cambiando le regole del gioco. L'<b>EU AI Act</b> è la cornice legale che garantisce che questa potenza sia usata per difendere la privacy, non per violarla. Nel museo analizzeremo il rapporto tra AI e attacchi crittografici.</p>
-        </div>
-    </section>
+    <div class="scroll-indicator">SCROLLA PER NAVIGARE</div>
 
-    <footer>
-        <p>&copy; 2024 Progetto 5BINF - Centro Studi Leonardo da Vinci Bergamo</p>
-        <p style="margin-top: 10px; font-family: 'JetBrains Mono'; font-size: 0.7rem; color: var(--accent-cyan);">SISTEMA CRITTOGRAFICO ATTIVO // ACCESSO AUTORIZZATO</p>
-    </footer>
+    <script>
+        let scene, camera, renderer, loader, currentModel, backgroundPrism;
+        
+        const sectionModels = {
+            'hero': 'oggetti/Meshy_AI_Chatty_Apple_0518224900_texture.glb', 
+            'cesare': 'oggetti/Cipher_Disk_1211075956_texture.glb',
+            'enigma': 'oggetti/Meshy_AI_Enigma_Machine_0212071927_texture.glb', 
+            'modern': 'oggetti/Meshy_AI_Neon_Circuit_Keys_0519074627_texture.glb'
+        };
 
+        let activeSection = 'hero';
+
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            document.getElementById('viewport').appendChild(renderer.domElement);
+
+            // Luci
+            const light = new THREE.DirectionalLight(0xffffff, 1.5);
+            light.position.set(5, 5, 5);
+            scene.add(light);
+            scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+            camera.position.z = 5;
+            camera.position.x = -2.5; 
+
+            // 1. CREAZIONE DEL PRISMA FISSO (Icosaedro)
+            const prismGeom = new THREE.IcosahedronGeometry(2, 1); 
+            const prismMat = new THREE.MeshPhongMaterial({ 
+                color: 0x00f2ff, 
+                wireframe: true,
+                transparent: true,
+                opacity: 0.2 // Leggera trasparenza per non coprire il modello interno
+            });
+            backgroundPrism = new THREE.Mesh(prismGeom, prismMat);
+            scene.add(backgroundPrism);
+
+            loader = new THREE.GLTFLoader();
+            loadModel(sectionModels['hero']);
+
+            animate();
+        }
+
+        function loadModel(path) {
+                if (!path || path.includes('nome_file')) return;
+
+            loader.load(path, function (gltf) {
+                if (currentModel) scene.remove(currentModel);
+                
+                currentModel = gltf.scene;
+                currentModel.scale.set(1, 1.3, 1); // Leggermente più piccolo per stare nel prisma
+                currentModel.position.x = 0.285; // Sposta a destra (usa numeri negativi per sinistra)
+                currentModel.position.y = -0.05; // Sposta in basso (usa numeri positivi per in alto)
+                currentModel.position.z = 0.25;   // Sposta avanti/dietro
+                scene.add(currentModel);
+            });
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Ruota il prisma esterno
+            if(backgroundPrism) {
+                backgroundPrism.rotation.y += 0.002;
+                backgroundPrism.rotation.x += 0.001;
+            }
+
+            // Ruota il modello GLB interno
+            if(currentModel) {
+                currentModel.rotation.y += 0.008;
+            }
+            
+            renderer.render(scene, camera);
+        }
+
+        window.onscroll = () => {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 400;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    if (activeSection !== id) {
+                        activeSection = id;
+                        loadModel(sectionModels[id]);
+                    }
+                    sec.classList.add('visible');
+                } else {
+                    sec.classList.remove('visible');
+                }
+            });
+        };
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        init();
+    </script>
 </body>
 </html>
-"""
-
-# Salvataggio del file
-with open("museo_crittografia.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("File 'museo_crittografia.html' creato con successo!")
-"""
-
-import os
-
-# Create the HTML file
-html_file_path = 'museo_crittografia.html'
-with open(html_file_path, 'w', encoding='utf-8') as f:
-    f.write(html_content)
-    
-print(f"File {html_file_path} created.")
