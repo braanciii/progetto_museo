@@ -41,6 +41,8 @@
 [ext_resource type="PackedScene" uid="uid://c018sg0bigbuv" path="res://esterno/Giardino/pozzo/Meshy_AI_Pozzo_0212080349_texture.glb" id="37_28k2w"]
 [ext_resource type="PackedScene" uid="uid://cp158ul7o6e0k" path="res://Arredamento/Telecamera/security camera 3d model.glb" id="39_anhy5"]
 [ext_resource type="Script" uid="uid://bbn50g8ullihk" path="res://Scenes/ui.gd" id="40_jh8ph"]
+[ext_resource type="PackedScene" uid="uid://bl310gqs0nck6" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Frammento_di_chiave_p_0507065828_texture.glb" id="42_ypsc0"]
+[ext_resource type="PackedScene" uid="uid://bvm1g6g2y81u4" path="res://Arredamento/secret_room/oggetti_perduti/Meshy_AI_Libro_proibito_della__0507065819_texture.glb" id="43_0hp1g"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -1526,6 +1528,14 @@ physics_material_override = SubResource("PhysicsMaterial_t3l2h")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_weast2/StaticBody3D" unique_id=806300727]
 shape = SubResource("BoxShape3D_58eop")
+
+[node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture" parent="." unique_id=966713850 instance=ExtResource("42_ypsc0")]
+
+[node name="Meshy_AI_Frammento_di_chiave_p_0507065828_texture2" parent="." unique_id=2051189058 instance=ExtResource("42_ypsc0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.591747, 0.9144837, -12.756767)
+
+[node name="Meshy_AI_Libro_proibito_della__0507065819_texture" parent="." unique_id=76366279 instance=ExtResource("43_0hp1g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.262808, 0.65400726, -12.020454)
 
 [connection signal="body_entered" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_exited"]
