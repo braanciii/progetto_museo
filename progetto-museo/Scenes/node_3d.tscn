@@ -30,13 +30,22 @@
 [ext_resource type="PackedScene" uid="uid://cx4c1i4c62scb" path="res://Scenes/playfair_hitbox.tscn" id="26_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
 [ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
+[ext_resource type="Script" uid="uid://nh7w7g7i4xf4" path="res://Oggetti/cartello/al_kindi.gd" id="28_kpsu7"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
+[ext_resource type="Script" uid="uid://cee1mq7aar5oc" path="res://Oggetti/cartello/monoalfabetico.gd" id="28_vaous"]
 [ext_resource type="Script" uid="uid://dat3t4smp3dsr" path="res://Oggetti/cartello/meshy_ai_rectangular_wooden_se_0509231500_texture.gd" id="29_i8p8r"]
 [ext_resource type="PackedScene" uid="uid://dvd12dj88akn" path="res://Scenes/barriera_with_box.tscn" id="29_tw2p7"]
+[ext_resource type="Script" uid="uid://x140xss7geao" path="res://Oggetti/cartello/alberti.gd" id="29_twgqo"]
+[ext_resource type="Script" uid="uid://juewga8hw4sp" path="res://Oggetti/cartello/scitala.gd" id="30_0hp1g"]
+[ext_resource type="Script" uid="uid://dh3e1ed006hwh" path="res://Oggetti/cartello/playfair.gd" id="30_3rbk4"]
+[ext_resource type="Script" uid="uid://ctri6j6x8tdmh" path="res://Oggetti/cartello/vigenere.gd" id="31_1ty6y"]
 [ext_resource type="PackedScene" uid="uid://sdstbk5gde7x" path="res://Arredamento/Mela/Meshy_AI_Chatty_Apple_0518224900_texture.glb" id="31_i8p8r"]
 [ext_resource type="ArrayMesh" uid="uid://cwclww10ac30u" path="res://esterno/Giardino/erba/new_array_mesh.tres" id="32_e0x74"]
 [ext_resource type="PackedScene" uid="uid://cj60ttebu0cyo" path="res://esterno/Giardino/erba/erba.glb" id="32_edoog"]
 [ext_resource type="Script" uid="uid://btk55jxjl7uyv" path="res://Scenes/grass_field.gd" id="32_f528r"]
+[ext_resource type="Script" uid="uid://d0pvfcfqccpha" path="res://Oggetti/cartello/trasposizione.gd" id="34_jpw7g"]
+[ext_resource type="Script" uid="uid://b8xrxah2l3n0p" path="res://Oggetti/cartello/enigma.gd" id="35_11qmb"]
+[ext_resource type="Script" uid="uid://d21tnv01v8fu6" path="res://Oggetti/cartello/lorenz.gd" id="36_bx5fl"]
 [ext_resource type="PackedScene" uid="uid://dupmnf5e4cguw" path="res://esterno/Giardino/cespuglio/cespuglio.glb" id="36_j3itv"]
 [ext_resource type="PackedScene" uid="uid://c018sg0bigbuv" path="res://esterno/Giardino/pozzo/Meshy_AI_Pozzo_0212080349_texture.glb" id="37_28k2w"]
 [ext_resource type="PackedScene" uid="uid://cp158ul7o6e0k" path="res://Arredamento/Telecamera/security camera 3d model.glb" id="39_anhy5"]
@@ -218,7 +227,7 @@ height = 1.6
 albedo_texture = ExtResource("12_vudi7")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ltyky"]
-size = Vector3(2.0219803, 1.1416931, 1.198761)
+size = Vector3(2.0219803, 1.1416931, 1.8737946)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58eop"]
 albedo_texture = ExtResource("2_8ljg1")
@@ -806,6 +815,7 @@ transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-
 
 [node name="CartelloLegno1" parent="Oggetti" unique_id=1326165383 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5802851, 0.8248122, -19.796152)
+script = ExtResource("28_vaous")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno1" unique_id=860866459]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005437732, 0.01085639, 0.042808533)
@@ -814,29 +824,56 @@ text = "Cifrario monoalfabetico
 medievale
 VIII secolo"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno1" unique_id=513866067]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno1/Area3D" unique_id=1141548662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno2" parent="Oggetti" unique_id=1171426455 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.412987, 0.7539542, -19.796152)
+script = ExtResource("29_twgqo")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno2" unique_id=237970727]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
 text = "Cifrario di Alberti
 1467"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno2" unique_id=157742604]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno2/Area3D" unique_id=1536979107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno3" parent="Oggetti" unique_id=1530867554 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.4942, 0.6460408, -11.044806)
+script = ExtResource("30_3rbk4")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno3" unique_id=756182732]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
 text = "Cifrario di Playfair
 1854"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno3" unique_id=1921965621]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno3/Area3D" unique_id=2006517904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno4" parent="Oggetti" unique_id=1462736202 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.77939296, -14.182707)
+script = ExtResource("28_kpsu7")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno4" unique_id=1560718417]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
 text = "Cifrario di AL Kindi
 IX secolo"
+
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno4" unique_id=1248142892]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno4/Area3D" unique_id=1244564213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno5" parent="Oggetti" unique_id=1632050831 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.827408, 0.79652727, 17.773315)
@@ -850,19 +887,27 @@ text = "Cifrario di Cesare
 [node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno5" unique_id=730414332]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno5/Area3D" unique_id=1229871333]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.42933655)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
 shape = SubResource("BoxShape3D_ltyky")
 
 [node name="CartelloLegno6" parent="Oggetti" unique_id=1560458725 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.778854, 0.6065061, -18.818802)
+script = ExtResource("31_1ty6y")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno6" unique_id=1147612625]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
 text = "Cifrario di Vigenère
 1586"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno6" unique_id=1041575711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno6/Area3D" unique_id=429134318]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno7" parent="Oggetti" unique_id=2078160058 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -49.851086, 0.7437637, -2.6831007)
+script = ExtResource("34_jpw7g")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno7" unique_id=791410288]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
@@ -871,21 +916,41 @@ text = "Cifrario a trasposizione
 meccanica
 XX secolo"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno7" unique_id=1438267720]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno7/Area3D" unique_id=888320682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno8" parent="Oggetti" unique_id=1903760359 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.57335, 0.6329392, 5.318186)
+script = ExtResource("35_11qmb")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno8" unique_id=1128757700]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
 text = "Enigma machine
 1918"
 
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno8" unique_id=518633116]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno8/Area3D" unique_id=954177379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
+
 [node name="CartelloLegno9" parent="Oggetti" unique_id=1425418163 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -48.6451, 0.60936856, 14.80568)
+script = ExtResource("36_bx5fl")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno9" unique_id=1697733659]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014976501, -0.0012524128, 0.032066345)
 text = "Cifrario di Lorenz
 1942"
+
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno9" unique_id=426062032]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno9/Area3D" unique_id=1488435250]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
 
 [node name="Oro1" parent="Oggetti" unique_id=1225743416 instance=ExtResource("28_tw2p7")]
 transform = Transform3D(1.3434411, 0, 1.4816092, 0, 2, 0, -1.4816092, 0, 1.3434411, -27.1, 1.177, -2.163621)
@@ -895,11 +960,18 @@ transform = Transform3D(1.5867066, 0, -1.2175229, 0, 2, 0, 1.2175229, 0, 1.58670
 
 [node name="CartelloLegno10" parent="Oggetti" unique_id=1220313760 instance=ExtResource("27_8ms6x")]
 transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 8.903299, 0.62365866, -1.6811371)
+script = ExtResource("30_0hp1g")
 
 [node name="Label3D" type="Label3D" parent="Oggetti/CartelloLegno10" unique_id=1721434946]
 transform = Transform3D(-1, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -1, -0.014974594, -0.0012524128, -0.04495144)
 text = "Scitala Spartana
 V secolo a.C."
+
+[node name="Area3D" type="Area3D" parent="Oggetti/CartelloLegno10" unique_id=1353583875]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/CartelloLegno10/Area3D" unique_id=393970057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.015781403, -0.15708923, -0.76685333)
+shape = SubResource("BoxShape3D_ltyky")
 
 [node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
 transform = Transform3D(1.4458588, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.159824, 1.2001867, -11.059715)
@@ -1135,7 +1207,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=2098729667]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=591830392]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
@@ -1546,8 +1618,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.432415, 1.2759326, -0.09232
 text = "Modello segreto della chiave utilizzata per cifrare
 "
 
+[connection signal="body_entered" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno1/Area3D" to="Oggetti/CartelloLegno1" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno2/Area3D" to="Oggetti/CartelloLegno2" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno2/Area3D" to="Oggetti/CartelloLegno2" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno3/Area3D" to="Oggetti/CartelloLegno3" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno3/Area3D" to="Oggetti/CartelloLegno3" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno4/Area3D" to="Oggetti/CartelloLegno4" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno4/Area3D" to="Oggetti/CartelloLegno4" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Oggetti/CartelloLegno5/Area3D" to="Oggetti/CartelloLegno5" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno6/Area3D" to="Oggetti/CartelloLegno6" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno6/Area3D" to="Oggetti/CartelloLegno6" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno7/Area3D" to="Oggetti/CartelloLegno7" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno7/Area3D" to="Oggetti/CartelloLegno7" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno8/Area3D" to="Oggetti/CartelloLegno8" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno8/Area3D" to="Oggetti/CartelloLegno8" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno9/Area3D" to="Oggetti/CartelloLegno9" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno9/Area3D" to="Oggetti/CartelloLegno9" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Oggetti/CartelloLegno10/Area3D" to="Oggetti/CartelloLegno10" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Oggetti/CartelloLegno10/Area3D" to="Oggetti/CartelloLegno10" method="_on_area_3d_body_exited"]
 
 [editable path="TerminaleParola"]
 [editable path="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture"]

@@ -144,3 +144,11 @@ func _process(_delta: float) -> void:
 
 			if obj.has_method("on_clicked"):
 				obj.on_clicked()
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	pass # Replace with function body.
+
+
+func _on_area_3d_body_exited(body: Node3D) -> void:
+	pass # Replace with function body.
