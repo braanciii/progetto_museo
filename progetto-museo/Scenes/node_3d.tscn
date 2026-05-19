@@ -468,6 +468,7 @@ operation = 2
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Room_right/Corridor/CSGCombiner3D/CSGBox3D2" unique_id=1340008013]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4152713, 22.0717)
+radius = 0.73291016
 height = 2.621338
 
 [node name="Floor" type="MeshInstance3D" parent="Room_right" unique_id=825678301]
