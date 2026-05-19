@@ -107,12 +107,6 @@ size = Vector3(0.2, 4, 12)
 [sub_resource type="BoxShape3D" id="BoxShape3D_m2rse_alt"]
 size = Vector3(0.2, 4, 12)
 
-[sub_resource type="BoxMesh" id="BoxMesh_rl1jb_alt"]
-size = Vector3(3, 4, 0.2)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_58eop_alt"]
-size = Vector3(3, 4, 0.2)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_worak"]
 albedo_texture = ExtResource("2_aeo3b")
 
@@ -435,7 +429,7 @@ shape = SubResource("BoxShape3D_cb6ip_alt")
 [node name="Corridor" type="Node3D" parent="Room_right" unique_id=1346803494]
 
 [node name="Corridor_Floor" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=1688670158]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.1525574e-07, 16)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.1525574e-07, 15.909607)
 material_override = SubResource("StandardMaterial3D_vudi7")
 mesh = SubResource("BoxMesh_vudi7")
 
@@ -462,14 +456,19 @@ mesh = SubResource("BoxMesh_062e5_alt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Corridor/Corridor_Wall_R/StaticBody3D" unique_id=185731699]
 shape = SubResource("BoxShape3D_m2rse_alt")
 
-[node name="Corridor_EndWall" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=536955163]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 22)
-mesh = SubResource("BoxMesh_rl1jb_alt")
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Room_right/Corridor" unique_id=2046852230]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Corridor/Corridor_EndWall" unique_id=1508405499]
+[node name="CSGBox3D" type="CSGBox3D" parent="Room_right/Corridor/CSGCombiner3D" unique_id=1138443552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 21.884851)
+size = Vector3(3, 4, 0.2)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Corridor/Corridor_EndWall/StaticBody3D" unique_id=1389249625]
-shape = SubResource("BoxShape3D_58eop_alt")
+[node name="CSGBox3D2" type="CSGBox3D" parent="Room_right/Corridor/CSGCombiner3D" unique_id=665855547]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.856923, 0)
+operation = 2
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Room_right/Corridor/CSGCombiner3D/CSGBox3D2" unique_id=1340008013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4152713, 22.0717)
+height = 2.621338
 
 [node name="Floor" type="MeshInstance3D" parent="Room_right" unique_id=825678301]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.025)
@@ -707,7 +706,7 @@ target_position = Vector3(0, 0, -5)
 
 [node name="UIHint" type="Label" parent="Player/DesktopPlayer" unique_id=753585973]
 visible = false
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -1133,7 +1132,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=738323019]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=2098729667]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
