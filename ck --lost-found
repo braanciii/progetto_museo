@@ -1,0 +1,21 @@
+[33m18cc014[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDevelopment[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/Development[m[33m)[m HEAD@{0}: pull: Fast-forward
+[33m3b4f97d[m HEAD@{1}: commit: [CAPOBIANCO MATTEO] Aggiunta oggetti
+[33m5cd4c2e[m HEAD@{2}: commit: [CAPOBIANCO MATTEO] Aggiunta oggetti
+[33md99f476[m HEAD@{3}: commit: [BRAMATI LUCA] Fix entrata
+[33mf670bd8[m HEAD@{4}: commit: [BRAMATI LUCA] Entrata museo realizzata
+[33m4e280ea[m HEAD@{5}: pull: Fast-forward
+[33mdfdb9cb[m HEAD@{6}: commit (merge): [BRAMATI LUCA] Puntatore fixato
+[33me1005cf[m HEAD@{7}: commit: [BRAMATI LUCA] Fix puntatore posizione
+[33m4fe0e1b[m HEAD@{8}: pull: Fast-forward
+[33md8fb170[m HEAD@{9}: commit: [BRAMATI LUCA] Implementazione puntatore
+[33md1c9310[m HEAD@{10}: commit: [BRAMATI LUCA] RayCast funzionante
+[33m579c591[m HEAD@{11}: pull: Fast-forward
+[33m575b4a5[m HEAD@{12}: commit: [BRAMATI LUCA] Implementazione RayCast
+[33m57c6f58[m HEAD@{13}: commit: [BRAMATI LUCA] Aggiunta interazione oggetti
+[33mbd87ed5[m HEAD@{14}: commit: [Bramati Luca] Implementazione codice interazione pulsante
+[33m8f65d4f[m HEAD@{15}: commit: [Bramati Luca] Prima implementazione interazione bottone per cifrario di cesare
+[33m5eb0a98[m HEAD@{16}: commit: [BRAMATI LUCA] Fix bottone + separatorie tolte
+[33m1ee8db0[m HEAD@{17}: commit: [BRAMATI LUCA] Bottone fixato
+[33m80406b7[m HEAD@{18}: commit: [Alex Lin] Bottone
+[33m26d5daf[m HEAD@{19}: commit: [BRAMATI LUCA] Fix completo lettere cifrario di cesare + Implementazione rotazione parziale
+[33m083bd5b[m HEAD@{20}: clone: from https://github.com/braanciii/progetto_museo.git
