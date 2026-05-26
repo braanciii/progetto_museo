@@ -29,7 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://ces0r0m45ta5k" path="res://Oggetti/Nuovo cifrario monoalfabetico medievale/Meshy_AI_creami_un_cifrario_al_0509221842_texture.glb" id="25_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://cx4c1i4c62scb" path="res://Scenes/playfair_hitbox.tscn" id="26_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
-[ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes/piedistallo_hitbox.tscn" id="28_8ms6x"]
 [ext_resource type="Script" uid="uid://nh7w7g7i4xf4" path="res://Oggetti/cartello/al_kindi.gd" id="28_kpsu7"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
 [ext_resource type="Script" uid="uid://cee1mq7aar5oc" path="res://Oggetti/cartello/monoalfabetico.gd" id="28_vaous"]
@@ -53,7 +52,7 @@
 [ext_resource type="Script" uid="uid://dhdx74a11fqhv" path="res://Arredamento/Mela/meshy_ai_chatty_apple_0518224900_texture.gd" id="41_2e31y"]
 [ext_resource type="PackedScene" uid="uid://bwggyj8jmafso" path="res://Scenes/frammento_chiave_hitbox.tscn" id="42_2e31y"]
 [ext_resource type="PackedScene" uid="uid://b3ahr8upwphco" path="res://Scenes/libro_proibito_hitbox.tscn" id="43_po56r"]
-[ext_resource type="PackedScene" path="res://Scenes/trattore_hitbox.tscn" id="44_po56r"]
+[ext_resource type="PackedScene" uid="uid://i48w76ik4sje" path="res://Scenes/trattore_hitbox.tscn" id="44_po56r"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_7q7q3"]
 size = Vector3(20, 4, 0.2)
@@ -532,16 +531,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4152713, 22.0717)
 radius = 0.73291016
 height = 2.621338
 
-[node name="Ceiling" type="MeshInstance3D" parent="Room_right/Corridor" unique_id=913442161]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.019, 15.91)
-material_override = SubResource("StandardMaterial3D_vudi7")
-mesh = SubResource("BoxMesh_vudi7")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Corridor/Ceiling" unique_id=1579519701]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Corridor/Ceiling/StaticBody3D" unique_id=852782480]
-shape = SubResource("BoxShape3D_1vwyg_alt")
-
 [node name="Floor" type="MeshInstance3D" parent="Room_right" unique_id=825678301]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.025)
 mesh = SubResource("BoxMesh_8ljg1")
@@ -549,15 +538,6 @@ mesh = SubResource("BoxMesh_8ljg1")
 [node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Floor" unique_id=1674830633]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Floor/StaticBody3D" unique_id=1595651951]
-shape = SubResource("BoxShape3D_m2rse")
-
-[node name="Ceiling" type="MeshInstance3D" parent="Room_right" unique_id=894146730]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.018911, -10.025)
-mesh = SubResource("BoxMesh_8ljg1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Room_right/Ceiling" unique_id=1177819589]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_right/Ceiling/StaticBody3D" unique_id=1311662764]
 shape = SubResource("BoxShape3D_m2rse")
 
 [node name="Hidden_room" type="Node3D" parent="." unique_id=1576215689]
@@ -570,16 +550,6 @@ mesh = SubResource("BoxMesh_8cye3")
 physics_material_override = SubResource("PhysicsMaterial_cb6ip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hidden_room/hidden_room_floor/StaticBody3D" unique_id=1320968028]
-shape = SubResource("BoxShape3D_j3itv")
-
-[node name="hidden_room_ceiling" type="MeshInstance3D" parent="Hidden_room" unique_id=716801356]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.019, -10)
-mesh = SubResource("BoxMesh_8cye3")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Hidden_room/hidden_room_ceiling" unique_id=2065442311]
-physics_material_override = SubResource("PhysicsMaterial_cb6ip")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Hidden_room/hidden_room_ceiling/StaticBody3D" unique_id=680664293]
 shape = SubResource("BoxShape3D_j3itv")
 
 [node name="Room_left" type="Node3D" parent="." unique_id=1592948789]
@@ -657,15 +627,6 @@ mesh = SubResource("BoxMesh_o74xe")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room_left/Wall_south2/StaticBody3D" unique_id=110382858]
 shape = SubResource("BoxShape3D_odfm3")
 
-[node name="Ceiling" type="MeshInstance3D" parent="Room_left" unique_id=1300861092]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.932, 4.019, -10.025)
-mesh = SubResource("BoxMesh_062e5")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Room_left/Ceiling" unique_id=1988221021]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Room_left/Ceiling/StaticBody3D" unique_id=818326868]
-shape = SubResource("BoxShape3D_m2rse")
-
 [node name="Corridor_north" type="Node3D" parent="." unique_id=2008743600]
 
 [node name="Corridor_north_floor" type="MeshInstance3D" parent="Corridor_north" unique_id=1657791499]
@@ -695,16 +656,6 @@ mesh = SubResource("BoxMesh_cb6ip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_north/Corridor_north_wall_south/StaticBody3D" unique_id=1574867145]
 shape = SubResource("BoxShape3D_1vwyg")
-
-[node name="Corridor_north_ceiling" type="MeshInstance3D" parent="Corridor_north" unique_id=1610046419]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.019, -17.67)
-mesh = SubResource("BoxMesh_28k2w")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Corridor_north/Corridor_north_ceiling" unique_id=2112863039]
-physics_material_override = SubResource("PhysicsMaterial_cb6ip")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_north/Corridor_north_ceiling/StaticBody3D" unique_id=1058625325]
-shape = SubResource("BoxShape3D_vudi7")
 
 [node name="Corridor_south" type="Node3D" parent="." unique_id=1454333049]
 
@@ -741,16 +692,6 @@ mesh = SubResource("BoxMesh_58eop")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_wall_south/StaticBody3D" unique_id=1749665275]
 shape = SubResource("BoxShape3D_nivdu")
-
-[node name="Corridor_south_ceiling" type="MeshInstance3D" parent="Corridor_south" unique_id=1524205254]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4.019, -2.33)
-mesh = SubResource("BoxMesh_d4vpw")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Corridor_south/Corridor_south_ceiling" unique_id=1023450047]
-physics_material_override = SubResource("PhysicsMaterial_cb6ip")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Corridor_south/Corridor_south_ceiling/StaticBody3D" unique_id=791586603]
-shape = SubResource("BoxShape3D_062e5")
 
 [node name="Lights" type="Node3D" parent="." unique_id=1521230608]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.025122)
@@ -883,7 +824,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.80
 [node name="Scitala_Spartana" parent="Oggetti" unique_id=944688063 instance=ExtResource("19_nivdu")]
 transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 9.377521, 1.3744199, -1.6918077)
 
-[node name="Piedistallo" parent="Oggetti/Scitala_Spartana" unique_id=1888761026 instance=ExtResource("28_8ms6x")]
+[node name="Piedistallo" parent="Oggetti/Scitala_Spartana" unique_id=1888761026]
 transform = Transform3D(1.1111112, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -0.0009689331, -0.28516304, -0.0027570724)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Scitala_Spartana/Piedistallo" unique_id=483809142]
@@ -1081,7 +1022,7 @@ V secolo a.C."
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030889511, 0, -0.092163086)
 shape = SubResource("BoxShape3D_idlc8")
 
-[node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536 instance=ExtResource("28_8ms6x")]
+[node name="Piedistallo_playfair" parent="Oggetti" unique_id=582318536]
 transform = Transform3D(1.4458588, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.159824, 1.2001867, -11.059715)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_playfair" unique_id=342298111]
@@ -1092,7 +1033,7 @@ distance_fade_enabled = true
 spot_range = 0.97905385
 spot_angle = 20.74781
 
-[node name="Piedistallo_vigenere" parent="Oggetti" unique_id=1774181845 instance=ExtResource("28_8ms6x")]
+[node name="Piedistallo_vigenere" parent="Oggetti" unique_id=1774181845]
 transform = Transform3D(-4.856821e-08, 0, 2.7109554, 0, 1.1111112, 0, -1.1111112, 0, -1.1849962e-07, -33.76512, 1.1770064, -19.368912)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_vigenere" unique_id=1514175371]
@@ -1103,7 +1044,7 @@ distance_fade_enabled = true
 spot_range = 0.97905385
 spot_angle = 20.74781
 
-[node name="Piedistallo_Enigma" parent="Oggetti" unique_id=499115068 instance=ExtResource("28_8ms6x")]
+[node name="Piedistallo_Enigma" parent="Oggetti" unique_id=499115068]
 transform = Transform3D(1.3926437, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.226215, 1.2033126, 5.3379564)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_Enigma" unique_id=412201017]
@@ -1114,7 +1055,7 @@ distance_fade_enabled = true
 spot_range = 0.97905385
 spot_angle = 20.74781
 
-[node name="Piedistallo_lorenz" parent="Oggetti" unique_id=247100733 instance=ExtResource("28_8ms6x")]
+[node name="Piedistallo_lorenz" parent="Oggetti" unique_id=247100733]
 transform = Transform3D(1.3286692, 0, 0, 0, 1.1111112, 0, 0, 0, 2.7109554, -49.268135, 1.1900164, 14.835355)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Oggetti/Piedistallo_lorenz" unique_id=279593097]
@@ -1563,15 +1504,6 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.071, -38.383)
 [node name="Meshy_AI_Chatty_Apple_0518224900_texture" parent="Oggetti/Meshy_AI_Vintage_1940s_1950s_a_0423063136_texture2" unique_id=1771484059 instance=ExtResource("31_i8p8r")]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.22557992, -0.53525734)
 
-[node name="Ceiling" type="MeshInstance3D" parent="Oggetti" unique_id=1584739189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7094378, -39.86124, 4.019, 33.89216)
-mesh = SubResource("BoxMesh_062e5")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Oggetti/Ceiling" unique_id=2107991319]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Oggetti/Ceiling/StaticBody3D" unique_id=1039064492]
-shape = SubResource("BoxShape3D_m2rse")
-
 [node name="Meshy_AI_Chatty_Apple_0518224900_texture5" parent="Oggetti" unique_id=450746844 instance=ExtResource("31_i8p8r")]
 transform = Transform3D(-0.04, 0, -6.0398317e-09, 0, 0.04, 0, 6.0398317e-09, 0, -0.04, -2.1212869, 1.0400112, 19.355366)
 
@@ -1597,7 +1529,7 @@ transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.00000
 [node name="Label3D" parent="TerminaleParola" index="2" unique_id=577050456]
 transform = Transform3D(1, -5.3290705e-15, 2.1316282e-14, 1.7763568e-15, 1.0000005, -6.140825e-16, 1.7763568e-14, -6.1408253e-16, 1.0000005, 4.3314357, 1.0061882, -2.6751018)
 
-[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=489671086]
+[node name="Mesh" parent="TerminaleParola/Meshy_AI_bottone_amin_0409064529_texture" parent_id_path=PackedInt32Array(131578165, 196949277) index="0" unique_id=2098729667]
 transform = Transform3D(0.9999997, 3.5527137e-15, 0, 1.4210855e-14, 0.99999976, 1.4901161e-07, -1.7763568e-15, -1.4901161e-07, 0.99999976, 45.163906, -27.64478, -10.061867)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1143747051]
