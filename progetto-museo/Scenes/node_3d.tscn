@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://ces0r0m45ta5k" path="res://Oggetti/Nuovo cifrario monoalfabetico medievale/Meshy_AI_creami_un_cifrario_al_0509221842_texture.glb" id="25_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://cx4c1i4c62scb" path="res://Scenes/playfair_hitbox.tscn" id="26_ugn1w"]
 [ext_resource type="PackedScene" uid="uid://donoqloxbi8hg" path="res://Oggetti/cartello/Meshy_AI_Rectangular_wooden_se_0509231500_texture.glb" id="27_8ms6x"]
+[ext_resource type="PackedScene" uid="uid://b3u1dn1ft23f6" path="res://Scenes//piedistallo_histbox.tscn" id="28_8ms6x"]
 [ext_resource type="Script" uid="uid://nh7w7g7i4xf4" path="res://Oggetti/cartello/al_kindi.gd" id="28_kpsu7"]
 [ext_resource type="PackedScene" uid="uid://d4cq8c1o81wi5" path="res://Scenes/gold_hitbox.tscn" id="28_tw2p7"]
 [ext_resource type="Script" uid="uid://cee1mq7aar5oc" path="res://Oggetti/cartello/monoalfabetico.gd" id="28_vaous"]
